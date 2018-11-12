@@ -1,0 +1,9 @@
+{
+  "java_libraries_list": "{\"_video_engine_tests__library\"}",
+  "lib_paths": [
+    "./lib_video_engine_tests__library.so"
+  ],
+  "libraries": [
+    "lib_video_engine_tests__library.so"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "deps_info": {
+    "deps_configs": [
+      "gen/third_party/robolectric/android-all-8.1.0-robolectric-r4402310_java.build_config",
+      "gen/third_party/robolectric/robolectric_annotations_java.build_config",
+      "gen/third_party/robolectric/robolectric_java.build_config",
+      "gen/third_party/robolectric/robolectric_junit_java.build_config",
+      "gen/third_party/robolectric/robolectric_resources_java.build_config",
+      "gen/third_party/robolectric/robolectric_shadowapi_java.build_config",
+      "gen/third_party/robolectric/robolectric_utils_java.build_config",
+      "gen/third_party/robolectric/shadows_core_java.build_config",
+      "gen/third_party/robolectric/shadows_multidex_java.build_config",
+      "gen/third_party/robolectric/shadows_play_services_java.build_config"
+    ],
+    "name": "robolectric_all_java.build_config",
+    "path": "gen/third_party/robolectric/robolectric_all_java.build_config",
+    "type": "group"
+  },
+  "gradle": {}
+}

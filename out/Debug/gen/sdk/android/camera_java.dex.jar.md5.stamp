@@ -1,0 +1,273 @@
+{
+  "input-strings": [
+    "java", 
+    "-jar", 
+    "../../third_party/r8/lib/d8.jar"
+  ], 
+  "files-md5": "c3afb164daee01f7aa2726de83f25490", 
+  "input-files": [
+    {
+      "path": "lib.java/sdk/android/camera_java.jar", 
+      "tag": "f43b75404961f3a938c99c47d48d2ef2", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "org/webrtc/Camera1Capturer.class", 
+          "tag": 1064751051
+        }, 
+        {
+          "path": "org/webrtc/Camera1Enumerator.class", 
+          "tag": 3909060507
+        }, 
+        {
+          "path": "org/webrtc/Camera1Session$1.class", 
+          "tag": 677575666
+        }, 
+        {
+          "path": "org/webrtc/Camera1Session$2.class", 
+          "tag": 1435617366
+        }, 
+        {
+          "path": "org/webrtc/Camera1Session$3.class", 
+          "tag": 1543450042
+        }, 
+        {
+          "path": "org/webrtc/Camera1Session$SessionState.class", 
+          "tag": 2005722551
+        }, 
+        {
+          "path": "org/webrtc/Camera1Session.class", 
+          "tag": 1162255705
+        }, 
+        {
+          "path": "org/webrtc/Camera2Capturer.class", 
+          "tag": 3847526545
+        }, 
+        {
+          "path": "org/webrtc/Camera2Enumerator.class", 
+          "tag": 1177282538
+        }, 
+        {
+          "path": "org/webrtc/Camera2Session$1.class", 
+          "tag": 2610204102
+        }, 
+        {
+          "path": "org/webrtc/Camera2Session$CameraCaptureCallback.class", 
+          "tag": 3039590133
+        }, 
+        {
+          "path": "org/webrtc/Camera2Session$CameraStateCallback.class", 
+          "tag": 3875861964
+        }, 
+        {
+          "path": "org/webrtc/Camera2Session$CaptureSessionCallback$1.class", 
+          "tag": 502544523
+        }, 
+        {
+          "path": "org/webrtc/Camera2Session$CaptureSessionCallback.class", 
+          "tag": 4246414392
+        }, 
+        {
+          "path": "org/webrtc/Camera2Session$SessionState.class", 
+          "tag": 4038421284
+        }, 
+        {
+          "path": "org/webrtc/Camera2Session.class", 
+          "tag": 3128042885
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$1.class", 
+          "tag": 2995359733
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$2.class", 
+          "tag": 3567559148
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$3.class", 
+          "tag": 4270485244
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$4.class", 
+          "tag": 728678765
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$5.class", 
+          "tag": 1678060734
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$6.class", 
+          "tag": 1063907167
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$7.class", 
+          "tag": 3761704284
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$8.class", 
+          "tag": 73433931
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer$SwitchState.class", 
+          "tag": 1373984959
+        }, 
+        {
+          "path": "org/webrtc/CameraCapturer.class", 
+          "tag": 1535466236
+        }, 
+        {
+          "path": "org/webrtc/CameraEnumerationAndroid$1.class", 
+          "tag": 2226276638
+        }, 
+        {
+          "path": "org/webrtc/CameraEnumerationAndroid$2.class", 
+          "tag": 3178587962
+        }, 
+        {
+          "path": "org/webrtc/CameraEnumerationAndroid$CaptureFormat$FramerateRange.class", 
+          "tag": 3741237528
+        }, 
+        {
+          "path": "org/webrtc/CameraEnumerationAndroid$CaptureFormat.class", 
+          "tag": 1884603380
+        }, 
+        {
+          "path": "org/webrtc/CameraEnumerationAndroid$ClosestComparator.class", 
+          "tag": 1989909428
+        }, 
+        {
+          "path": "org/webrtc/CameraEnumerationAndroid.class", 
+          "tag": 4232178241
+        }, 
+        {
+          "path": "org/webrtc/CameraEnumerator.class", 
+          "tag": 2840075100
+        }, 
+        {
+          "path": "org/webrtc/CameraSession$CreateSessionCallback.class", 
+          "tag": 3889109348
+        }, 
+        {
+          "path": "org/webrtc/CameraSession$Events.class", 
+          "tag": 1529100538
+        }, 
+        {
+          "path": "org/webrtc/CameraSession$FailureType.class", 
+          "tag": 1138708952
+        }, 
+        {
+          "path": "org/webrtc/CameraSession.class", 
+          "tag": 1022855941
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturer$CameraEventsHandler.class", 
+          "tag": 4148740103
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturer$CameraStatistics$1.class", 
+          "tag": 331352207
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturer$CameraStatistics.class", 
+          "tag": 244623139
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturer$CameraSwitchHandler.class", 
+          "tag": 4182558793
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturer$MediaRecorderHandler.class", 
+          "tag": 2033872398
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturer.class", 
+          "tag": 1775575884
+        }, 
+        {
+          "path": "org/webrtc/Camera1Session$3$$Lambda$0.class", 
+          "tag": 3759978508
+        }, 
+        {
+          "path": "org/webrtc/Camera1Session$3$$Lambda$1.class", 
+          "tag": 1677336184
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturer$$CC.class", 
+          "tag": 1910309781
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/dex.py", 
+      "tag": "92f07a54681f9da14d0c639647142db3"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "02b2b2af8679aeed8e11fdd11bea5a08"
+}

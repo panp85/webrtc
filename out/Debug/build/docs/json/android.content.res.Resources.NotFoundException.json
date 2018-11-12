@@ -1,0 +1,82 @@
+{
+  "methods": {
+    "__constructor__()": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "__constructor__()"
+    },
+    "__constructor__(java.lang.String)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "name"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "__constructor__(java.lang.String)"
+    },
+    "toString()": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "java.lang.String",
+      "exceptions": [],
+      "name": "toString()"
+    }
+  },
+  "imports": [
+    "android.os.Build.VERSION_CODES.M",
+    "android.os.Build.VERSION_CODES.N",
+    "org.robolectric.Shadows.shadowOf",
+    "org.robolectric.shadow.api.Shadow.directlyOn",
+    "android.content.res.AssetFileDescriptor",
+    "android.content.res.AssetManager",
+    "android.content.res.Configuration",
+    "android.content.res.Resources",
+    "android.content.res.ResourcesImpl",
+    "android.content.res.TypedArray",
+    "android.content.res.XmlResourceParser",
+    "android.graphics.Bitmap",
+    "android.graphics.drawable.BitmapDrawable",
+    "android.graphics.drawable.Drawable",
+    "android.os.ParcelFileDescriptor",
+    "android.util.AttributeSet",
+    "android.util.DisplayMetrics",
+    "android.util.LongSparseArray",
+    "android.util.TypedValue",
+    "android.view.Display",
+    "java.io.FileInputStream",
+    "java.io.IOException",
+    "java.io.InputStream",
+    "java.lang.reflect.Field",
+    "java.lang.reflect.Modifier",
+    "java.util.ArrayList",
+    "java.util.List",
+    "java.util.Locale",
+    "org.robolectric.RuntimeEnvironment",
+    "org.robolectric.annotation.HiddenApi",
+    "org.robolectric.annotation.Implementation",
+    "org.robolectric.annotation.Implements",
+    "org.robolectric.annotation.RealObject",
+    "org.robolectric.annotation.Resetter",
+    "org.robolectric.res.Plural",
+    "org.robolectric.res.PluralRules",
+    "org.robolectric.res.ResName",
+    "org.robolectric.res.ResType",
+    "org.robolectric.res.ResourceTable",
+    "org.robolectric.res.TypedResource",
+    "org.robolectric.shadow.api.Shadow",
+    "org.robolectric.util.ReflectionHelpers",
+    "org.robolectric.util.ReflectionHelpers.ClassParameter"
+  ],
+  "name": "org.robolectric.shadows.ShadowResources.ShadowNotFoundException"
+}

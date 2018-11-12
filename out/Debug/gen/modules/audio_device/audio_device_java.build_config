@@ -1,0 +1,58 @@
+{
+  "deps_info": {
+    "deps_configs": [
+      "gen/rtc_base/base_java.build_config",
+      "gen/third_party/jsr-305/jsr_305_javalib.build_config"
+    ],
+    "dex_path": "gen/modules/audio_device/audio_device_java.dex.jar",
+    "gradle_treat_as_prebuilt": null,
+    "interface_jar_path": "lib.java/modules/audio_device/audio_device_java.interface.jar",
+    "is_prebuilt": false,
+    "jar_path": "lib.java/modules/audio_device/audio_device_java.jar",
+    "java_sources_file": "gen/modules/audio_device/audio_device_java.sources",
+    "javac_full_classpath": [
+      "../../third_party/bazel/desugar/Desugar-runtime.jar",
+      "gen/build/android/buildhooks/build_hooks_java.javac.jar",
+      "gen/third_party/jsr-305/jsr_305_javalib.javac.jar",
+      "gen/rtc_base/base_java.javac.jar"
+    ],
+    "javac_full_interface_classpath": [
+      "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar",
+      "lib.java/build/android/buildhooks/build_hooks_java.interface.jar",
+      "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar",
+      "lib.java/rtc_base/base_java.interface.jar"
+    ],
+    "name": "audio_device_java.build_config",
+    "owned_resource_srcjars": [],
+    "owned_resources_dirs": [],
+    "owned_resources_zips": [],
+    "path": "gen/modules/audio_device/audio_device_java.build_config",
+    "requires_android": true,
+    "supports_android": true,
+    "type": "java_library",
+    "unprocessed_jar_path": "gen/modules/audio_device/audio_device_java.javac.jar"
+  },
+  "gradle": {
+    "bundled_srcjars": [],
+    "dependent_android_projects": [
+      "gen/rtc_base/base_java.build_config"
+    ],
+    "dependent_java_projects": [
+      "gen/third_party/jsr-305/jsr_305_javalib.build_config"
+    ],
+    "dependent_prebuilt_jars": []
+  },
+  "javac": {
+    "classpath": [
+      "gen/rtc_base/base_java.javac.jar",
+      "gen/third_party/jsr-305/jsr_305_javalib.javac.jar"
+    ],
+    "interface_classpath": [
+      "lib.java/rtc_base/base_java.interface.jar",
+      "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar"
+    ],
+    "processor_classes": [],
+    "processor_classpath": [],
+    "resource_packages": []
+  }
+}

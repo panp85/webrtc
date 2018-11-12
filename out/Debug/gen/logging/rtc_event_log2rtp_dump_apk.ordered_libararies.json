@@ -1,0 +1,9 @@
+{
+  "java_libraries_list": "{\"_rtc_event_log2rtp_dump__library\"}",
+  "lib_paths": [
+    "./lib_rtc_event_log2rtp_dump__library.so"
+  ],
+  "libraries": [
+    "lib_rtc_event_log2rtp_dump__library.so"
+  ]
+}

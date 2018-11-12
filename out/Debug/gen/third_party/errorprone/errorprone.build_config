@@ -1,0 +1,40 @@
+{
+  "deps_info": {
+    "deps_configs": [
+      "gen/third_party/errorprone/errorprone_java.build_config"
+    ],
+    "java_runtime_classpath": [
+      "lib.java/third_party/errorprone/error_prone_ant-2.3.1.jar"
+    ],
+    "javac_full_classpath": [
+      "../../third_party/errorprone/lib/error_prone_ant-2.3.1.jar"
+    ],
+    "javac_full_interface_classpath": [
+      "lib.java/third_party/errorprone/error_prone_ant-2.3.1.interface.jar"
+    ],
+    "main_class": "com.google.errorprone.ErrorProneCompiler",
+    "name": "errorprone.build_config",
+    "path": "gen/third_party/errorprone/errorprone.build_config",
+    "requires_android": false,
+    "supports_android": false,
+    "type": "java_binary"
+  },
+  "gradle": {
+    "bundled_srcjars": [],
+    "dependent_android_projects": [],
+    "dependent_java_projects": [],
+    "dependent_prebuilt_jars": [
+      "lib.java/third_party/errorprone/error_prone_ant-2.3.1.jar"
+    ]
+  },
+  "javac": {
+    "classpath": [
+      "../../third_party/errorprone/lib/error_prone_ant-2.3.1.jar"
+    ],
+    "interface_classpath": [
+      "lib.java/third_party/errorprone/error_prone_ant-2.3.1.interface.jar"
+    ],
+    "processor_classes": [],
+    "processor_classpath": []
+  }
+}

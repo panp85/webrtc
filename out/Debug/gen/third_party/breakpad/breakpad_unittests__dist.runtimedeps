@@ -1,0 +1,2 @@
+./exe.unstripped/obj/third_party/breakpad/breakpad_unittests/breakpad_unittests
+./exe.unstripped/linux_dumper_unittest_helper

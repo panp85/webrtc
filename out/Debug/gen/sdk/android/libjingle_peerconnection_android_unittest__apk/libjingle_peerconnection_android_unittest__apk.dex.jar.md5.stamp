@@ -1,0 +1,657 @@
+{
+  "input-strings": [
+    "java", 
+    "-jar", 
+    "../../third_party/r8/lib/d8.jar"
+  ], 
+  "files-md5": "d48dd6a765dc9b79cf1e4478a559fa13", 
+  "input-files": [
+    {
+      "path": "gen/sdk/android/libjingle_peerconnection_android_unittest__apk/libjingle_peerconnection_android_unittest__apk.jar", 
+      "tag": "2fde5817b7872aa63eb8bd948657c519", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "android/arch/lifecycle/R.class", 
+          "tag": 3102739895
+        }, 
+        {
+          "path": "android/support/compat/R$attr.class", 
+          "tag": 2722813435
+        }, 
+        {
+          "path": "android/support/compat/R$bool.class", 
+          "tag": 2271076065
+        }, 
+        {
+          "path": "android/support/compat/R$color.class", 
+          "tag": 2531358236
+        }, 
+        {
+          "path": "android/support/compat/R$dimen.class", 
+          "tag": 330741134
+        }, 
+        {
+          "path": "android/support/compat/R$drawable.class", 
+          "tag": 435926768
+        }, 
+        {
+          "path": "android/support/compat/R$id.class", 
+          "tag": 1809372762
+        }, 
+        {
+          "path": "android/support/compat/R$integer.class", 
+          "tag": 2406305666
+        }, 
+        {
+          "path": "android/support/compat/R$layout.class", 
+          "tag": 931861666
+        }, 
+        {
+          "path": "android/support/compat/R$string.class", 
+          "tag": 4089072815
+        }, 
+        {
+          "path": "android/support/compat/R$style.class", 
+          "tag": 3860956358
+        }, 
+        {
+          "path": "android/support/compat/R$styleable.class", 
+          "tag": 841611418
+        }, 
+        {
+          "path": "android/support/compat/R.class", 
+          "tag": 445296700
+        }, 
+        {
+          "path": "android/support/coreui/R$attr.class", 
+          "tag": 3128164650
+        }, 
+        {
+          "path": "android/support/coreui/R$bool.class", 
+          "tag": 754730070
+        }, 
+        {
+          "path": "android/support/coreui/R$color.class", 
+          "tag": 2468408310
+        }, 
+        {
+          "path": "android/support/coreui/R$dimen.class", 
+          "tag": 2711407232
+        }, 
+        {
+          "path": "android/support/coreui/R$drawable.class", 
+          "tag": 16161165
+        }, 
+        {
+          "path": "android/support/coreui/R$id.class", 
+          "tag": 1446323178
+        }, 
+        {
+          "path": "android/support/coreui/R$integer.class", 
+          "tag": 954269784
+        }, 
+        {
+          "path": "android/support/coreui/R$layout.class", 
+          "tag": 1481373988
+        }, 
+        {
+          "path": "android/support/coreui/R$string.class", 
+          "tag": 3313965236
+        }, 
+        {
+          "path": "android/support/coreui/R$style.class", 
+          "tag": 1152333498
+        }, 
+        {
+          "path": "android/support/coreui/R$styleable.class", 
+          "tag": 1565386951
+        }, 
+        {
+          "path": "android/support/coreui/R.class", 
+          "tag": 1079316040
+        }, 
+        {
+          "path": "android/support/coreutils/R$attr.class", 
+          "tag": 2115025961
+        }, 
+        {
+          "path": "android/support/coreutils/R$bool.class", 
+          "tag": 1890510413
+        }, 
+        {
+          "path": "android/support/coreutils/R$color.class", 
+          "tag": 767451572
+        }, 
+        {
+          "path": "android/support/coreutils/R$dimen.class", 
+          "tag": 3104282616
+        }, 
+        {
+          "path": "android/support/coreutils/R$drawable.class", 
+          "tag": 3084115825
+        }, 
+        {
+          "path": "android/support/coreutils/R$id.class", 
+          "tag": 1968248159
+        }, 
+        {
+          "path": "android/support/coreutils/R$integer.class", 
+          "tag": 2178620333
+        }, 
+        {
+          "path": "android/support/coreutils/R$layout.class", 
+          "tag": 2179653565
+        }, 
+        {
+          "path": "android/support/coreutils/R$string.class", 
+          "tag": 3908375044
+        }, 
+        {
+          "path": "android/support/coreutils/R$style.class", 
+          "tag": 2572160369
+        }, 
+        {
+          "path": "android/support/coreutils/R$styleable.class", 
+          "tag": 2098224438
+        }, 
+        {
+          "path": "android/support/coreutils/R.class", 
+          "tag": 3924042903
+        }, 
+        {
+          "path": "android/support/fragment/R$attr.class", 
+          "tag": 3006475858
+        }, 
+        {
+          "path": "android/support/fragment/R$bool.class", 
+          "tag": 1927949151
+        }, 
+        {
+          "path": "android/support/fragment/R$color.class", 
+          "tag": 2406930253
+        }, 
+        {
+          "path": "android/support/fragment/R$dimen.class", 
+          "tag": 3598057514
+        }, 
+        {
+          "path": "android/support/fragment/R$drawable.class", 
+          "tag": 557152737
+        }, 
+        {
+          "path": "android/support/fragment/R$id.class", 
+          "tag": 2068705110
+        }, 
+        {
+          "path": "android/support/fragment/R$integer.class", 
+          "tag": 1539643151
+        }, 
+        {
+          "path": "android/support/fragment/R$layout.class", 
+          "tag": 2770155652
+        }, 
+        {
+          "path": "android/support/fragment/R$string.class", 
+          "tag": 120222026
+        }, 
+        {
+          "path": "android/support/fragment/R$style.class", 
+          "tag": 3888070102
+        }, 
+        {
+          "path": "android/support/fragment/R$styleable.class", 
+          "tag": 3085935901
+        }, 
+        {
+          "path": "android/support/fragment/R.class", 
+          "tag": 3251782362
+        }, 
+        {
+          "path": "android/support/mediacompat/R$attr.class", 
+          "tag": 1311388382
+        }, 
+        {
+          "path": "android/support/mediacompat/R$bool.class", 
+          "tag": 3470683142
+        }, 
+        {
+          "path": "android/support/mediacompat/R$color.class", 
+          "tag": 2507899154
+        }, 
+        {
+          "path": "android/support/mediacompat/R$dimen.class", 
+          "tag": 1410906687
+        }, 
+        {
+          "path": "android/support/mediacompat/R$drawable.class", 
+          "tag": 3164766805
+        }, 
+        {
+          "path": "android/support/mediacompat/R$id.class", 
+          "tag": 1258717235
+        }, 
+        {
+          "path": "android/support/mediacompat/R$integer.class", 
+          "tag": 3703845676
+        }, 
+        {
+          "path": "android/support/mediacompat/R$layout.class", 
+          "tag": 3500682550
+        }, 
+        {
+          "path": "android/support/mediacompat/R$string.class", 
+          "tag": 1316543025
+        }, 
+        {
+          "path": "android/support/mediacompat/R$style.class", 
+          "tag": 1419828068
+        }, 
+        {
+          "path": "android/support/mediacompat/R$styleable.class", 
+          "tag": 1077021121
+        }, 
+        {
+          "path": "android/support/mediacompat/R.class", 
+          "tag": 258703534
+        }, 
+        {
+          "path": "android/support/test/rule/R$string.class", 
+          "tag": 2554129124
+        }, 
+        {
+          "path": "android/support/test/rule/R.class", 
+          "tag": 2492107223
+        }, 
+        {
+          "path": "org/chromium/base/BuildConfig.class", 
+          "tag": 1789322665
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/NativeLibraries.class", 
+          "tag": 624929749
+        }, 
+        {
+          "path": "org/webrtc/Camera1CapturerUsingByteBufferTest$1.class", 
+          "tag": 1152595373
+        }, 
+        {
+          "path": "org/webrtc/Camera1CapturerUsingByteBufferTest$TestObjectFactory.class", 
+          "tag": 994862759
+        }, 
+        {
+          "path": "org/webrtc/Camera1CapturerUsingByteBufferTest.class", 
+          "tag": 2276780034
+        }, 
+        {
+          "path": "org/webrtc/Camera1CapturerUsingTextureTest$1.class", 
+          "tag": 943873372
+        }, 
+        {
+          "path": "org/webrtc/Camera1CapturerUsingTextureTest$TestObjectFactory.class", 
+          "tag": 3799517012
+        }, 
+        {
+          "path": "org/webrtc/Camera1CapturerUsingTextureTest.class", 
+          "tag": 350299827
+        }, 
+        {
+          "path": "org/webrtc/Camera2CapturerTest$1.class", 
+          "tag": 1127285778
+        }, 
+        {
+          "path": "org/webrtc/Camera2CapturerTest$SimpleCamera2$CameraStateCallback.class", 
+          "tag": 2159222925
+        }, 
+        {
+          "path": "org/webrtc/Camera2CapturerTest$SimpleCamera2$LooperThread.class", 
+          "tag": 3987956405
+        }, 
+        {
+          "path": "org/webrtc/Camera2CapturerTest$SimpleCamera2.class", 
+          "tag": 4122610962
+        }, 
+        {
+          "path": "org/webrtc/Camera2CapturerTest$TestObjectFactory.class", 
+          "tag": 1839066900
+        }, 
+        {
+          "path": "org/webrtc/Camera2CapturerTest.class", 
+          "tag": 3822277777
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturerTestFixtures$1.class", 
+          "tag": 761964036
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturerTestFixtures$2.class", 
+          "tag": 3766603320
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturerTestFixtures$3.class", 
+          "tag": 504802701
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturerTestFixtures$CameraEvents.class", 
+          "tag": 1722349390
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturerTestFixtures$CapturerInstance.class", 
+          "tag": 3929003557
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturerTestFixtures$FakeAsyncRenderer.class", 
+          "tag": 3848187720
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturerTestFixtures$FakeCapturerObserver.class", 
+          "tag": 483297174
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturerTestFixtures$RendererCallbacks.class", 
+          "tag": 3000310404
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturerTestFixtures$TestObjectFactory.class", 
+          "tag": 2977729531
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturerTestFixtures$VideoTrackWithRenderer.class", 
+          "tag": 3143612839
+        }, 
+        {
+          "path": "org/webrtc/CameraVideoCapturerTestFixtures.class", 
+          "tag": 2605530628
+        }, 
+        {
+          "path": "org/webrtc/DefaultVideoEncoderFactoryTest$CustomHardwareVideoEncoderFactory.class", 
+          "tag": 320140354
+        }, 
+        {
+          "path": "org/webrtc/DefaultVideoEncoderFactoryTest.class", 
+          "tag": 604748131
+        }, 
+        {
+          "path": "org/webrtc/EglRendererTest$1.class", 
+          "tag": 815904841
+        }, 
+        {
+          "path": "org/webrtc/EglRendererTest$TestFrameListener.class", 
+          "tag": 3618904855
+        }, 
+        {
+          "path": "org/webrtc/EglRendererTest.class", 
+          "tag": 2802650400
+        }, 
+        {
+          "path": "org/webrtc/FileVideoCapturerTest$MockCapturerObserver.class", 
+          "tag": 74934317
+        }, 
+        {
+          "path": "org/webrtc/FileVideoCapturerTest.class", 
+          "tag": 1849353390
+        }, 
+        {
+          "path": "org/webrtc/GlRectDrawerTest$1StubOesTextureProducer.class", 
+          "tag": 1543283569
+        }, 
+        {
+          "path": "org/webrtc/GlRectDrawerTest.class", 
+          "tag": 38712026
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoDecoderTest$1.class", 
+          "tag": 2547080737
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoDecoderTest$MockDecodeCallback.class", 
+          "tag": 1127106582
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoDecoderTest.class", 
+          "tag": 3928988520
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoderTest$1.class", 
+          "tag": 3698708166
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoderTest$2.class", 
+          "tag": 1558594523
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoderTest$MockBufferBase.class", 
+          "tag": 3516512867
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoderTest$MockEncoderCallback.class", 
+          "tag": 1113797641
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoderTest$MockI420Buffer.class", 
+          "tag": 3523594990
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoderTest$MockTextureBuffer.class", 
+          "tag": 1790301176
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoderTest.class", 
+          "tag": 1622190441
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoderTest.class", 
+          "tag": 49859471
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorTest$1.class", 
+          "tag": 3549470746
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorTest$MockConnectivityManagerDelegate.class", 
+          "tag": 1718879052
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorTest$MockWifiManagerDelegate.class", 
+          "tag": 1713631718
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorTest$NetworkMonitorTestObserver.class", 
+          "tag": 2029540629
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorTest$TestNetworkMonitorAutoDetectObserver.class", 
+          "tag": 2052938249
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorTest.class", 
+          "tag": 530631485
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionFactoryTest.class", 
+          "tag": 434620432
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionTest$ExpectedResolutionSetter.class", 
+          "tag": 1382705349
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionTest$ObserverExpectations.class", 
+          "tag": 2555631894
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionTest$SdpObserverLatch.class", 
+          "tag": 4079370730
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionTest.class", 
+          "tag": 2935815570
+        }, 
+        {
+          "path": "org/webrtc/R$attr.class", 
+          "tag": 3836816538
+        }, 
+        {
+          "path": "org/webrtc/R$bool.class", 
+          "tag": 4293287310
+        }, 
+        {
+          "path": "org/webrtc/R$color.class", 
+          "tag": 1807344997
+        }, 
+        {
+          "path": "org/webrtc/R$dimen.class", 
+          "tag": 2306367063
+        }, 
+        {
+          "path": "org/webrtc/R$drawable.class", 
+          "tag": 3854765514
+        }, 
+        {
+          "path": "org/webrtc/R$id.class", 
+          "tag": 1057384852
+        }, 
+        {
+          "path": "org/webrtc/R$integer.class", 
+          "tag": 537923805
+        }, 
+        {
+          "path": "org/webrtc/R$layout.class", 
+          "tag": 4012737302
+        }, 
+        {
+          "path": "org/webrtc/R$string.class", 
+          "tag": 3051574103
+        }, 
+        {
+          "path": "org/webrtc/R$style.class", 
+          "tag": 777794365
+        }, 
+        {
+          "path": "org/webrtc/R$styleable.class", 
+          "tag": 3671751696
+        }, 
+        {
+          "path": "org/webrtc/R.class", 
+          "tag": 576806403
+        }, 
+        {
+          "path": "org/webrtc/RendererCommonTest.class", 
+          "tag": 1385317863
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelperTest$1.class", 
+          "tag": 3207938752
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelperTest$2.class", 
+          "tag": 4035594940
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelperTest$MockTextureListener.class", 
+          "tag": 3034056999
+        }, 
+        {
+          "path": "org/webrtc/SurfaceTextureHelperTest.class", 
+          "tag": 1235035108
+        }, 
+        {
+          "path": "org/webrtc/SurfaceViewRendererOnMeasureTest$1MockRendererEvents.class", 
+          "tag": 3793922712
+        }, 
+        {
+          "path": "org/webrtc/SurfaceViewRendererOnMeasureTest.class", 
+          "tag": 503445199
+        }, 
+        {
+          "path": "org/webrtc/VideoFileRendererTest.class", 
+          "tag": 3817148853
+        }, 
+        {
+          "path": "org/webrtc/WebRtcJniBootTest.class", 
+          "tag": 3376496674
+        }, 
+        {
+          "path": "org/webrtc/YuvHelperTest.class", 
+          "tag": 1856684437
+        }, 
+        {
+          "path": "org/webrtc/HardwareVideoEncoderTest$MockTextureBuffer$$Lambda$0.class", 
+          "tag": 921504758
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/dex.py", 
+      "tag": "92f07a54681f9da14d0c639647142db3"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "02b2b2af8679aeed8e11fdd11bea5a08"
+}

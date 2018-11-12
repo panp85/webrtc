@@ -1,0 +1,521 @@
+{
+  "input-strings": [
+    "java", 
+    "-jar", 
+    "../../third_party/r8/lib/d8.jar"
+  ], 
+  "files-md5": "d584c8a6faf9baeda86004b6d09d03bc", 
+  "input-files": [
+    {
+      "path": "lib.java/sdk/android/peerconnection_java.jar", 
+      "tag": "69a9db03c9d05e02c8bb2b01f5f9c372", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "org/webrtc/AudioProcessingFactory.class", 
+          "tag": 610865705
+        }, 
+        {
+          "path": "org/webrtc/AudioSource.class", 
+          "tag": 337971274
+        }, 
+        {
+          "path": "org/webrtc/AudioTrack.class", 
+          "tag": 2422108343
+        }, 
+        {
+          "path": "org/webrtc/CallSessionFileRotatingLogSink.class", 
+          "tag": 694456387
+        }, 
+        {
+          "path": "org/webrtc/DataChannel$Buffer.class", 
+          "tag": 4273866989
+        }, 
+        {
+          "path": "org/webrtc/DataChannel$Init.class", 
+          "tag": 2761373575
+        }, 
+        {
+          "path": "org/webrtc/DataChannel$Observer.class", 
+          "tag": 139665794
+        }, 
+        {
+          "path": "org/webrtc/DataChannel$State.class", 
+          "tag": 3661729321
+        }, 
+        {
+          "path": "org/webrtc/DataChannel.class", 
+          "tag": 3729089314
+        }, 
+        {
+          "path": "org/webrtc/DtmfSender.class", 
+          "tag": 2979816085
+        }, 
+        {
+          "path": "org/webrtc/FecControllerFactoryFactoryInterface.class", 
+          "tag": 1997338480
+        }, 
+        {
+          "path": "org/webrtc/IceCandidate.class", 
+          "tag": 1583919090
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$1.class", 
+          "tag": 3242322691
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$DecodedOutputBuffer.class", 
+          "tag": 397466561
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$DecodedTextureBuffer.class", 
+          "tag": 2462966761
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$DecoderProperties.class", 
+          "tag": 1689516768
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$MediaCodecVideoDecoderErrorCallback.class", 
+          "tag": 627326162
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$TextureListener.class", 
+          "tag": 1431772276
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$TimeStamps.class", 
+          "tag": 3885894062
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder$VideoCodecType.class", 
+          "tag": 766460740
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoDecoder.class", 
+          "tag": 3698999726
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$1.class", 
+          "tag": 2424689365
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$1CaughtException.class", 
+          "tag": 1559468166
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$BitrateAdjustmentType.class", 
+          "tag": 585301730
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$EncoderProperties.class", 
+          "tag": 2584336813
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$H264Profile.class", 
+          "tag": 334713011
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$MediaCodecProperties.class", 
+          "tag": 945515152
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$MediaCodecVideoEncoderErrorCallback.class", 
+          "tag": 3184795117
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$OutputBufferInfo.class", 
+          "tag": 307025732
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder$VideoCodecType.class", 
+          "tag": 3492365112
+        }, 
+        {
+          "path": "org/webrtc/MediaCodecVideoEncoder.class", 
+          "tag": 1934537678
+        }, 
+        {
+          "path": "org/webrtc/MediaConstraints$KeyValuePair.class", 
+          "tag": 34078454
+        }, 
+        {
+          "path": "org/webrtc/MediaConstraints.class", 
+          "tag": 2270306401
+        }, 
+        {
+          "path": "org/webrtc/MediaSource$State.class", 
+          "tag": 1546315977
+        }, 
+        {
+          "path": "org/webrtc/MediaSource.class", 
+          "tag": 930858113
+        }, 
+        {
+          "path": "org/webrtc/MediaStream.class", 
+          "tag": 11376978
+        }, 
+        {
+          "path": "org/webrtc/MediaStreamTrack$MediaType.class", 
+          "tag": 4229042855
+        }, 
+        {
+          "path": "org/webrtc/MediaStreamTrack$State.class", 
+          "tag": 1730365118
+        }, 
+        {
+          "path": "org/webrtc/MediaStreamTrack.class", 
+          "tag": 2792758
+        }, 
+        {
+          "path": "org/webrtc/NativeLibrary$DefaultLoader.class", 
+          "tag": 3845693877
+        }, 
+        {
+          "path": "org/webrtc/NativeLibrary.class", 
+          "tag": 3927791488
+        }, 
+        {
+          "path": "org/webrtc/NativeLibraryLoader.class", 
+          "tag": 1519070697
+        }, 
+        {
+          "path": "org/webrtc/NativePeerConnectionFactory.class", 
+          "tag": 1956688540
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitor$1.class", 
+          "tag": 1779429854
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitor$InstanceHolder.class", 
+          "tag": 4110323048
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitor$NetworkObserver.class", 
+          "tag": 771287933
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitor.class", 
+          "tag": 3811428903
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$1.class", 
+          "tag": 1633277763
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$ConnectionType.class", 
+          "tag": 4139147328
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$ConnectivityManagerDelegate.class", 
+          "tag": 2585769139
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$IPAddress.class", 
+          "tag": 176406953
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$NetworkInformation.class", 
+          "tag": 2612376245
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$NetworkState.class", 
+          "tag": 1000261286
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$Observer.class", 
+          "tag": 1013248459
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$SimpleNetworkCallback.class", 
+          "tag": 3771979577
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$WifiDirectManagerDelegate.class", 
+          "tag": 3635049733
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect$WifiManagerDelegate.class", 
+          "tag": 4021948947
+        }, 
+        {
+          "path": "org/webrtc/NetworkMonitorAutoDetect.class", 
+          "tag": 1874249830
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$1.class", 
+          "tag": 1082603264
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$AdapterType.class", 
+          "tag": 1961860625
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$BundlePolicy.class", 
+          "tag": 753063529
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$CandidateNetworkPolicy.class", 
+          "tag": 1372861231
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$ContinualGatheringPolicy.class", 
+          "tag": 2499620304
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$IceConnectionState.class", 
+          "tag": 381973129
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$IceGatheringState.class", 
+          "tag": 1525942840
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$IceServer$Builder.class", 
+          "tag": 1716482330
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$IceServer.class", 
+          "tag": 784454116
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$IceTransportsType.class", 
+          "tag": 2839538315
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$IntervalRange.class", 
+          "tag": 93291235
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$KeyType.class", 
+          "tag": 3696527863
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$Observer.class", 
+          "tag": 3270655519
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$RTCConfiguration.class", 
+          "tag": 697210951
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$RtcpMuxPolicy.class", 
+          "tag": 1328334453
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$SdpSemantics.class", 
+          "tag": 1038040526
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$SignalingState.class", 
+          "tag": 454311658
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$TcpCandidatePolicy.class", 
+          "tag": 577782465
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$TlsCertPolicy.class", 
+          "tag": 1234270494
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection.class", 
+          "tag": 3283131370
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionFactory$1.class", 
+          "tag": 1875492464
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionFactory$Builder.class", 
+          "tag": 1925624770
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionFactory$InitializationOptions$Builder.class", 
+          "tag": 2962736720
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionFactory$InitializationOptions.class", 
+          "tag": 3127643407
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionFactory$Options.class", 
+          "tag": 1553094362
+        }, 
+        {
+          "path": "org/webrtc/PeerConnectionFactory.class", 
+          "tag": 3387729614
+        }, 
+        {
+          "path": "org/webrtc/RTCStats.class", 
+          "tag": 2295427777
+        }, 
+        {
+          "path": "org/webrtc/RTCStatsCollectorCallback.class", 
+          "tag": 1831454484
+        }, 
+        {
+          "path": "org/webrtc/RTCStatsReport.class", 
+          "tag": 3920492949
+        }, 
+        {
+          "path": "org/webrtc/RtpParameters$Codec.class", 
+          "tag": 572293455
+        }, 
+        {
+          "path": "org/webrtc/RtpParameters$Encoding.class", 
+          "tag": 3071355480
+        }, 
+        {
+          "path": "org/webrtc/RtpParameters$Rtcp.class", 
+          "tag": 2016955107
+        }, 
+        {
+          "path": "org/webrtc/RtpParameters.class", 
+          "tag": 2368839961
+        }, 
+        {
+          "path": "org/webrtc/RtpReceiver$Observer.class", 
+          "tag": 432872950
+        }, 
+        {
+          "path": "org/webrtc/RtpReceiver.class", 
+          "tag": 4154147375
+        }, 
+        {
+          "path": "org/webrtc/RtpSender.class", 
+          "tag": 12602348
+        }, 
+        {
+          "path": "org/webrtc/RtpTransceiver$RtpTransceiverDirection.class", 
+          "tag": 2834924188
+        }, 
+        {
+          "path": "org/webrtc/RtpTransceiver$RtpTransceiverInit.class", 
+          "tag": 2189862378
+        }, 
+        {
+          "path": "org/webrtc/RtpTransceiver.class", 
+          "tag": 64691988
+        }, 
+        {
+          "path": "org/webrtc/SdpObserver.class", 
+          "tag": 1893482987
+        }, 
+        {
+          "path": "org/webrtc/SessionDescription$Type.class", 
+          "tag": 2679831713
+        }, 
+        {
+          "path": "org/webrtc/SessionDescription.class", 
+          "tag": 1469848743
+        }, 
+        {
+          "path": "org/webrtc/StatsObserver.class", 
+          "tag": 3158039652
+        }, 
+        {
+          "path": "org/webrtc/StatsReport$Value.class", 
+          "tag": 3263286189
+        }, 
+        {
+          "path": "org/webrtc/StatsReport.class", 
+          "tag": 1814010564
+        }, 
+        {
+          "path": "org/webrtc/TurnCustomizer.class", 
+          "tag": 2368676990
+        }, 
+        {
+          "path": "org/webrtc/VideoSource.class", 
+          "tag": 3931951544
+        }, 
+        {
+          "path": "org/webrtc/VideoTrack.class", 
+          "tag": 43911905
+        }, 
+        {
+          "path": "org/webrtc/audio/LegacyAudioDeviceModule.class", 
+          "tag": 2695072067
+        }, 
+        {
+          "path": "org/webrtc/PeerConnection$Observer$$CC.class", 
+          "tag": 2229923748
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/dex.py", 
+      "tag": "92f07a54681f9da14d0c639647142db3"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "02b2b2af8679aeed8e11fdd11bea5a08"
+}

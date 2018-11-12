@@ -1,0 +1,5 @@
+./lib.unstripped/lib_rtc_unittests__library.so
+../../resources/audio_device/audio_short44.pcm
+../../resources/audio_device/audio_short48.pcm
+../../testing/test_env.py
+icudtl.dat

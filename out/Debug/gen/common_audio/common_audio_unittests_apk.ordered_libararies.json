@@ -1,0 +1,9 @@
+{
+  "java_libraries_list": "{\"_common_audio_unittests__library\"}",
+  "lib_paths": [
+    "./lib_common_audio_unittests__library.so"
+  ],
+  "libraries": [
+    "lib_common_audio_unittests__library.so"
+  ]
+}

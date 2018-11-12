@@ -1,0 +1,111 @@
+{
+  "methods": {
+    "clearStartedServices()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "clearStartedServices()",
+      "documentation": "Delegates to the application to clear the stack of started service intents.\n"
+    },
+    "denyPermissions(java.lang.String...)": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "permissionNames"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "denyPermissions(java.lang.String...)"
+    },
+    "getBroadcastIntents()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "java.util.List\u003candroid.content.Intent\u003e",
+      "exceptions": [],
+      "name": "getBroadcastIntents()"
+    },
+    "getNextStartedActivity()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "android.content.Intent",
+      "exceptions": [],
+      "name": "getNextStartedActivity()",
+      "documentation": "Delegates to the application to consume and return the next {@code Intent} on the\nstarted activities stack.\n\n@return the next started {@code Intent} for an activity\n"
+    },
+    "getNextStartedService()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "android.content.Intent",
+      "exceptions": [],
+      "name": "getNextStartedService()",
+      "documentation": "Delegates to the application to consume and return the next {@code Intent} on the\nstarted services stack.\n\n@return the next started {@code Intent} for a service\n"
+    },
+    "getNextStoppedService()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "android.content.Intent",
+      "exceptions": [],
+      "name": "getNextStoppedService()",
+      "documentation": "Delegates to the application to return the next {@code Intent} to stop\na service (irrespective of if the service was running)\n\n@return {@code Intent} for the next service requested to be stopped\n"
+    },
+    "grantPermissions(java.lang.String...)": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "permissionNames"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "grantPermissions(java.lang.String...)"
+    },
+    "peekNextStartedActivity()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "android.content.Intent",
+      "exceptions": [],
+      "name": "peekNextStartedActivity()",
+      "documentation": "Delegates to the application to return (without consuming) the next {@code Intent} on\nthe started activities stack.\n\n@return the next started {@code Intent} for an activity\n"
+    },
+    "peekNextStartedService()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "android.content.Intent",
+      "exceptions": [],
+      "name": "peekNextStartedService()",
+      "documentation": "Return (without consuming) the next {@code Intent} on the started services stack.\n\n@return the next started {@code Intent} for a service\n"
+    }
+  },
+  "imports": [
+    "android.content.ContextWrapper",
+    "android.content.Intent",
+    "java.util.List",
+    "org.robolectric.annotation.Implements"
+  ],
+  "name": "org.robolectric.shadows.ShadowContextWrapper"
+}

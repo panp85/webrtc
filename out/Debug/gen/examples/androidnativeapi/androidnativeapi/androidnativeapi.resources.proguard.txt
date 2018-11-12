@@ -1,0 +1,7 @@
+# Referenced at /tmp/tmpYX3kvR/deps/resources.resources.zip/layout/activity_main.xml:11
+# Referenced at /tmp/tmpYX3kvR/deps/resources.resources.zip/layout/activity_main.xml:18
+-keep class org.webrtc.SurfaceViewRenderer { <init>(...); }
+
+# Referenced at /tmp/tmpYX3kvR/AndroidManifest.xml:10
+-keep class org.webrtc.examples.androidnativeapi.MainActivity { <init>(...); }
+

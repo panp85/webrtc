@@ -1,0 +1,417 @@
+{
+  "input-strings": [
+    "java", 
+    "-jar", 
+    "../../third_party/r8/lib/d8.jar"
+  ], 
+  "files-md5": "0dfdf9919772feb58ab4e86722831454", 
+  "input-files": [
+    {
+      "path": "lib.java/third_party/espresso/espresso-web-release-no-dep.jar", 
+      "tag": "b07f1c0b829119301f3648e3ce882cfe", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 3993141178
+        }, 
+        {
+          "path": "android/support/test/espresso/web/BuildConfig.class", 
+          "tag": 681605213
+        }, 
+        {
+          "path": "android/support/test/espresso/web/bridge/AndroidJavaScriptBridgeInstaller$1.class", 
+          "tag": 2229758779
+        }, 
+        {
+          "path": "android/support/test/espresso/web/bridge/JavaScriptBoundBridge.class", 
+          "tag": 3932175739
+        }, 
+        {
+          "path": "android/support/test/espresso/web/bridge/Conduit$1.class", 
+          "tag": 965527522
+        }, 
+        {
+          "path": "android/support/test/espresso/web/bridge/AndroidJavaScriptBridgeInstaller$WebCoreHandlerSpy.class", 
+          "tag": 1716688951
+        }, 
+        {
+          "path": "android/support/test/espresso/web/bridge/JavaScriptBridgeInstallException.class", 
+          "tag": 1784974163
+        }, 
+        {
+          "path": "android/support/test/espresso/web/bridge/AndroidJavaScriptBridgeInstaller.class", 
+          "tag": 130694354
+        }, 
+        {
+          "path": "android/support/test/espresso/web/bridge/Conduit$Builder.class", 
+          "tag": 3409515149
+        }, 
+        {
+          "path": "android/support/test/espresso/web/bridge/Conduit.class", 
+          "tag": 2642598789
+        }, 
+        {
+          "path": "android/support/test/espresso/web/bridge/JavaScriptBridge.class", 
+          "tag": 1420638028
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/ElementReference$1.class", 
+          "tag": 642419213
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/TransformingAtom.class", 
+          "tag": 3300573160
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/Atoms$1.class", 
+          "tag": 2597233284
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/TransformingAtom$Transformer.class", 
+          "tag": 2470884071
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/Atoms.class", 
+          "tag": 1357680327
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/Atoms$2.class", 
+          "tag": 2046922621
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/Atom.class", 
+          "tag": 1733229307
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/Evaluation$Builder.class", 
+          "tag": 101949066
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/JSONAble$DeJSONFactory.class", 
+          "tag": 759984205
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/ElementReference.class", 
+          "tag": 385640192
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/WindowReference$1.class", 
+          "tag": 3649902882
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/Evaluation$1.class", 
+          "tag": 3505047541
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/JSONAble.class", 
+          "tag": 2696803581
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/SimpleAtom.class", 
+          "tag": 1646242159
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/ModelCodec$1.class", 
+          "tag": 3956945638
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/Evaluation.class", 
+          "tag": 4155175154
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/WindowReference.class", 
+          "tag": 2107204234
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/ModelCodec.class", 
+          "tag": 3540612854
+        }, 
+        {
+          "path": "android/support/test/espresso/web/model/SimpleAtom$ElementReferencePlacement.class", 
+          "tag": 810830664
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/JavascriptEvaluation$SanitizerTask.class", 
+          "tag": 3651852639
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/JavascriptEvaluation$UnpreparedScript.class", 
+          "tag": 1275576361
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/JavascriptEvaluation$AsyncConduitEvaluation$1.class", 
+          "tag": 2553275314
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/JavascriptEvaluation$ScriptPreparer.class", 
+          "tag": 4235275660
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/JavascriptEvaluation$AsyncConduitEvaluation.class", 
+          "tag": 1996812242
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/EnableJavascriptAction.class", 
+          "tag": 1266861070
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/AtomAction.class", 
+          "tag": 236810961
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/JavascriptEvaluation.class", 
+          "tag": 1367139680
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/AtomAction$2.class", 
+          "tag": 354674480
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/JavascriptEvaluation$2.class", 
+          "tag": 1708694444
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/JavascriptEvaluation$SanitizerTask$1$1.class", 
+          "tag": 1272632074
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/JavascriptEvaluation$AsyncJavascriptEvaluation.class", 
+          "tag": 2590286
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/EvaluationAtom.class", 
+          "tag": 3818994704
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/JavascriptEvaluation$1.class", 
+          "tag": 930364015
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/AtomAction$1.class", 
+          "tag": 3900888288
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/JavascriptEvaluation$ValueCallbackFuture.class", 
+          "tag": 2951497717
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/JavascriptEvaluation$PreparedScript.class", 
+          "tag": 3321373290
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/JavascriptEvaluation$SanitizerTask$1.class", 
+          "tag": 3047910743
+        }, 
+        {
+          "path": "android/support/test/espresso/web/action/JavascriptEvaluation$AsyncJavascriptEvaluation$1.class", 
+          "tag": 86925095
+        }, 
+        {
+          "path": "android/support/test/espresso/web/matcher/DomMatchers$3.class", 
+          "tag": 397249101
+        }, 
+        {
+          "path": "android/support/test/espresso/web/matcher/DomMatchers$6.class", 
+          "tag": 411011752
+        }, 
+        {
+          "path": "android/support/test/espresso/web/matcher/DomMatchers.class", 
+          "tag": 2098929652
+        }, 
+        {
+          "path": "android/support/test/espresso/web/matcher/DomMatchers$5.class", 
+          "tag": 3888036654
+        }, 
+        {
+          "path": "android/support/test/espresso/web/matcher/DomMatchers$1.class", 
+          "tag": 2800534744
+        }, 
+        {
+          "path": "android/support/test/espresso/web/matcher/DomMatchers$2.class", 
+          "tag": 489106884
+        }, 
+        {
+          "path": "android/support/test/espresso/web/matcher/DomMatchers$4.class", 
+          "tag": 1638496319
+        }, 
+        {
+          "path": "android/support/test/espresso/web/matcher/AmbiguousElementMatcherException.class", 
+          "tag": 3073500553
+        }, 
+        {
+          "path": "android/support/test/espresso/web/sugar/Web$WebInteraction.class", 
+          "tag": 3850086326
+        }, 
+        {
+          "path": "android/support/test/espresso/web/sugar/Web$WebInteraction$ExceptionPropagator.class", 
+          "tag": 2227237266
+        }, 
+        {
+          "path": "android/support/test/espresso/web/sugar/Web$1.class", 
+          "tag": 2283809531
+        }, 
+        {
+          "path": "android/support/test/espresso/web/sugar/Web$Timeout.class", 
+          "tag": 3461990570
+        }, 
+        {
+          "path": "android/support/test/espresso/web/sugar/Web.class", 
+          "tag": 2475005584
+        }, 
+        {
+          "path": "android/support/test/espresso/web/assertion/WebViewAssertions$3.class", 
+          "tag": 433994646
+        }, 
+        {
+          "path": "android/support/test/espresso/web/assertion/WebViewAssertions$2.class", 
+          "tag": 1899522755
+        }, 
+        {
+          "path": "android/support/test/espresso/web/assertion/TagSoupDocumentParser$1.class", 
+          "tag": 1279855781
+        }, 
+        {
+          "path": "android/support/test/espresso/web/assertion/WebViewAssertions$ResultDescriber.class", 
+          "tag": 3297659143
+        }, 
+        {
+          "path": "android/support/test/espresso/web/assertion/TagSoupDocumentParser.class", 
+          "tag": 1018509981
+        }, 
+        {
+          "path": "android/support/test/espresso/web/assertion/WebViewAssertions$1.class", 
+          "tag": 2036990654
+        }, 
+        {
+          "path": "android/support/test/espresso/web/assertion/WebViewAssertions.class", 
+          "tag": 1237585787
+        }, 
+        {
+          "path": "android/support/test/espresso/web/assertion/WebAssertion$1.class", 
+          "tag": 343499742
+        }, 
+        {
+          "path": "android/support/test/espresso/web/assertion/WebViewAssertions$4.class", 
+          "tag": 2091732852
+        }, 
+        {
+          "path": "android/support/test/espresso/web/assertion/WebAssertion.class", 
+          "tag": 3555089901
+        }, 
+        {
+          "path": "android/support/test/espresso/web/webdriver/DriverAtoms$1.class", 
+          "tag": 3968711353
+        }, 
+        {
+          "path": "android/support/test/espresso/web/webdriver/DriverAtoms$4.class", 
+          "tag": 4102870418
+        }, 
+        {
+          "path": "android/support/test/espresso/web/webdriver/DriverAtoms$5.class", 
+          "tag": 755080869
+        }, 
+        {
+          "path": "android/support/test/espresso/web/webdriver/DriverAtoms$3.class", 
+          "tag": 1580975780
+        }, 
+        {
+          "path": "android/support/test/espresso/web/webdriver/DriverAtoms$7.class", 
+          "tag": 312097151
+        }, 
+        {
+          "path": "android/support/test/espresso/web/webdriver/DriverAtoms$2.class", 
+          "tag": 3520346640
+        }, 
+        {
+          "path": "android/support/test/espresso/web/webdriver/DriverAtoms$8.class", 
+          "tag": 956565634
+        }, 
+        {
+          "path": "android/support/test/espresso/web/webdriver/DriverAtoms$6.class", 
+          "tag": 2842464860
+        }, 
+        {
+          "path": "android/support/test/espresso/web/webdriver/DriverAtoms.class", 
+          "tag": 3652041200
+        }, 
+        {
+          "path": "android/support/test/espresso/web/webdriver/Locator.class", 
+          "tag": 3367003513
+        }, 
+        {
+          "path": "android/support/test/espresso/web/webdriver/WebDriverAtomScripts.class", 
+          "tag": 571657101
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/dex.py", 
+      "tag": "92f07a54681f9da14d0c639647142db3"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "02b2b2af8679aeed8e11fdd11bea5a08"
+}

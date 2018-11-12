@@ -1,0 +1,207 @@
+{
+  "input-strings": [
+    "True", 
+    "True", 
+    "False", 
+    "26", 
+    "gen/modules/audio_device/audio_device_java__lint/config.xml"
+  ], 
+  "files-md5": "7184e99396ce1c0192463bcfb400fdc2", 
+  "input-files": [
+    {
+      "path": "../../third_party/android_tools/sdk/tools/bin/lint", 
+      "tag": "f8028c5b5957effc1f7d41a76b9312c5"
+    }, 
+    {
+      "path": "../../third_party/android_tools/sdk/platform-tools/api/api-versions.xml", 
+      "tag": "2dd802aa7c698f145d300183e741a0a9"
+    }, 
+    {
+      "path": "../../tools_webrtc/android/suppressions.xml", 
+      "tag": "3c9324bbe31d507df4f0d57718c4db82"
+    }, 
+    {
+      "path": "gen/modules/audio_device/audio_device_java.javac.jar", 
+      "tag": "4540f364f9c6f3d345c1832c889381a0", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/BuildInfo.class", 
+          "tag": 3627409253
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioEffects.class", 
+          "tag": 2563028849
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioManager$VolumeLogger$LogVolumeTask.class", 
+          "tag": 3539067902
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioManager$VolumeLogger.class", 
+          "tag": 3973060644
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioManager.class", 
+          "tag": 145493560
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioRecord$1.class", 
+          "tag": 2356406019
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioRecord$AudioRecordStartErrorCode.class", 
+          "tag": 1527723256
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioRecord$AudioRecordThread.class", 
+          "tag": 1671690466
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioRecord$AudioSamples.class", 
+          "tag": 458637904
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioRecord$WebRtcAudioRecordErrorCallback.class", 
+          "tag": 3923166899
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioRecord$WebRtcAudioRecordSamplesReadyCallback.class", 
+          "tag": 4203418321
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioRecord.class", 
+          "tag": 164266027
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioTrack$AudioTrackStartErrorCode.class", 
+          "tag": 3755517878
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioTrack$AudioTrackThread.class", 
+          "tag": 1651883898
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioTrack$ErrorCallback.class", 
+          "tag": 2430985042
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioTrack$WebRtcAudioTrackErrorCallback.class", 
+          "tag": 264673543
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioTrack.class", 
+          "tag": 1714046703
+        }, 
+        {
+          "path": "org/webrtc/voiceengine/WebRtcAudioUtils.class", 
+          "tag": 3621464704
+        }
+      ]
+    }, 
+    {
+      "path": "../../modules/audio_device/android/java/src/org/webrtc/voiceengine/BuildInfo.java", 
+      "tag": "13176ec09f8ab9adb7f3ddb2a7320946"
+    }, 
+    {
+      "path": "../../modules/audio_device/android/java/src/org/webrtc/voiceengine/WebRtcAudioEffects.java", 
+      "tag": "35a443a1b5761a0e8ee1d4850f2e51b1"
+    }, 
+    {
+      "path": "../../modules/audio_device/android/java/src/org/webrtc/voiceengine/WebRtcAudioManager.java", 
+      "tag": "2caa9ce43c7567a76d6c0f074cf429fd"
+    }, 
+    {
+      "path": "../../modules/audio_device/android/java/src/org/webrtc/voiceengine/WebRtcAudioRecord.java", 
+      "tag": "821a28afaa86bfc0ccb06bbfb1352673"
+    }, 
+    {
+      "path": "../../modules/audio_device/android/java/src/org/webrtc/voiceengine/WebRtcAudioTrack.java", 
+      "tag": "0be50b9e072928b60f966cb75f99ae3b"
+    }, 
+    {
+      "path": "../../modules/audio_device/android/java/src/org/webrtc/voiceengine/WebRtcAudioUtils.java", 
+      "tag": "234233528845578dbcb25a04733d25cb"
+    }, 
+    {
+      "path": "lib.java/rtc_base/base_java.interface.jar", 
+      "tag": "1c95e051f4aa200b9495e9ad41b043c1"
+    }, 
+    {
+      "path": "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar", 
+      "tag": "daf95408cdca8618e2d9d54c4f777c2b"
+    }, 
+    {
+      "path": "../../build/android/gyp/lint.py", 
+      "tag": "5250034419fed9cb7b335bbe3569ee12"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "9dc8e6be41902f3cedeeae918c76bb6b"
+}

@@ -1,0 +1,9 @@
+# Referenced at /tmp/tmp3k4QsB/AndroidManifest.xml:18
+-keep class org.chromium.native_test.NativeTestApplication { <init>(...); }
+
+# Referenced at /tmp/tmp3k4QsB/AndroidManifest.xml:16
+-keep class org.chromium.native_test.NativeTestInstrumentationTestRunner { <init>(...); }
+
+# Referenced at /tmp/tmp3k4QsB/AndroidManifest.xml:21
+-keep class org.webrtc.native_test.RTCNativeUnitTestActivity { <init>(...); }
+

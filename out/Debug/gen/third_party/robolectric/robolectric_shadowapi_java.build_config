@@ -1,0 +1,46 @@
+{
+  "deps_info": {
+    "deps_configs": [
+      "gen/third_party/jsr-305/jsr_305_javalib.build_config"
+    ],
+    "gradle_treat_as_prebuilt": null,
+    "interface_jar_path": "lib.java/third_party/robolectric/robolectric_shadowapi_java.interface.jar",
+    "is_prebuilt": false,
+    "jar_path": "lib.java/third_party/robolectric/robolectric_shadowapi_java.jar",
+    "java_sources_file": "gen/third_party/robolectric/robolectric_shadowapi_java.sources",
+    "javac_full_classpath": [
+      "../../third_party/bazel/desugar/Desugar-runtime.jar",
+      "gen/build/android/buildhooks/build_hooks_java.javac.jar",
+      "gen/third_party/jsr-305/jsr_305_javalib.javac.jar"
+    ],
+    "javac_full_interface_classpath": [
+      "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar",
+      "lib.java/build/android/buildhooks/build_hooks_java.interface.jar",
+      "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar"
+    ],
+    "name": "robolectric_shadowapi_java.build_config",
+    "path": "gen/third_party/robolectric/robolectric_shadowapi_java.build_config",
+    "requires_android": false,
+    "supports_android": false,
+    "type": "java_library",
+    "unprocessed_jar_path": "gen/third_party/robolectric/robolectric_shadowapi_java.javac.jar"
+  },
+  "gradle": {
+    "bundled_srcjars": [],
+    "dependent_android_projects": [],
+    "dependent_java_projects": [
+      "gen/third_party/jsr-305/jsr_305_javalib.build_config"
+    ],
+    "dependent_prebuilt_jars": []
+  },
+  "javac": {
+    "classpath": [
+      "gen/third_party/jsr-305/jsr_305_javalib.javac.jar"
+    ],
+    "interface_classpath": [
+      "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar"
+    ],
+    "processor_classes": [],
+    "processor_classpath": []
+  }
+}

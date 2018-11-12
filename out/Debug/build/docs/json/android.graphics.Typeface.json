@@ -1,0 +1,225 @@
+{
+  "methods": {
+    "__constructor__(int)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "fontId"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "__constructor__(int)"
+    },
+    "__constructor__(long)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "fontId"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "__constructor__(long)"
+    },
+    "create(android.graphics.Typeface,int)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [
+        "family",
+        "style"
+      ],
+      "returnType": "android.graphics.Typeface",
+      "exceptions": [],
+      "name": "create(android.graphics.Typeface,int)"
+    },
+    "create(java.lang.String,int)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [
+        "familyName",
+        "style"
+      ],
+      "returnType": "android.graphics.Typeface",
+      "exceptions": [],
+      "name": "create(java.lang.String,int)"
+    },
+    "createFromAsset(android.content.res.AssetManager,java.lang.String)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [
+        "mgr",
+        "path"
+      ],
+      "returnType": "android.graphics.Typeface",
+      "exceptions": [],
+      "name": "createFromAsset(android.content.res.AssetManager,java.lang.String)"
+    },
+    "createFromFamilies(java.lang.Object)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [
+        "families"
+      ],
+      "returnType": "android.graphics.Typeface",
+      "exceptions": [],
+      "minSdk": 21,
+      "name": "createFromFamilies(java.lang.Object)"
+    },
+    "createFromFamiliesWithDefault(java.lang.Object)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [
+        "families"
+      ],
+      "returnType": "android.graphics.Typeface",
+      "exceptions": [],
+      "minSdk": 21,
+      "name": "createFromFamiliesWithDefault(java.lang.Object)"
+    },
+    "createFromFile(java.io.File)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [
+        "path"
+      ],
+      "returnType": "android.graphics.Typeface",
+      "exceptions": [],
+      "name": "createFromFile(java.io.File)"
+    },
+    "createFromFile(java.lang.String)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [
+        "path"
+      ],
+      "returnType": "android.graphics.Typeface",
+      "exceptions": [],
+      "name": "createFromFile(java.lang.String)"
+    },
+    "createUnderlyingTypeface(java.lang.String,int)": {
+      "isImplementation": false,
+      "modifiers": [
+        "private",
+        "static"
+      ],
+      "params": [
+        "familyName",
+        "style"
+      ],
+      "returnType": "android.graphics.Typeface",
+      "exceptions": [],
+      "name": "createUnderlyingTypeface(java.lang.String,int)"
+    },
+    "findById(long)": {
+      "isImplementation": false,
+      "modifiers": [
+        "private",
+        "static",
+        "synchronized"
+      ],
+      "params": [
+        "fontId"
+      ],
+      "returnType": "org.robolectric.shadows.ShadowTypeface.FontDesc",
+      "exceptions": [],
+      "name": "findById(long)"
+    },
+    "getAssetsPath(org.robolectric.manifest.AndroidManifest,java.lang.String)": {
+      "isImplementation": false,
+      "modifiers": [
+        "private",
+        "static"
+      ],
+      "params": [
+        "appManifest",
+        "fontName"
+      ],
+      "returnType": "java.lang.String",
+      "exceptions": [],
+      "name": "getAssetsPath(org.robolectric.manifest.AndroidManifest,java.lang.String)"
+    },
+    "getFontDescription()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "org.robolectric.shadows.ShadowTypeface.FontDesc",
+      "exceptions": [],
+      "name": "getFontDescription()",
+      "documentation": "Returns the font description.\n\n@return Font description.\n"
+    },
+    "getStyle()": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "int",
+      "exceptions": [],
+      "name": "getStyle()"
+    },
+    "reset()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public",
+        "static",
+        "synchronized"
+      ],
+      "params": [],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "reset()"
+    }
+  },
+  "imports": [
+    "android.os.Build.VERSION_CODES.LOLLIPOP",
+    "org.robolectric.RuntimeEnvironment.getApiLevel",
+    "org.robolectric.Shadows.shadowOf",
+    "android.content.res.AssetManager",
+    "android.graphics.Typeface",
+    "java.io.File",
+    "java.util.ArrayList",
+    "java.util.HashMap",
+    "java.util.List",
+    "java.util.Map",
+    "org.robolectric.RuntimeEnvironment",
+    "org.robolectric.Shadows",
+    "org.robolectric.annotation.HiddenApi",
+    "org.robolectric.annotation.Implementation",
+    "org.robolectric.annotation.Implements",
+    "org.robolectric.annotation.RealObject",
+    "org.robolectric.annotation.Resetter",
+    "org.robolectric.manifest.AndroidManifest",
+    "org.robolectric.res.FsFile",
+    "org.robolectric.util.ReflectionHelpers",
+    "org.robolectric.util.ReflectionHelpers.ClassParameter",
+    "org.robolectric.shadows.ShadowTypeface.FontDesc",
+    "org.robolectric.shadows.ShadowTypeface.StartsWith"
+  ],
+  "name": "org.robolectric.shadows.ShadowTypeface"
+}

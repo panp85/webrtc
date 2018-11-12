@@ -1,0 +1,29 @@
+{
+  "deps_info": {
+    "deps_configs": [],
+    "gradle_treat_as_prebuilt": null,
+    "interface_jar_path": "lib.java/third_party/robolectric/android-all-5.0.0_r2-robolectric-1.interface.jar",
+    "is_prebuilt": true,
+    "jar_path": "lib.java/third_party/robolectric/android-all-5.0.0_r2-robolectric-1.jar",
+    "javac_full_classpath": [],
+    "javac_full_interface_classpath": [],
+    "name": "android-all-5.0.0_r2-robolectric-1_java.build_config",
+    "path": "gen/third_party/robolectric/android-all-5.0.0_r2-robolectric-1_java.build_config",
+    "requires_android": false,
+    "supports_android": false,
+    "type": "java_library",
+    "unprocessed_jar_path": "../../third_party/robolectric/lib/android-all-5.0.0_r2-robolectric-1.jar"
+  },
+  "gradle": {
+    "bundled_srcjars": [],
+    "dependent_android_projects": [],
+    "dependent_java_projects": [],
+    "dependent_prebuilt_jars": []
+  },
+  "javac": {
+    "classpath": [],
+    "interface_classpath": [],
+    "processor_classes": [],
+    "processor_classpath": []
+  }
+}

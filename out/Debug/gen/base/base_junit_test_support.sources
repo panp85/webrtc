@@ -1,0 +1,3 @@
+../../base/android/junit/src/org/chromium/base/metrics/test/ShadowRecordHistogram.java
+../../base/test/android/junit/src/org/chromium/base/test/BaseRobolectricTestRunner.java
+../../base/test/android/junit/src/org/chromium/base/test/util/TestRunnerTestRule.java

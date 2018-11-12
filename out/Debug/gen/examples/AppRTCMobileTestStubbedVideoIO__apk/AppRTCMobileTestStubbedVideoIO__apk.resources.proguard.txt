@@ -1,0 +1,3 @@
+# Referenced at /tmp/tmpt0Az8P/AndroidManifest.xml:9
+-keep class android.support.test.runner.AndroidJUnitRunner { <init>(...); }
+

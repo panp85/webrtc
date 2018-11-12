@@ -1,0 +1,2 @@
+org.webrtc.native_test.RTCNativeUnitTestActivity,../../test/android/org/webrtc/native_test/RTCNativeUnitTestActivity.java
+org.webrtc.native_test.RTCNativeUnitTest,../../test/android/org/webrtc/native_test/RTCNativeUnitTest.java

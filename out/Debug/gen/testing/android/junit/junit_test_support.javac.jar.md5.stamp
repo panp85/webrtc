@@ -1,0 +1,495 @@
+{
+  "input-strings": [
+    "bin/errorprone", 
+    "-g", 
+    "-encoding", 
+    "UTF-8", 
+    "-sourcepath", 
+    ":", 
+    "-Xep:DoubleBraceInitialization:OFF", 
+    "-Xep:ParcelableCreator:OFF", 
+    "-Xep:OrphanedFormatString:OFF", 
+    "-Xep:CatchAndPrintStackTrace:OFF", 
+    "-Xep:SynchronizeOnNonFinalField:OFF", 
+    "-Xep:TypeParameterUnusedInFormals:OFF", 
+    "-Xep:CatchFail:OFF", 
+    "-Xep:JUnitAmbiguousTestClass:OFF", 
+    "-Xep:DefaultCharset:OFF", 
+    "-Xep:JdkObsolete:OFF", 
+    "-Xep:FunctionalInterfaceClash:OFF", 
+    "-Xep:FutureReturnValueIgnored:OFF", 
+    "-Xep:OperatorPrecedence:OFF", 
+    "-Xep:ThreadJoinLoop:OFF", 
+    "-Xep:StringSplitter:OFF", 
+    "-Xep:ClassNewInstance:OFF", 
+    "-Xep:ClassCanBeStatic:OFF", 
+    "-Xep:FloatCast:OFF", 
+    "-Xep:ThreadLocalUsage:OFF", 
+    "-Xep:Finally:OFF", 
+    "-Xep:FragmentNotInstantiable:OFF", 
+    "-Xep:HidingField:OFF", 
+    "-Xep:IntLongMath:OFF", 
+    "-Xep:BadComparable:OFF", 
+    "-Xep:EqualsHashCode:OFF", 
+    "-Xep:TypeParameterShadowing:OFF", 
+    "-Xep:ImmutableEnumChecker:OFF", 
+    "-Xep:InputStreamSlowMultibyteRead:OFF", 
+    "-Xep:BoxedPrimitiveConstructor:OFF", 
+    "-Xep:OverrideThrowableToString:OFF", 
+    "-Xep:CollectionToArraySafeParameter:OFF", 
+    "-Xep:ArgumentSelectionDefectChecker:ERROR", 
+    "-Xep:AssertionFailureIgnored:ERROR", 
+    "-Xep:FloatingPointLiteralPrecision:ERROR", 
+    "-Xep:JavaLangClash:ERROR", 
+    "-Xep:MissingFail:ERROR", 
+    "-Xep:MissingOverride:ERROR", 
+    "-Xep:NarrowingCompoundAssignment:ERROR", 
+    "-Xep:ParameterName:ERROR", 
+    "-Xep:ReferenceEquality:ERROR", 
+    "-Xep:StaticGuardedByInstance:ERROR", 
+    "-Xep:StaticQualifiedUsingExpression:ERROR", 
+    "-Xep:UseCorrectAssertInTests:ERROR", 
+    "-source", 
+    "1.8", 
+    "-target", 
+    "1.8", 
+    "-Xlint:unchecked", 
+    "-Werror", 
+    "-processorpath", 
+    "lib.java/tools/android/errorprone_plugin/errorprone_plugin_java.jar", 
+    "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar", 
+    "lib.java/build/android/buildhooks/build_hooks_java.interface.jar", 
+    "lib.java/third_party/hamcrest/hamcrest-core.interface.jar", 
+    "lib.java/third_party/hamcrest/hamcrest-integration.interface.jar", 
+    "lib.java/third_party/hamcrest/hamcrest-library.interface.jar", 
+    "lib.java/third_party/junit/junit.interface.jar", 
+    "lib.java/third_party/byte_buddy/byte-buddy.interface.jar", 
+    "lib.java/third_party/objenesis/objenesis.interface.jar", 
+    "lib.java/third_party/mockito/mockito_java.interface.jar", 
+    "lib.java/third_party/robolectric/android-all-8.1.0-robolectric-r4402310.interface.jar", 
+    "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_shadowapi_java.interface.jar", 
+    "lib.java/third_party/intellij/annotations.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_annotations_java.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_utils_java.interface.jar", 
+    "lib.java/third_party/guava/guava.interface.jar", 
+    "lib.java/third_party/ow2_asm/asm.interface.jar", 
+    "lib.java/third_party/ow2_asm/asm-tree.interface.jar", 
+    "lib.java/third_party/ow2_asm/asm-commons.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_sandbox_java.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_junit_java.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_resources_java.interface.jar", 
+    "lib.java/third_party/accessibility_test_framework/accessibility-test-framework.interface.jar", 
+    "lib.java/third_party/gson/gson.interface.jar", 
+    "lib.java/third_party/icu4j/icu4j.interface.jar", 
+    "lib.java/third_party/sqlite4java/sqlite4java.interface.jar", 
+    "lib.java/third_party/robolectric/shadows-core-3.2.interface.jar", 
+    "lib.java/third_party/bouncycastle/bcprov-jdk16.interface.jar", 
+    "lib.java/third_party/xstream/xstream.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_java.interface.jar", 
+    "lib.java/build/android/tools.interface.jar", 
+    "lib.java/build/android/buildhooks/build_hooks_android_java.interface.jar", 
+    "lib.java/third_party/android_tools/support/android_support_multidex_java.interface.jar", 
+    "lib.java/third_party/robolectric/shadows_multidex_java.interface.jar", 
+    "lib.java/third_party/android_tools/support/support-annotations-27.0.0.interface.jar", 
+    "lib.java/third_party/android_tools/support/arch_core_common.interface.jar", 
+    "lib.java/third_party/android_tools/support/arch_lifecycle_common.interface.jar", 
+    "lib.java/third_party/android_tools/support/android_arch_lifecycle_runtime_java.interface.jar", 
+    "lib.java/third_party/android_tools/support/android_support_compat_java.interface.jar", 
+    "lib.java/third_party/android_tools/support/android_support_core_ui_java.interface.jar", 
+    "lib.java/third_party/android_tools/support/android_support_core_utils_java.interface.jar", 
+    "lib.java/third_party/android_tools/support/android_support_media_compat_java.interface.jar", 
+    "lib.java/third_party/android_tools/support/android_support_fragment_java.interface.jar", 
+    "lib.java/third_party/android_tools/google_play_services_basement_java.interface.jar", 
+    "lib.java/third_party/android_tools/google_play_services_tasks_java.interface.jar", 
+    "lib.java/third_party/android_tools/google_play_services_base_java.interface.jar", 
+    "lib.java/third_party/android_tools/google_play_services_auth_base_java.interface.jar", 
+    "lib.java/third_party/robolectric/shadows_play_services_java.interface.jar"
+  ], 
+  "files-md5": "01513ff6c1a5a24b62b944f2fcd81639", 
+  "input-files": [
+    {
+      "path": "bin/errorprone", 
+      "tag": "845cfab88e3748fb954cbbd07e1fb0c4"
+    }, 
+    {
+      "path": "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar", 
+      "tag": "4cea7523c856c6112307327d27568c2e"
+    }, 
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_java.interface.jar", 
+      "tag": "1b65d9fc56ed74a602715a27c16354b6"
+    }, 
+    {
+      "path": "lib.java/third_party/hamcrest/hamcrest-core.interface.jar", 
+      "tag": "8a88192f4dd6d4badddb1215e657d23b"
+    }, 
+    {
+      "path": "lib.java/third_party/hamcrest/hamcrest-integration.interface.jar", 
+      "tag": "18c8f6614243ca5378677c18cb0c59c4"
+    }, 
+    {
+      "path": "lib.java/third_party/hamcrest/hamcrest-library.interface.jar", 
+      "tag": "31ebdaa6ef711e6b013cb38d440bcf28"
+    }, 
+    {
+      "path": "lib.java/third_party/junit/junit.interface.jar", 
+      "tag": "93c92386a7302ea3633f7e225e4e0c06"
+    }, 
+    {
+      "path": "lib.java/third_party/byte_buddy/byte-buddy.interface.jar", 
+      "tag": "f3aa8474f6fa665a3f9f5843a4b2dde7"
+    }, 
+    {
+      "path": "lib.java/third_party/objenesis/objenesis.interface.jar", 
+      "tag": "e0e6029b2701e1b8c87ba5223ee527bc"
+    }, 
+    {
+      "path": "lib.java/third_party/mockito/mockito_java.interface.jar", 
+      "tag": "fe789d861d8621c1db848a941d0572d8"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/android-all-8.1.0-robolectric-r4402310.interface.jar", 
+      "tag": "2d437db30d4a313c6f03645722b7f969"
+    }, 
+    {
+      "path": "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar", 
+      "tag": "daf95408cdca8618e2d9d54c4f777c2b"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_shadowapi_java.interface.jar", 
+      "tag": "2382d24e9dac42d71996e8dacbcd3d48"
+    }, 
+    {
+      "path": "lib.java/third_party/intellij/annotations.interface.jar", 
+      "tag": "17846fe9096612a089334b8bd751438c"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_annotations_java.interface.jar", 
+      "tag": "293b8512c8dd49ea436908d309e231f2"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_utils_java.interface.jar", 
+      "tag": "7685daa6e3dbc3f53bbca3a980dfaebc"
+    }, 
+    {
+      "path": "lib.java/third_party/guava/guava.interface.jar", 
+      "tag": "1f37dc9114d4e07ac9606b747b5f3237"
+    }, 
+    {
+      "path": "lib.java/third_party/ow2_asm/asm.interface.jar", 
+      "tag": "a3aeb0e0e9ae2ec2b08ad47fe1ee2c73"
+    }, 
+    {
+      "path": "lib.java/third_party/ow2_asm/asm-tree.interface.jar", 
+      "tag": "7f9e3eeb6eae4437f9d1adc761213f27"
+    }, 
+    {
+      "path": "lib.java/third_party/ow2_asm/asm-commons.interface.jar", 
+      "tag": "af8be9eeb2fc92cd1304908dfcc92bac"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_sandbox_java.interface.jar", 
+      "tag": "827c8894a6151c210ef43a49eefc88f0"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_junit_java.interface.jar", 
+      "tag": "7b372402ef5d337c2fe1cabec536f2c5"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_resources_java.interface.jar", 
+      "tag": "48216bbe309f20affafeab889f147579"
+    }, 
+    {
+      "path": "lib.java/third_party/accessibility_test_framework/accessibility-test-framework.interface.jar", 
+      "tag": "7404c03750d256a821873130f2321a21"
+    }, 
+    {
+      "path": "lib.java/third_party/gson/gson.interface.jar", 
+      "tag": "478b6d59d8d1c4362be07ebb13388558"
+    }, 
+    {
+      "path": "lib.java/third_party/icu4j/icu4j.interface.jar", 
+      "tag": "a57b65f71552298dc502f18074a0429a"
+    }, 
+    {
+      "path": "lib.java/third_party/sqlite4java/sqlite4java.interface.jar", 
+      "tag": "c53acc6abb30c4cae37b510fc5d428ae"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/shadows-core-3.2.interface.jar", 
+      "tag": "543df5b7da0559e83116886e28b61ef3"
+    }, 
+    {
+      "path": "lib.java/third_party/bouncycastle/bcprov-jdk16.interface.jar", 
+      "tag": "7fb3355b900dfe7f8670f2ecf9af60a7"
+    }, 
+    {
+      "path": "lib.java/third_party/xstream/xstream.interface.jar", 
+      "tag": "a4738d9c7ed8c5a83be28b7516cb9e4c"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_java.interface.jar", 
+      "tag": "2b91426f6b5d9cf8a0eb463e0570aacd"
+    }, 
+    {
+      "path": "lib.java/build/android/tools.interface.jar", 
+      "tag": "8fdc65d2ea4a2eb1ac635d1eeadd71b4"
+    }, 
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_android_java.interface.jar", 
+      "tag": "d3c4784b6cc62e78239b50be6f588dec"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/android_support_multidex_java.interface.jar", 
+      "tag": "130f1d4a8ad477a6785f0f0a313cbbe4"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/shadows_multidex_java.interface.jar", 
+      "tag": "b17dfb2d00850db89012a41c2f559a0b"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/support-annotations-27.0.0.interface.jar", 
+      "tag": "f831b51b730af50ca145513631459cf4"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/arch_core_common.interface.jar", 
+      "tag": "cdf47ded6414901dcec4226e4eb5182f"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/arch_lifecycle_common.interface.jar", 
+      "tag": "34e4ec744c57fdd232bcbf2832c4280b"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/android_arch_lifecycle_runtime_java.interface.jar", 
+      "tag": "e7311612a32691c622438adc1d3e3ee1"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/android_support_compat_java.interface.jar", 
+      "tag": "331055d5c291a6150791102301114079"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/android_support_core_ui_java.interface.jar", 
+      "tag": "1a0b4986b5271b8acf6539b452fc487b"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/android_support_core_utils_java.interface.jar", 
+      "tag": "94ef98e505c0d72b38188cf62125e08f"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/android_support_media_compat_java.interface.jar", 
+      "tag": "269d1bf16d3f4d8b04335f05b815e7b7"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/android_support_fragment_java.interface.jar", 
+      "tag": "db13cbfa2073a9d52967c7783ec89381"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/google_play_services_basement_java.interface.jar", 
+      "tag": "295d2148fcce2905bc888f501f8a9183"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/google_play_services_tasks_java.interface.jar", 
+      "tag": "06929d11353542944580d21866ca6434"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/google_play_services_base_java.interface.jar", 
+      "tag": "0b65af9959f463c00a84ea89166ea74e"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/google_play_services_auth_base_java.interface.jar", 
+      "tag": "1a1f409d81a68436af9f6d79219ead91"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/shadows_play_services_java.interface.jar", 
+      "tag": "0a4ee4de60226f89fa0dd573167be017"
+    }, 
+    {
+      "path": "lib.java/tools/android/errorprone_plugin/errorprone_plugin_java.jar", 
+      "tag": "2c25fb135ddf23fb8d504e8d2118cf1d", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "META-INF/services/com.google.errorprone.bugpatterns.BugChecker", 
+          "tag": 2265107091
+        }, 
+        {
+          "path": "org/chromium/tools/errorprone/plugin/NoSynchronizedMethodCheck.class", 
+          "tag": 3685185552
+        }, 
+        {
+          "path": "org/chromium/tools/errorprone/plugin/NoSynchronizedThisCheck.class", 
+          "tag": 2119845360
+        }
+      ]
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/BackgroundShadowAsyncTask.java", 
+      "tag": "cb8a8db3d29db69f2842398f595ba603"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/CustomShadowAsyncTask.java", 
+      "tag": "9474d333a699191752fa9d4ba65063ea"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/CustomShadowUserManager.java", 
+      "tag": "83d2a76c9347d57b9dcdac019cf89f07"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/GtestComputer.java", 
+      "tag": "8a90a098b7f6d5c4dd6c08db1e801cf2"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/GtestFilter.java", 
+      "tag": "614ba50d27cb75e9f75564e3a350500d"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/GtestListener.java", 
+      "tag": "6798c6d818f45af3553255f9f9a81d90"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/GtestLogger.java", 
+      "tag": "ce1b792e18fe6ca308c8e9662c1113e6"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/JsonListener.java", 
+      "tag": "49067d5812ce3f2862f730c955270fea"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/JsonLogger.java", 
+      "tag": "a51f1fa049180055aaafc362b3d790fc"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/JunitTestArgParser.java", 
+      "tag": "f15d022b6de20b0d5be9ee8d814d27c6"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/JunitTestMain.java", 
+      "tag": "6cd9ef43e3f167c255c0a714206a2ce3"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/GNManifestFactory.java", 
+      "tag": "338289c7baa2a8e09951950581421c16"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/LocalRobolectricTestRunner.java", 
+      "tag": "d8ccffd612e462e81f56d2faaf15dc60"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/PackageFilter.java", 
+      "tag": "6e8202aabd9362bec434cf82eec6dca1"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/RunnerFilter.java", 
+      "tag": "7d862155fd33ee13dc0c90bf0a9bcd2b"
+    }, 
+    {
+      "path": "../../testing/android/junit/java/src/org/chromium/testing/local/TestDir.java", 
+      "tag": "ba652a71ef9f8c6ae10bcbea4b0ac1c4"
+    }, 
+    {
+      "path": "../../build/android/gyp/jar.py", 
+      "tag": "200de2b36cd3fa871c310d0ee2247db2"
+    }, 
+    {
+      "path": "../../build/android/gyp/javac.py", 
+      "tag": "cbf873e1c408900b25122f0e810316f8"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/jar_info_utils.py", 
+      "tag": "bbfe4350b3cabbced0a5b3250d4a7e0a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/__init__.py", 
+      "tag": "de647b90a4b99c279f3e4e358ea39b3e"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/ansi.py", 
+      "tag": "3ad189643bf1b70eb5be73153569c26c"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/ansitowin32.py", 
+      "tag": "9b39fc8f8d1af5b00161ed93f037176b"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/initialise.py", 
+      "tag": "91141f9b74377895dae6f33b6de5cca8"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/win32.py", 
+      "tag": "e6ef5597c899deefd23e628b209763dd"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/winterm.py", 
+      "tag": "9d0c650cd287ccf58d29894feec2178f"
+    }
+  ], 
+  "strings-md5": "98b9a146ecf7e69445d33a203fd6bb44"
+}

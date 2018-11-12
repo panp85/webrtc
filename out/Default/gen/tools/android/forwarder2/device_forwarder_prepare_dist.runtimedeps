@@ -1,0 +1,3 @@
+./exe.unstripped/device_forwarder
+lib.java/chromium_commands.dex.jar
+lib.java/build/android/pylib/device/commands/chromium_commands_java.interface.jar

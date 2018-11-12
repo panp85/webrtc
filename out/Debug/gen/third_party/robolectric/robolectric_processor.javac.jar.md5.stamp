@@ -1,0 +1,249 @@
+{
+  "input-strings": [
+    "/usr/bin/javac", 
+    "-g", 
+    "-encoding", 
+    "UTF-8", 
+    "-sourcepath", 
+    ":", 
+    "-source", 
+    "1.8", 
+    "-target", 
+    "1.8", 
+    "-XDignore.symbol.file", 
+    "lib.java/third_party/robolectric/android-all-8.1.0-robolectric-r4402310.interface.jar", 
+    "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar", 
+    "lib.java/build/android/buildhooks/build_hooks_java.interface.jar", 
+    "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_shadowapi_java.interface.jar", 
+    "lib.java/third_party/intellij/annotations.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_annotations_java.interface.jar", 
+    "lib.java/build/android/tools.interface.jar", 
+    "lib.java/third_party/gson/gson.interface.jar", 
+    "lib.java/third_party/guava/guava.interface.jar"
+  ], 
+  "files-md5": "e209cfd5954762acc42f3d048d6c673b", 
+  "input-files": [
+    {
+      "path": "/usr/bin/javac", 
+      "tag": "332f4fb39f9964c829ef77e17178fda5"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/android-all-8.1.0-robolectric-r4402310.interface.jar", 
+      "tag": "2d437db30d4a313c6f03645722b7f969"
+    }, 
+    {
+      "path": "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar", 
+      "tag": "4cea7523c856c6112307327d27568c2e"
+    }, 
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_java.interface.jar", 
+      "tag": "1b65d9fc56ed74a602715a27c16354b6"
+    }, 
+    {
+      "path": "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar", 
+      "tag": "daf95408cdca8618e2d9d54c4f777c2b"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_shadowapi_java.interface.jar", 
+      "tag": "2382d24e9dac42d71996e8dacbcd3d48"
+    }, 
+    {
+      "path": "lib.java/third_party/intellij/annotations.interface.jar", 
+      "tag": "17846fe9096612a089334b8bd751438c"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_annotations_java.interface.jar", 
+      "tag": "293b8512c8dd49ea436908d309e231f2"
+    }, 
+    {
+      "path": "lib.java/build/android/tools.interface.jar", 
+      "tag": "8fdc65d2ea4a2eb1ac635d1eeadd71b4"
+    }, 
+    {
+      "path": "lib.java/third_party/gson/gson.interface.jar", 
+      "tag": "478b6d59d8d1c4362be07ebb13388558"
+    }, 
+    {
+      "path": "lib.java/third_party/guava/guava.interface.jar", 
+      "tag": "1f37dc9114d4e07ac9606b747b5f3237"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/DocumentedElement.java", 
+      "tag": "53ee96f1b016d7c346cd182f6974647b"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/DocumentedMethod.java", 
+      "tag": "c23ffa5f083722d04edae5714304b5c2"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/DocumentedPackage.java", 
+      "tag": "da22bb2b36f2843cd08134bf4c1ff7b2"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/DocumentedType.java", 
+      "tag": "a3db2cd9721de7d75db22efac2fa4846"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/RobolectricModel.java", 
+      "tag": "228053932d8e5fd16cb66b0d227416c4"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/RobolectricProcessor.java", 
+      "tag": "e1ab58d6624d12f9e67d280a3e9311fb"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/generator/Generator.java", 
+      "tag": "b0d0c682713c880533113181f8b4f78c"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/generator/JavadocJsonGenerator.java", 
+      "tag": "3a7f3f19b9b8d6464a41dd490c3dfc98"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/generator/ServiceLoaderGenerator.java", 
+      "tag": "c45637566ebc1a686b8d094feee72609"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/generator/ShadowProviderGenerator.java", 
+      "tag": "c7ac3015245e78b1edf566475f9f30b7"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/generator/package-info.java", 
+      "tag": "48f4cb8829413d69fe1646ec10e02219"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/package-info.java", 
+      "tag": "ee2200bd9505daa2237077779faae81a"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/validator/FoundOnImplementsValidator.java", 
+      "tag": "1bf58aa0058e3ad590981f3730a92190"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/validator/ImplementationValidator.java", 
+      "tag": "3e2397d58593683c9e6d94d4acbe7273"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/validator/ImplementsValidator.java", 
+      "tag": "827afb40fd79402398ddd17b854792c5"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/validator/RealObjectValidator.java", 
+      "tag": "a08eccdea8e459fc1f3539e4c4585190"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/validator/ResetterValidator.java", 
+      "tag": "f91e03a916bf6c77c274cf35f456298a"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/validator/Validator.java", 
+      "tag": "3a0e6413f1bba490843b916b8728ee8c"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/processor/src/main/java/org/robolectric/annotation/processing/validator/package-info.java", 
+      "tag": "81d9a755dcdedf72bf3a65f188790ad2"
+    }, 
+    {
+      "path": "../../build/android/gyp/jar.py", 
+      "tag": "200de2b36cd3fa871c310d0ee2247db2"
+    }, 
+    {
+      "path": "../../build/android/gyp/javac.py", 
+      "tag": "cbf873e1c408900b25122f0e810316f8"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/jar_info_utils.py", 
+      "tag": "bbfe4350b3cabbced0a5b3250d4a7e0a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/__init__.py", 
+      "tag": "de647b90a4b99c279f3e4e358ea39b3e"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/ansi.py", 
+      "tag": "3ad189643bf1b70eb5be73153569c26c"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/ansitowin32.py", 
+      "tag": "9b39fc8f8d1af5b00161ed93f037176b"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/initialise.py", 
+      "tag": "91141f9b74377895dae6f33b6de5cca8"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/win32.py", 
+      "tag": "e6ef5597c899deefd23e628b209763dd"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/winterm.py", 
+      "tag": "9d0c650cd287ccf58d29894feec2178f"
+    }
+  ], 
+  "strings-md5": "45e88fc2d75431e26d240c83f85787b2"
+}

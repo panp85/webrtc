@@ -1,0 +1,35 @@
+{
+  "methods": {
+    "getLatestListPopupWindow()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [],
+      "returnType": "android.widget.ListPopupWindow",
+      "exceptions": [],
+      "name": "getLatestListPopupWindow()"
+    },
+    "show()": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "show()"
+    }
+  },
+  "imports": [
+    "org.robolectric.Shadows.shadowOf",
+    "org.robolectric.shadow.api.Shadow.directlyOn",
+    "android.widget.ListPopupWindow",
+    "org.robolectric.RuntimeEnvironment",
+    "org.robolectric.annotation.Implementation",
+    "org.robolectric.annotation.Implements",
+    "org.robolectric.annotation.RealObject"
+  ],
+  "name": "org.robolectric.shadows.ShadowListPopupWindow"
+}

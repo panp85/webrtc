@@ -1,0 +1,7 @@
+org.chromium.native_test.NativeTestInstrumentationTestRunner,../../testing/android/native_test/java/src/org/chromium/native_test/NativeTestInstrumentationTestRunner.java
+org.chromium.native_test.NativeUnitTestActivity,../../testing/android/native_test/java/src/org/chromium/native_test/NativeUnitTestActivity.java
+org.chromium.native_test.NativeBrowserTestActivity,../../testing/android/native_test/java/src/org/chromium/native_test/NativeBrowserTestActivity.java
+org.chromium.native_test.NativeTestApplication,../../testing/android/native_test/java/src/org/chromium/native_test/NativeTestApplication.java
+org.chromium.native_test.NativeUnitTest,../../testing/android/native_test/java/src/org/chromium/native_test/NativeUnitTest.java
+org.chromium.native_test.NativeTest,../../testing/android/native_test/java/src/org/chromium/native_test/NativeTest.java
+org.chromium.native_test.NativeUnitTestNativeActivity,../../testing/android/native_test/java/src/org/chromium/native_test/NativeUnitTestNativeActivity.java

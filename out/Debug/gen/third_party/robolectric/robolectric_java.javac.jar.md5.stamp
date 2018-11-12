@@ -1,0 +1,429 @@
+{
+  "input-strings": [
+    "/usr/bin/javac", 
+    "-g", 
+    "-encoding", 
+    "UTF-8", 
+    "-sourcepath", 
+    ":", 
+    "-source", 
+    "1.8", 
+    "-target", 
+    "1.8", 
+    "-XDignore.symbol.file", 
+    "lib.java/third_party/robolectric/android-all-8.1.0-robolectric-r4402310.interface.jar", 
+    "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar", 
+    "lib.java/build/android/buildhooks/build_hooks_java.interface.jar", 
+    "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_shadowapi_java.interface.jar", 
+    "lib.java/third_party/intellij/annotations.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_annotations_java.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_utils_java.interface.jar", 
+    "lib.java/third_party/guava/guava.interface.jar", 
+    "lib.java/third_party/ow2_asm/asm.interface.jar", 
+    "lib.java/third_party/ow2_asm/asm-tree.interface.jar", 
+    "lib.java/third_party/ow2_asm/asm-commons.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_sandbox_java.interface.jar", 
+    "lib.java/third_party/hamcrest/hamcrest-core.interface.jar", 
+    "lib.java/third_party/hamcrest/hamcrest-integration.interface.jar", 
+    "lib.java/third_party/hamcrest/hamcrest-library.interface.jar", 
+    "lib.java/third_party/junit/junit.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_junit_java.interface.jar", 
+    "lib.java/third_party/robolectric/robolectric_resources_java.interface.jar", 
+    "lib.java/third_party/accessibility_test_framework/accessibility-test-framework.interface.jar", 
+    "lib.java/third_party/gson/gson.interface.jar", 
+    "lib.java/third_party/icu4j/icu4j.interface.jar", 
+    "lib.java/third_party/sqlite4java/sqlite4java.interface.jar", 
+    "lib.java/third_party/robolectric/shadows-core-3.2.interface.jar", 
+    "lib.java/third_party/bouncycastle/bcprov-jdk16.interface.jar", 
+    "lib.java/third_party/xstream/xstream.interface.jar"
+  ], 
+  "files-md5": "ae3a8401abb066946c48a50caa241bfc", 
+  "input-files": [
+    {
+      "path": "/usr/bin/javac", 
+      "tag": "332f4fb39f9964c829ef77e17178fda5"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/android-all-8.1.0-robolectric-r4402310.interface.jar", 
+      "tag": "2d437db30d4a313c6f03645722b7f969"
+    }, 
+    {
+      "path": "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar", 
+      "tag": "4cea7523c856c6112307327d27568c2e"
+    }, 
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_java.interface.jar", 
+      "tag": "1b65d9fc56ed74a602715a27c16354b6"
+    }, 
+    {
+      "path": "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar", 
+      "tag": "daf95408cdca8618e2d9d54c4f777c2b"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_shadowapi_java.interface.jar", 
+      "tag": "2382d24e9dac42d71996e8dacbcd3d48"
+    }, 
+    {
+      "path": "lib.java/third_party/intellij/annotations.interface.jar", 
+      "tag": "17846fe9096612a089334b8bd751438c"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_annotations_java.interface.jar", 
+      "tag": "293b8512c8dd49ea436908d309e231f2"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_utils_java.interface.jar", 
+      "tag": "7685daa6e3dbc3f53bbca3a980dfaebc"
+    }, 
+    {
+      "path": "lib.java/third_party/guava/guava.interface.jar", 
+      "tag": "1f37dc9114d4e07ac9606b747b5f3237"
+    }, 
+    {
+      "path": "lib.java/third_party/ow2_asm/asm.interface.jar", 
+      "tag": "a3aeb0e0e9ae2ec2b08ad47fe1ee2c73"
+    }, 
+    {
+      "path": "lib.java/third_party/ow2_asm/asm-tree.interface.jar", 
+      "tag": "7f9e3eeb6eae4437f9d1adc761213f27"
+    }, 
+    {
+      "path": "lib.java/third_party/ow2_asm/asm-commons.interface.jar", 
+      "tag": "af8be9eeb2fc92cd1304908dfcc92bac"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_sandbox_java.interface.jar", 
+      "tag": "827c8894a6151c210ef43a49eefc88f0"
+    }, 
+    {
+      "path": "lib.java/third_party/hamcrest/hamcrest-core.interface.jar", 
+      "tag": "8a88192f4dd6d4badddb1215e657d23b"
+    }, 
+    {
+      "path": "lib.java/third_party/hamcrest/hamcrest-integration.interface.jar", 
+      "tag": "18c8f6614243ca5378677c18cb0c59c4"
+    }, 
+    {
+      "path": "lib.java/third_party/hamcrest/hamcrest-library.interface.jar", 
+      "tag": "31ebdaa6ef711e6b013cb38d440bcf28"
+    }, 
+    {
+      "path": "lib.java/third_party/junit/junit.interface.jar", 
+      "tag": "93c92386a7302ea3633f7e225e4e0c06"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_junit_java.interface.jar", 
+      "tag": "7b372402ef5d337c2fe1cabec536f2c5"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/robolectric_resources_java.interface.jar", 
+      "tag": "48216bbe309f20affafeab889f147579"
+    }, 
+    {
+      "path": "lib.java/third_party/accessibility_test_framework/accessibility-test-framework.interface.jar", 
+      "tag": "7404c03750d256a821873130f2321a21"
+    }, 
+    {
+      "path": "lib.java/third_party/gson/gson.interface.jar", 
+      "tag": "478b6d59d8d1c4362be07ebb13388558"
+    }, 
+    {
+      "path": "lib.java/third_party/icu4j/icu4j.interface.jar", 
+      "tag": "a57b65f71552298dc502f18074a0429a"
+    }, 
+    {
+      "path": "lib.java/third_party/sqlite4java/sqlite4java.interface.jar", 
+      "tag": "c53acc6abb30c4cae37b510fc5d428ae"
+    }, 
+    {
+      "path": "lib.java/third_party/robolectric/shadows-core-3.2.interface.jar", 
+      "tag": "543df5b7da0559e83116886e28b61ef3"
+    }, 
+    {
+      "path": "lib.java/third_party/bouncycastle/bcprov-jdk16.interface.jar", 
+      "tag": "7fb3355b900dfe7f8670f2ecf9af60a7"
+    }, 
+    {
+      "path": "lib.java/third_party/xstream/xstream.interface.jar", 
+      "tag": "a4738d9c7ed8c5a83be28b7516cb9e4c"
+    }, 
+    {
+      "path": "../../third_party/robolectric/local/robolectric/src/main/java/org/robolectric/internal/dependency/MavenDependencyResolver.java", 
+      "tag": "3e0c0640eaf70e5ed38cf34eb02fac4e"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/ConfigMerger.java", 
+      "tag": "beefe9d55bca2d3636d1bd235fa6f5d0"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/DefaultTestLifecycle.java", 
+      "tag": "8df438e7139c631409a90d623cc6dfef"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/ParameterizedRobolectricTestRunner.java", 
+      "tag": "47681207b9feeed07b17c39f92746e17"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/Robolectric.java", 
+      "tag": "52f25b2c1eae352dcdc9348cb2f36b0a"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/RobolectricTestRunner.java", 
+      "tag": "f256c170bb75b3cc60fe42f844c05e4b"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/SdkPicker.java", 
+      "tag": "5d19ef7a9070f12a6d0c6950e76bb2f5"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/TestLifecycle.java", 
+      "tag": "8aaf1d9fdfae2da7a8de037e017e04f4"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/TestLifecycleApplication.java", 
+      "tag": "3c0f1c17fcbdb4bb3410f8d645ece676"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/TestLifecycleApplicationImpl.java", 
+      "tag": "d2686b2a378de1170ffca32c02bd099b"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/AndroidInterceptors.java", 
+      "tag": "902a719d5bf5fbe779bca83a14ea560c"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/ApplicationTestUtil.java", 
+      "tag": "93f2f2a6c8f3b2017a94f329f422760b"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/controller/ActivityController.java", 
+      "tag": "2f4ab7235855bbdf4a4ffac989b61ab9"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/controller/BackupAgentController.java", 
+      "tag": "2857550e0759308f456c48bf0502d062"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/controller/ComponentController.java", 
+      "tag": "697a6a61121b7500e0a84ed6e5680ddc"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/controller/ContentProviderController.java", 
+      "tag": "cebff8558443445be37c73b01285b145"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/controller/FragmentController.java", 
+      "tag": "0f0e244315dac9f7acf2a93f87295884"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/controller/IntentServiceController.java", 
+      "tag": "2e0b8f08794f2262cadf825a9caf331e"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/controller/ServiceController.java", 
+      "tag": "144231140b5df91a3425b82b41709e6c"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/fakes/RoboCharsets.java", 
+      "tag": "530359caee7af932bf88ba59860f4863"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/fakes/RoboExtendedResponseCache.java", 
+      "tag": "c9c4a4154c5ffca4b3f04677cda2d5fe"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/fakes/RoboInstrumentation.java", 
+      "tag": "d9ff59cb1390c2269a9988e1b0d1dfe9"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/fakes/RoboResponseSource.java", 
+      "tag": "878f706b0eb247a6ee8d018674aa3f0c"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/internal/ClassNameResolver.java", 
+      "tag": "3730a32f3c1af49348156db006fbfc04"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/android/internal/ParallelUniverse.java", 
+      "tag": "f4249d58cbb752431cccd305e78c0b53"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/AndroidConfigurer.java", 
+      "tag": "8f9355f3fb7b58383eb9dcdc9deb9c75"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/BuckManifestFactory.java", 
+      "tag": "f939490e2765d37f4d13e88a48cd9cc9"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/DeepCloner.java", 
+      "tag": "887e88762d921d1839b889e49563d549"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/DefaultManifestFactory.java", 
+      "tag": "d0cfc5d7f6b702c5cbd2748085423255"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/GradleManifestFactory.java", 
+      "tag": "036d8822025bf0f7a8c63800201e53d7"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/ManifestFactory.java", 
+      "tag": "92377b153b337e583a5769cf6cfb6e38"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/ManifestIdentifier.java", 
+      "tag": "2a53f117fe7c3079f6aa339b7128c726"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/MavenManifestFactory.java", 
+      "tag": "5692e924dc45aeabfcad586abc0db569"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/ParallelUniverseInterface.java", 
+      "tag": "1662e2b7a8f813abc34ff1b955444ed2"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/SandboxFactory.java", 
+      "tag": "54e4ea9f7b5d1d6d1b3a73138993094d"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/SdkConfig.java", 
+      "tag": "8b5b0aebfa1bdf6bf6b7bf46098ebd9d"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/SdkEnvironment.java", 
+      "tag": "1716cc26fe0ad73da245e3db157da45d"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/dependency/CachedDependencyResolver.java", 
+      "tag": "71df1bacca12285e13fdb15330dee831"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/dependency/DependencyJar.java", 
+      "tag": "8cd8ef0ed5eeaf4c7a512f5d63567d41"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/dependency/DependencyResolver.java", 
+      "tag": "5ba868fc1323f0a47b5bbedd7bee6c74"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/dependency/LocalDependencyResolver.java", 
+      "tag": "2a2d94cad0d2f33171a33d1c0103cfaa"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/internal/dependency/PropertiesDependencyResolver.java", 
+      "tag": "9a2c10f61b2eef24ee4b67b82d8bf1a4"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/package-info.java", 
+      "tag": "49673c9f9b3c2e3676fd61dad018d1db"
+    }, 
+    {
+      "path": "../../third_party/robolectric/robolectric/robolectric/src/main/java/org/robolectric/util/FragmentTestUtil.java", 
+      "tag": "8f6f6bb9fe345cd7e99b635704cff97e"
+    }, 
+    {
+      "path": "../../build/android/gyp/jar.py", 
+      "tag": "200de2b36cd3fa871c310d0ee2247db2"
+    }, 
+    {
+      "path": "../../build/android/gyp/javac.py", 
+      "tag": "cbf873e1c408900b25122f0e810316f8"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/jar_info_utils.py", 
+      "tag": "bbfe4350b3cabbced0a5b3250d4a7e0a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/__init__.py", 
+      "tag": "de647b90a4b99c279f3e4e358ea39b3e"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/ansi.py", 
+      "tag": "3ad189643bf1b70eb5be73153569c26c"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/ansitowin32.py", 
+      "tag": "9b39fc8f8d1af5b00161ed93f037176b"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/initialise.py", 
+      "tag": "91141f9b74377895dae6f33b6de5cca8"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/win32.py", 
+      "tag": "e6ef5597c899deefd23e628b209763dd"
+    }, 
+    {
+      "path": "../../third_party/colorama/src/colorama/winterm.py", 
+      "tag": "9d0c650cd287ccf58d29894feec2178f"
+    }
+  ], 
+  "strings-md5": "34ba5fb06dc830cd1a8d70c54b705934"
+}

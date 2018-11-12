@@ -1,0 +1,205 @@
+{
+  "input-strings": [
+    "java", 
+    "-jar", 
+    "../../third_party/r8/lib/d8.jar"
+  ], 
+  "files-md5": "ef766454e3af44941d7cd759857f3a93", 
+  "input-files": [
+    {
+      "path": "lib.java/sdk/android/video_java.jar", 
+      "tag": "168fa0fb85175b6425a0b9716f172771", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$1.class", 
+          "tag": 1352642112
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$EglSurfaceCreation.class", 
+          "tag": 61420003
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$FrameListener.class", 
+          "tag": 2521202004
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$FrameListenerAndParams.class", 
+          "tag": 867670854
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer.class", 
+          "tag": 1105219994
+        }, 
+        {
+          "path": "org/webrtc/GlRectDrawer$Shader.class", 
+          "tag": 657771242
+        }, 
+        {
+          "path": "org/webrtc/GlRectDrawer.class", 
+          "tag": 1738518993
+        }, 
+        {
+          "path": "org/webrtc/NV21Buffer.class", 
+          "tag": 365162912
+        }, 
+        {
+          "path": "org/webrtc/NativeCapturerObserver.class", 
+          "tag": 2056900347
+        }, 
+        {
+          "path": "org/webrtc/VideoDecoderFallback.class", 
+          "tag": 1480211829
+        }, 
+        {
+          "path": "org/webrtc/VideoDecoderWrapper.class", 
+          "tag": 939968396
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoderFallback.class", 
+          "tag": 1742442237
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoderWrapper.class", 
+          "tag": 380425566
+        }, 
+        {
+          "path": "org/webrtc/VideoFrameDrawer$1.class", 
+          "tag": 372308473
+        }, 
+        {
+          "path": "org/webrtc/VideoFrameDrawer$YuvUploader.class", 
+          "tag": 1168839129
+        }, 
+        {
+          "path": "org/webrtc/VideoFrameDrawer.class", 
+          "tag": 1051380414
+        }, 
+        {
+          "path": "org/webrtc/WrappedNativeI420Buffer.class", 
+          "tag": 2922089827
+        }, 
+        {
+          "path": "org/webrtc/WrappedNativeVideoDecoder.class", 
+          "tag": 3478499052
+        }, 
+        {
+          "path": "org/webrtc/WrappedNativeVideoEncoder.class", 
+          "tag": 4048715319
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$0.class", 
+          "tag": 3839110887
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$1.class", 
+          "tag": 1551970902
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$2.class", 
+          "tag": 1857210577
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$3.class", 
+          "tag": 4019641985
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$4.class", 
+          "tag": 2502744200
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$5.class", 
+          "tag": 3414653451
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$6.class", 
+          "tag": 2070468851
+        }, 
+        {
+          "path": "org/webrtc/EglRenderer$$Lambda$7.class", 
+          "tag": 424642895
+        }, 
+        {
+          "path": "org/webrtc/VideoDecoderWrapper$$Lambda$0.class", 
+          "tag": 1229848901
+        }, 
+        {
+          "path": "org/webrtc/VideoEncoderWrapper$$Lambda$0.class", 
+          "tag": 2090461587
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/dex.py", 
+      "tag": "92f07a54681f9da14d0c639647142db3"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "02b2b2af8679aeed8e11fdd11bea5a08"
+}

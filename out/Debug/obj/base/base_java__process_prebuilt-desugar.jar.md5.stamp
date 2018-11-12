@@ -1,0 +1,1129 @@
+{
+  "input-strings": [], 
+  "files-md5": "25f87c772efdab3c1a639cda88c69d19", 
+  "input-files": [
+    {
+      "path": "lib.java/third_party/android_tools/support/support-annotations-27.0.0.interface.jar", 
+      "tag": "f831b51b730af50ca145513631459cf4"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/android_support_multidex_java.interface.jar", 
+      "tag": "130f1d4a8ad477a6785f0f0a313cbbe4"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/android_support_compat_java.interface.jar", 
+      "tag": "331055d5c291a6150791102301114079"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/android_support_core_ui_java.interface.jar", 
+      "tag": "1a0b4986b5271b8acf6539b452fc487b"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/android_support_core_utils_java.interface.jar", 
+      "tag": "94ef98e505c0d72b38188cf62125e08f"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/android_support_fragment_java.interface.jar", 
+      "tag": "db13cbfa2073a9d52967c7783ec89381"
+    }, 
+    {
+      "path": "lib.java/third_party/android_tools/support/android_support_media_compat_java.interface.jar", 
+      "tag": "269d1bf16d3f4d8b04335f05b815e7b7"
+    }, 
+    {
+      "path": "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar", 
+      "tag": "daf95408cdca8618e2d9d54c4f777c2b"
+    }, 
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_java.interface.jar", 
+      "tag": "1b65d9fc56ed74a602715a27c16354b6"
+    }, 
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_android_java.interface.jar", 
+      "tag": "d3c4784b6cc62e78239b50be6f588dec"
+    }, 
+    {
+      "path": "lib.java/android.interface.jar", 
+      "tag": "37b1210806e59ec1c8dc9fa500fa18a9"
+    }, 
+    {
+      "path": "obj/base/base_java__process_prebuilt-bytecode-rewritten.jar", 
+      "tag": "ce9ab3cabc7a5353b99c742f0874bd09", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "android/arch/lifecycle/R.class", 
+          "tag": 2864008036
+        }, 
+        {
+          "path": "android/support/compat/R$attr.class", 
+          "tag": 1734586776
+        }, 
+        {
+          "path": "android/support/compat/R$bool.class", 
+          "tag": 3097376589
+        }, 
+        {
+          "path": "android/support/compat/R$color.class", 
+          "tag": 412291481
+        }, 
+        {
+          "path": "android/support/compat/R$dimen.class", 
+          "tag": 1077331712
+        }, 
+        {
+          "path": "android/support/compat/R$drawable.class", 
+          "tag": 904069229
+        }, 
+        {
+          "path": "android/support/compat/R$id.class", 
+          "tag": 1737844767
+        }, 
+        {
+          "path": "android/support/compat/R$integer.class", 
+          "tag": 520469225
+        }, 
+        {
+          "path": "android/support/compat/R$layout.class", 
+          "tag": 4022131365
+        }, 
+        {
+          "path": "android/support/compat/R$string.class", 
+          "tag": 2222625568
+        }, 
+        {
+          "path": "android/support/compat/R$style.class", 
+          "tag": 326144460
+        }, 
+        {
+          "path": "android/support/compat/R$styleable.class", 
+          "tag": 1783373029
+        }, 
+        {
+          "path": "android/support/compat/R.class", 
+          "tag": 2836576224
+        }, 
+        {
+          "path": "android/support/coreui/R$attr.class", 
+          "tag": 960298504
+        }, 
+        {
+          "path": "android/support/coreui/R$bool.class", 
+          "tag": 1608433305
+        }, 
+        {
+          "path": "android/support/coreui/R$color.class", 
+          "tag": 2734337509
+        }, 
+        {
+          "path": "android/support/coreui/R$dimen.class", 
+          "tag": 129638110
+        }, 
+        {
+          "path": "android/support/coreui/R$drawable.class", 
+          "tag": 3819576489
+        }, 
+        {
+          "path": "android/support/coreui/R$id.class", 
+          "tag": 1842055694
+        }, 
+        {
+          "path": "android/support/coreui/R$integer.class", 
+          "tag": 3092599077
+        }, 
+        {
+          "path": "android/support/coreui/R$layout.class", 
+          "tag": 3925674482
+        }, 
+        {
+          "path": "android/support/coreui/R$string.class", 
+          "tag": 1745463140
+        }, 
+        {
+          "path": "android/support/coreui/R$style.class", 
+          "tag": 2144048460
+        }, 
+        {
+          "path": "android/support/coreui/R$styleable.class", 
+          "tag": 1798263047
+        }, 
+        {
+          "path": "android/support/coreui/R.class", 
+          "tag": 3948469690
+        }, 
+        {
+          "path": "android/support/coreutils/R$attr.class", 
+          "tag": 3964706936
+        }, 
+        {
+          "path": "android/support/coreutils/R$bool.class", 
+          "tag": 2219425444
+        }, 
+        {
+          "path": "android/support/coreutils/R$color.class", 
+          "tag": 1714651333
+        }, 
+        {
+          "path": "android/support/coreutils/R$dimen.class", 
+          "tag": 2860298877
+        }, 
+        {
+          "path": "android/support/coreutils/R$drawable.class", 
+          "tag": 1616127661
+        }, 
+        {
+          "path": "android/support/coreutils/R$id.class", 
+          "tag": 3771082171
+        }, 
+        {
+          "path": "android/support/coreutils/R$integer.class", 
+          "tag": 1084401222
+        }, 
+        {
+          "path": "android/support/coreutils/R$layout.class", 
+          "tag": 3155977101
+        }, 
+        {
+          "path": "android/support/coreutils/R$string.class", 
+          "tag": 1678162466
+        }, 
+        {
+          "path": "android/support/coreutils/R$style.class", 
+          "tag": 2579652737
+        }, 
+        {
+          "path": "android/support/coreutils/R$styleable.class", 
+          "tag": 3062196085
+        }, 
+        {
+          "path": "android/support/coreutils/R.class", 
+          "tag": 3000926353
+        }, 
+        {
+          "path": "android/support/fragment/R$attr.class", 
+          "tag": 2956176563
+        }, 
+        {
+          "path": "android/support/fragment/R$bool.class", 
+          "tag": 2124046237
+        }, 
+        {
+          "path": "android/support/fragment/R$color.class", 
+          "tag": 302639042
+        }, 
+        {
+          "path": "android/support/fragment/R$dimen.class", 
+          "tag": 1456838544
+        }, 
+        {
+          "path": "android/support/fragment/R$drawable.class", 
+          "tag": 528066938
+        }, 
+        {
+          "path": "android/support/fragment/R$id.class", 
+          "tag": 2584569598
+        }, 
+        {
+          "path": "android/support/fragment/R$integer.class", 
+          "tag": 1397893335
+        }, 
+        {
+          "path": "android/support/fragment/R$layout.class", 
+          "tag": 3644930348
+        }, 
+        {
+          "path": "android/support/fragment/R$string.class", 
+          "tag": 2331235613
+        }, 
+        {
+          "path": "android/support/fragment/R$style.class", 
+          "tag": 2349492675
+        }, 
+        {
+          "path": "android/support/fragment/R$styleable.class", 
+          "tag": 1460107070
+        }, 
+        {
+          "path": "android/support/fragment/R.class", 
+          "tag": 81142807
+        }, 
+        {
+          "path": "android/support/mediacompat/R$attr.class", 
+          "tag": 2781089323
+        }, 
+        {
+          "path": "android/support/mediacompat/R$bool.class", 
+          "tag": 2169347512
+        }, 
+        {
+          "path": "android/support/mediacompat/R$color.class", 
+          "tag": 1533341644
+        }, 
+        {
+          "path": "android/support/mediacompat/R$dimen.class", 
+          "tag": 3883276752
+        }, 
+        {
+          "path": "android/support/mediacompat/R$drawable.class", 
+          "tag": 1449343849
+        }, 
+        {
+          "path": "android/support/mediacompat/R$id.class", 
+          "tag": 1759175130
+        }, 
+        {
+          "path": "android/support/mediacompat/R$integer.class", 
+          "tag": 4036110810
+        }, 
+        {
+          "path": "android/support/mediacompat/R$layout.class", 
+          "tag": 3254774159
+        }, 
+        {
+          "path": "android/support/mediacompat/R$string.class", 
+          "tag": 1927774455
+        }, 
+        {
+          "path": "android/support/mediacompat/R$style.class", 
+          "tag": 1813051186
+        }, 
+        {
+          "path": "android/support/mediacompat/R$styleable.class", 
+          "tag": 238364325
+        }, 
+        {
+          "path": "android/support/mediacompat/R.class", 
+          "tag": 2181071877
+        }, 
+        {
+          "path": "org/chromium/base/ActivityState.class", 
+          "tag": 1040937938
+        }, 
+        {
+          "path": "org/chromium/base/AnimationFrameTimeHistogram$1.class", 
+          "tag": 1602327516
+        }, 
+        {
+          "path": "org/chromium/base/AnimationFrameTimeHistogram$Recorder.class", 
+          "tag": 616830693
+        }, 
+        {
+          "path": "org/chromium/base/AnimationFrameTimeHistogram.class", 
+          "tag": 1960155060
+        }, 
+        {
+          "path": "org/chromium/base/ApiCompatibilityUtils$FinishAndRemoveTaskWithRetry.class", 
+          "tag": 688375447
+        }, 
+        {
+          "path": "org/chromium/base/ApiCompatibilityUtils.class", 
+          "tag": 344548564
+        }, 
+        {
+          "path": "org/chromium/base/ApkAssets.class", 
+          "tag": 3982407901
+        }, 
+        {
+          "path": "org/chromium/base/ApplicationState.class", 
+          "tag": 1569744041
+        }, 
+        {
+          "path": "org/chromium/base/ApplicationStatus$1.class", 
+          "tag": 949614697
+        }, 
+        {
+          "path": "org/chromium/base/ApplicationStatus$2.class", 
+          "tag": 61900070
+        }, 
+        {
+          "path": "org/chromium/base/ApplicationStatus$3$1.class", 
+          "tag": 2475998329
+        }, 
+        {
+          "path": "org/chromium/base/ApplicationStatus$3.class", 
+          "tag": 2819236937
+        }, 
+        {
+          "path": "org/chromium/base/ApplicationStatus$ActivityInfo.class", 
+          "tag": 972605763
+        }, 
+        {
+          "path": "org/chromium/base/ApplicationStatus$ActivityStateListener.class", 
+          "tag": 3212848179
+        }, 
+        {
+          "path": "org/chromium/base/ApplicationStatus$ApplicationStateListener.class", 
+          "tag": 2326770326
+        }, 
+        {
+          "path": "org/chromium/base/ApplicationStatus$WindowCallbackProxy.class", 
+          "tag": 1606279186
+        }, 
+        {
+          "path": "org/chromium/base/ApplicationStatus$WindowFocusChangedListener.class", 
+          "tag": 3255538937
+        }, 
+        {
+          "path": "org/chromium/base/ApplicationStatus.class", 
+          "tag": 2084645255
+        }, 
+        {
+          "path": "org/chromium/base/BaseSwitches.class", 
+          "tag": 29184186
+        }, 
+        {
+          "path": "org/chromium/base/BuildConfig.class", 
+          "tag": 1383126712
+        }, 
+        {
+          "path": "org/chromium/base/BuildInfo$1.class", 
+          "tag": 291929104
+        }, 
+        {
+          "path": "org/chromium/base/BuildInfo$Holder.class", 
+          "tag": 4059564652
+        }, 
+        {
+          "path": "org/chromium/base/BuildInfo.class", 
+          "tag": 3811304318
+        }, 
+        {
+          "path": "org/chromium/base/Callback$Helper.class", 
+          "tag": 1893460778
+        }, 
+        {
+          "path": "org/chromium/base/Callback.class", 
+          "tag": 3504462021
+        }, 
+        {
+          "path": "org/chromium/base/CollectionUtil.class", 
+          "tag": 2676070620
+        }, 
+        {
+          "path": "org/chromium/base/CommandLine$1.class", 
+          "tag": 4024492655
+        }, 
+        {
+          "path": "org/chromium/base/CommandLine$JavaCommandLine.class", 
+          "tag": 370020335
+        }, 
+        {
+          "path": "org/chromium/base/CommandLine$NativeCommandLine.class", 
+          "tag": 3390331623
+        }, 
+        {
+          "path": "org/chromium/base/CommandLine.class", 
+          "tag": 2905653683
+        }, 
+        {
+          "path": "org/chromium/base/CommandLineInitUtil.class", 
+          "tag": 529318120
+        }, 
+        {
+          "path": "org/chromium/base/ContentUriUtils$FileProviderUtil.class", 
+          "tag": 734803997
+        }, 
+        {
+          "path": "org/chromium/base/ContentUriUtils.class", 
+          "tag": 3266635202
+        }, 
+        {
+          "path": "org/chromium/base/ContextUtils$Holder.class", 
+          "tag": 2143505857
+        }, 
+        {
+          "path": "org/chromium/base/ContextUtils.class", 
+          "tag": 966175619
+        }, 
+        {
+          "path": "org/chromium/base/CpuFeatures.class", 
+          "tag": 3860383846
+        }, 
+        {
+          "path": "org/chromium/base/DiscardableReferencePool$1.class", 
+          "tag": 3202372536
+        }, 
+        {
+          "path": "org/chromium/base/DiscardableReferencePool$DiscardableReference.class", 
+          "tag": 751538409
+        }, 
+        {
+          "path": "org/chromium/base/DiscardableReferencePool.class", 
+          "tag": 2080368676
+        }, 
+        {
+          "path": "org/chromium/base/EarlyTraceEvent$AsyncEvent.class", 
+          "tag": 2004454840
+        }, 
+        {
+          "path": "org/chromium/base/EarlyTraceEvent$Event.class", 
+          "tag": 2225041941
+        }, 
+        {
+          "path": "org/chromium/base/EarlyTraceEvent.class", 
+          "tag": 1858433562
+        }, 
+        {
+          "path": "org/chromium/base/EventLog.class", 
+          "tag": 886607539
+        }, 
+        {
+          "path": "org/chromium/base/FieldTrialList.class", 
+          "tag": 3942932795
+        }, 
+        {
+          "path": "org/chromium/base/FileUtils.class", 
+          "tag": 3020716276
+        }, 
+        {
+          "path": "org/chromium/base/ImportantFileWriterAndroid.class", 
+          "tag": 3122856930
+        }, 
+        {
+          "path": "org/chromium/base/JNIUtils.class", 
+          "tag": 895837720
+        }, 
+        {
+          "path": "org/chromium/base/JavaExceptionReporter.class", 
+          "tag": 3424207676
+        }, 
+        {
+          "path": "org/chromium/base/JavaHandlerThread$1.class", 
+          "tag": 75669876
+        }, 
+        {
+          "path": "org/chromium/base/JavaHandlerThread$2.class", 
+          "tag": 2677247189
+        }, 
+        {
+          "path": "org/chromium/base/JavaHandlerThread$3.class", 
+          "tag": 4031657268
+        }, 
+        {
+          "path": "org/chromium/base/JavaHandlerThread$4.class", 
+          "tag": 3411845704
+        }, 
+        {
+          "path": "org/chromium/base/JavaHandlerThread.class", 
+          "tag": 102276404
+        }, 
+        {
+          "path": "org/chromium/base/LocaleUtils.class", 
+          "tag": 2045350355
+        }, 
+        {
+          "path": "org/chromium/base/Log.class", 
+          "tag": 3656795780
+        }, 
+        {
+          "path": "org/chromium/base/MemoryPressureLevel.class", 
+          "tag": 442655959
+        }, 
+        {
+          "path": "org/chromium/base/MemoryPressureListener.class", 
+          "tag": 407806885
+        }, 
+        {
+          "path": "org/chromium/base/NonThreadSafe.class", 
+          "tag": 243168060
+        }, 
+        {
+          "path": "org/chromium/base/ObserverList$1.class", 
+          "tag": 539371374
+        }, 
+        {
+          "path": "org/chromium/base/ObserverList$ObserverListIterator.class", 
+          "tag": 790267030
+        }, 
+        {
+          "path": "org/chromium/base/ObserverList$RewindableIterator.class", 
+          "tag": 1096716197
+        }, 
+        {
+          "path": "org/chromium/base/ObserverList.class", 
+          "tag": 1859296822
+        }, 
+        {
+          "path": "org/chromium/base/PackageUtils.class", 
+          "tag": 234347564
+        }, 
+        {
+          "path": "org/chromium/base/PathService.class", 
+          "tag": 1323973261
+        }, 
+        {
+          "path": "org/chromium/base/PathUtils$1.class", 
+          "tag": 787025547
+        }, 
+        {
+          "path": "org/chromium/base/PathUtils$Holder.class", 
+          "tag": 3974240790
+        }, 
+        {
+          "path": "org/chromium/base/PathUtils.class", 
+          "tag": 3464424967
+        }, 
+        {
+          "path": "org/chromium/base/PowerMonitor$1.class", 
+          "tag": 4217520827
+        }, 
+        {
+          "path": "org/chromium/base/PowerMonitor.class", 
+          "tag": 2345291982
+        }, 
+        {
+          "path": "org/chromium/base/Promise$AsyncFunction.class", 
+          "tag": 3501901384
+        }, 
+        {
+          "path": "org/chromium/base/Promise$Function.class", 
+          "tag": 2701932709
+        }, 
+        {
+          "path": "org/chromium/base/Promise$PromiseState.class", 
+          "tag": 2883033117
+        }, 
+        {
+          "path": "org/chromium/base/Promise$UnhandledRejectionException.class", 
+          "tag": 1107672659
+        }, 
+        {
+          "path": "org/chromium/base/Promise.class", 
+          "tag": 3191769443
+        }, 
+        {
+          "path": "org/chromium/base/ResourceExtractor$1.class", 
+          "tag": 2827313760
+        }, 
+        {
+          "path": "org/chromium/base/ResourceExtractor$ExtractTask.class", 
+          "tag": 2043126834
+        }, 
+        {
+          "path": "org/chromium/base/ResourceExtractor.class", 
+          "tag": 1199945858
+        }, 
+        {
+          "path": "org/chromium/base/SecureRandomInitializer.class", 
+          "tag": 3094339003
+        }, 
+        {
+          "path": "org/chromium/base/StreamUtil.class", 
+          "tag": 2621527553
+        }, 
+        {
+          "path": "org/chromium/base/StrictModeContext.class", 
+          "tag": 1151938281
+        }, 
+        {
+          "path": "org/chromium/base/Supplier.class", 
+          "tag": 1484353087
+        }, 
+        {
+          "path": "org/chromium/base/SysUtils.class", 
+          "tag": 3198367356
+        }, 
+        {
+          "path": "org/chromium/base/SystemMessageHandler$1.class", 
+          "tag": 1730088423
+        }, 
+        {
+          "path": "org/chromium/base/SystemMessageHandler$MessageCompat$LegacyMessageWrapperImpl.class", 
+          "tag": 1604801082
+        }, 
+        {
+          "path": "org/chromium/base/SystemMessageHandler$MessageCompat$LollipopMr1MessageWrapperImpl.class", 
+          "tag": 4031693592
+        }, 
+        {
+          "path": "org/chromium/base/SystemMessageHandler$MessageCompat$MessageWrapperImpl.class", 
+          "tag": 3682362177
+        }, 
+        {
+          "path": "org/chromium/base/SystemMessageHandler$MessageCompat.class", 
+          "tag": 3914462011
+        }, 
+        {
+          "path": "org/chromium/base/SystemMessageHandler.class", 
+          "tag": 3180340838
+        }, 
+        {
+          "path": "org/chromium/base/ThreadUtils.class", 
+          "tag": 4005860253
+        }, 
+        {
+          "path": "org/chromium/base/ThrowUncaughtException$1.class", 
+          "tag": 3208044325
+        }, 
+        {
+          "path": "org/chromium/base/ThrowUncaughtException.class", 
+          "tag": 252225998
+        }, 
+        {
+          "path": "org/chromium/base/TimeUtils.class", 
+          "tag": 770212018
+        }, 
+        {
+          "path": "org/chromium/base/TimezoneUtils.class", 
+          "tag": 2439602940
+        }, 
+        {
+          "path": "org/chromium/base/TraceEvent$1.class", 
+          "tag": 578050863
+        }, 
+        {
+          "path": "org/chromium/base/TraceEvent$BasicLooperMonitor.class", 
+          "tag": 3383199476
+        }, 
+        {
+          "path": "org/chromium/base/TraceEvent$IdleTracingLooperMonitor.class", 
+          "tag": 1895519425
+        }, 
+        {
+          "path": "org/chromium/base/TraceEvent$LooperMonitorHolder.class", 
+          "tag": 2702087243
+        }, 
+        {
+          "path": "org/chromium/base/TraceEvent.class", 
+          "tag": 3049264416
+        }, 
+        {
+          "path": "org/chromium/base/TraceRecordMode.class", 
+          "tag": 1070191871
+        }, 
+        {
+          "path": "org/chromium/base/UnguessableToken$1.class", 
+          "tag": 1409820390
+        }, 
+        {
+          "path": "org/chromium/base/UnguessableToken.class", 
+          "tag": 1510213032
+        }, 
+        {
+          "path": "org/chromium/base/VisibleForTesting.class", 
+          "tag": 658405914
+        }, 
+        {
+          "path": "org/chromium/base/annotations/AccessedByNative.class", 
+          "tag": 4022147793
+        }, 
+        {
+          "path": "org/chromium/base/annotations/CalledByNative.class", 
+          "tag": 1861390710
+        }, 
+        {
+          "path": "org/chromium/base/annotations/CalledByNativeUnchecked.class", 
+          "tag": 1625420873
+        }, 
+        {
+          "path": "org/chromium/base/annotations/JNIAdditionalImport.class", 
+          "tag": 1665836854
+        }, 
+        {
+          "path": "org/chromium/base/annotations/JNINamespace.class", 
+          "tag": 3743360895
+        }, 
+        {
+          "path": "org/chromium/base/annotations/MainDex.class", 
+          "tag": 2773193474
+        }, 
+        {
+          "path": "org/chromium/base/annotations/NativeCall.class", 
+          "tag": 1349407606
+        }, 
+        {
+          "path": "org/chromium/base/annotations/NativeClassQualifiedName.class", 
+          "tag": 977021995
+        }, 
+        {
+          "path": "org/chromium/base/annotations/RemovableInRelease.class", 
+          "tag": 101466958
+        }, 
+        {
+          "path": "org/chromium/base/annotations/UsedByReflection.class", 
+          "tag": 570081910
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/LegacyLinker$1.class", 
+          "tag": 2844160643
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/LegacyLinker.class", 
+          "tag": 267121705
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/LibraryLoadFromApkStatusCodes.class", 
+          "tag": 1064394255
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/LibraryLoader$LibraryPrefetchTask.class", 
+          "tag": 2743338734
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/LibraryLoader.class", 
+          "tag": 83352462
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/LibraryProcessType.class", 
+          "tag": 3460770089
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/Linker$LibInfo$1.class", 
+          "tag": 1171880992
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/Linker$LibInfo.class", 
+          "tag": 1438734871
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/Linker$TestRunner.class", 
+          "tag": 1329972357
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/Linker.class", 
+          "tag": 2167442261
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/LoaderErrors.class", 
+          "tag": 1310215397
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/NativeLibraries.class", 
+          "tag": 1525757371
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/NativeLibraryPreloader.class", 
+          "tag": 626365260
+        }, 
+        {
+          "path": "org/chromium/base/library_loader/ProcessInitException.class", 
+          "tag": 553536996
+        }, 
+        {
+          "path": "org/chromium/base/memory/MemoryPressureCallback.class", 
+          "tag": 1069930064
+        }, 
+        {
+          "path": "org/chromium/base/memory/MemoryPressureMonitor$1.class", 
+          "tag": 3564070237
+        }, 
+        {
+          "path": "org/chromium/base/memory/MemoryPressureMonitor.class", 
+          "tag": 2907544189
+        }, 
+        {
+          "path": "org/chromium/base/memory/MemoryPressureUma$Notification.class", 
+          "tag": 1906662059
+        }, 
+        {
+          "path": "org/chromium/base/memory/MemoryPressureUma.class", 
+          "tag": 3140138910
+        }, 
+        {
+          "path": "org/chromium/base/metrics/CachedMetrics$ActionEvent.class", 
+          "tag": 1104890399
+        }, 
+        {
+          "path": "org/chromium/base/metrics/CachedMetrics$BooleanHistogramSample.class", 
+          "tag": 4106061860
+        }, 
+        {
+          "path": "org/chromium/base/metrics/CachedMetrics$CachedMetric.class", 
+          "tag": 2024190668
+        }, 
+        {
+          "path": "org/chromium/base/metrics/CachedMetrics$Count1000HistogramSample.class", 
+          "tag": 3352541752
+        }, 
+        {
+          "path": "org/chromium/base/metrics/CachedMetrics$Count100HistogramSample.class", 
+          "tag": 4238724645
+        }, 
+        {
+          "path": "org/chromium/base/metrics/CachedMetrics$Count1MHistogramSample.class", 
+          "tag": 3144358327
+        }, 
+        {
+          "path": "org/chromium/base/metrics/CachedMetrics$CustomCountHistogramSample.class", 
+          "tag": 4234005207
+        }, 
+        {
+          "path": "org/chromium/base/metrics/CachedMetrics$EnumeratedHistogramSample.class", 
+          "tag": 3395013559
+        }, 
+        {
+          "path": "org/chromium/base/metrics/CachedMetrics$SparseHistogramSample.class", 
+          "tag": 1829455732
+        }, 
+        {
+          "path": "org/chromium/base/metrics/CachedMetrics$TimesHistogramSample.class", 
+          "tag": 3228315188
+        }, 
+        {
+          "path": "org/chromium/base/metrics/CachedMetrics.class", 
+          "tag": 801968142
+        }, 
+        {
+          "path": "org/chromium/base/metrics/JSONVerbosityLevel.class", 
+          "tag": 115922873
+        }, 
+        {
+          "path": "org/chromium/base/metrics/RecordHistogram.class", 
+          "tag": 2039604787
+        }, 
+        {
+          "path": "org/chromium/base/metrics/RecordUserAction$1.class", 
+          "tag": 2741346827
+        }, 
+        {
+          "path": "org/chromium/base/metrics/RecordUserAction$UserActionCallback.class", 
+          "tag": 4079393529
+        }, 
+        {
+          "path": "org/chromium/base/metrics/RecordUserAction.class", 
+          "tag": 348065103
+        }, 
+        {
+          "path": "org/chromium/base/metrics/StatisticsRecorderAndroid.class", 
+          "tag": 3132729813
+        }, 
+        {
+          "path": "org/chromium/base/multidex/ChromiumMultiDexInstaller.class", 
+          "tag": 802057364
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildConnectionAllocator$1$1.class", 
+          "tag": 4167160262
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildConnectionAllocator$1$2.class", 
+          "tag": 708335575
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildConnectionAllocator$1$3.class", 
+          "tag": 471601237
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildConnectionAllocator$1$4.class", 
+          "tag": 2588498201
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildConnectionAllocator$1.class", 
+          "tag": 1874208988
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildConnectionAllocator$ConnectionFactory.class", 
+          "tag": 1086669764
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildConnectionAllocator$ConnectionFactoryImpl.class", 
+          "tag": 1141605876
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildConnectionAllocator.class", 
+          "tag": 3894909887
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConnection$1.class", 
+          "tag": 3902360677
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConnection$2$1.class", 
+          "tag": 3384469580
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConnection$2$2.class", 
+          "tag": 1709548303
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConnection$2.class", 
+          "tag": 2102778077
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConnection$3$1.class", 
+          "tag": 1319342879
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConnection$3.class", 
+          "tag": 296157400
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConnection$ChildServiceConnection.class", 
+          "tag": 2456582030
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConnection$ChildServiceConnectionDelegate.class", 
+          "tag": 4157347442
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConnection$ChildServiceConnectionFactory.class", 
+          "tag": 2059963273
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConnection$ChildServiceConnectionImpl.class", 
+          "tag": 5819333
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConnection$ConnectionCallback.class", 
+          "tag": 2247771087
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConnection$ConnectionParams.class", 
+          "tag": 2654019555
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConnection$ServiceCallback.class", 
+          "tag": 2357179598
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConnection.class", 
+          "tag": 1343167643
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessConstants.class", 
+          "tag": 539764761
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessLauncher$1$1.class", 
+          "tag": 1201170138
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessLauncher$1.class", 
+          "tag": 2161876397
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessLauncher$2.class", 
+          "tag": 43497994
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessLauncher$Delegate.class", 
+          "tag": 4261389371
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessLauncher.class", 
+          "tag": 1369969404
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessService$1.class", 
+          "tag": 4242717342
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessService$2.class", 
+          "tag": 880738922
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessService.class", 
+          "tag": 4188542504
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ChildProcessServiceDelegate.class", 
+          "tag": 442465580
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/FileDescriptorInfo$1.class", 
+          "tag": 3430279511
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/FileDescriptorInfo.class", 
+          "tag": 4223814969
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ICallbackInt$Stub$Proxy.class", 
+          "tag": 2054575336
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ICallbackInt$Stub.class", 
+          "tag": 3014159161
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/ICallbackInt.class", 
+          "tag": 2966349182
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/IChildProcessService$Stub$Proxy.class", 
+          "tag": 502011944
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/IChildProcessService$Stub.class", 
+          "tag": 26582812
+        }, 
+        {
+          "path": "org/chromium/base/process_launcher/IChildProcessService.class", 
+          "tag": 2294926463
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/desugar.py", 
+      "tag": "4b00258d03ad87dd1313c1f9eac82032"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "d41d8cd98f00b204e9800998ecf8427e"
+}

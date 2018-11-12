@@ -1,0 +1,9 @@
+{
+  "java_libraries_list": "{\"_webrtc_perf_tests__library\"}",
+  "lib_paths": [
+    "./lib_webrtc_perf_tests__library.so"
+  ],
+  "libraries": [
+    "lib_webrtc_perf_tests__library.so"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "java_libraries_list": "{\"_neteq_rtpplay__library\"}",
+  "lib_paths": [
+    "./lib_neteq_rtpplay__library.so"
+  ],
+  "libraries": [
+    "lib_neteq_rtpplay__library.so"
+  ]
+}

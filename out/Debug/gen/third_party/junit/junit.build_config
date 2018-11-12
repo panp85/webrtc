@@ -1,0 +1,67 @@
+{
+  "deps_info": {
+    "deps_configs": [
+      "gen/third_party/hamcrest/hamcrest_core_java.build_config",
+      "gen/third_party/hamcrest/hamcrest_integration_java.build_config",
+      "gen/third_party/hamcrest/hamcrest_library_java.build_config",
+      "gen/build/android/buildhooks/build_hooks_java.build_config"
+    ],
+    "dex_path": "gen/third_party/junit/junit.dex.jar",
+    "gradle_treat_as_prebuilt": true,
+    "interface_jar_path": "lib.java/third_party/junit/junit.interface.jar",
+    "is_prebuilt": false,
+    "jar_path": "lib.java/third_party/junit/junit.jar",
+    "java_sources_file": "gen/third_party/junit/junit.sources",
+    "javac_full_classpath": [
+      "../../third_party/bazel/desugar/Desugar-runtime.jar",
+      "gen/build/android/buildhooks/build_hooks_java.javac.jar",
+      "../../third_party/hamcrest/lib/hamcrest-core.jar",
+      "../../third_party/hamcrest/lib/hamcrest-integration.jar",
+      "../../third_party/hamcrest/lib/hamcrest-library.jar"
+    ],
+    "javac_full_interface_classpath": [
+      "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar",
+      "lib.java/build/android/buildhooks/build_hooks_java.interface.jar",
+      "lib.java/third_party/hamcrest/hamcrest-core.interface.jar",
+      "lib.java/third_party/hamcrest/hamcrest-integration.interface.jar",
+      "lib.java/third_party/hamcrest/hamcrest-library.interface.jar"
+    ],
+    "name": "junit.build_config",
+    "path": "gen/third_party/junit/junit.build_config",
+    "proguard_configs": [
+      "../../third_party/junit/proguard.flags"
+    ],
+    "requires_android": false,
+    "supports_android": true,
+    "type": "java_library",
+    "unprocessed_jar_path": "gen/third_party/junit/junit.javac.jar"
+  },
+  "gradle": {
+    "bundled_srcjars": [],
+    "dependent_android_projects": [],
+    "dependent_java_projects": [
+      "gen/build/android/buildhooks/build_hooks_java.build_config"
+    ],
+    "dependent_prebuilt_jars": [
+      "lib.java/third_party/hamcrest/hamcrest-core.jar",
+      "lib.java/third_party/hamcrest/hamcrest-integration.jar",
+      "lib.java/third_party/hamcrest/hamcrest-library.jar"
+    ]
+  },
+  "javac": {
+    "classpath": [
+      "../../third_party/hamcrest/lib/hamcrest-core.jar",
+      "../../third_party/hamcrest/lib/hamcrest-integration.jar",
+      "../../third_party/hamcrest/lib/hamcrest-library.jar",
+      "gen/build/android/buildhooks/build_hooks_java.javac.jar"
+    ],
+    "interface_classpath": [
+      "lib.java/third_party/hamcrest/hamcrest-core.interface.jar",
+      "lib.java/third_party/hamcrest/hamcrest-integration.interface.jar",
+      "lib.java/third_party/hamcrest/hamcrest-library.interface.jar",
+      "lib.java/build/android/buildhooks/build_hooks_java.interface.jar"
+    ],
+    "processor_classes": [],
+    "processor_classpath": []
+  }
+}

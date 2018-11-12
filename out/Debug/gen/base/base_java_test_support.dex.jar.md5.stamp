@@ -1,0 +1,453 @@
+{
+  "input-strings": [
+    "java", 
+    "-jar", 
+    "../../third_party/r8/lib/d8.jar"
+  ], 
+  "files-md5": "d0fda9e7ef8f121b501e104add58a2cd", 
+  "input-files": [
+    {
+      "path": "lib.java/base/base_java_test_support.jar", 
+      "tag": "fb3c1eb60e62521275f1650990e6f8b6", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "org/chromium/base/test/BaseChromiumAndroidJUnitRunner$IncrementalInstallTestRequestBuilder.class", 
+          "tag": 2784428828
+        }, 
+        {
+          "path": "org/chromium/base/test/BaseChromiumAndroidJUnitRunner.class", 
+          "tag": 2871932249
+        }, 
+        {
+          "path": "org/chromium/base/test/BaseChromiumRunnerCommon$DexListReorderingComparator.class", 
+          "tag": 568154101
+        }, 
+        {
+          "path": "org/chromium/base/test/BaseChromiumRunnerCommon$MultiDexContextWrapper$1.class", 
+          "tag": 3802184197
+        }, 
+        {
+          "path": "org/chromium/base/test/BaseChromiumRunnerCommon$MultiDexContextWrapper.class", 
+          "tag": 710668456
+        }, 
+        {
+          "path": "org/chromium/base/test/BaseChromiumRunnerCommon.class", 
+          "tag": 1169578737
+        }, 
+        {
+          "path": "org/chromium/base/test/BaseJUnit4ClassRunner.class", 
+          "tag": 3343547479
+        }, 
+        {
+          "path": "org/chromium/base/test/BaseTestResult$PreTestHook.class", 
+          "tag": 3300777820
+        }, 
+        {
+          "path": "org/chromium/base/test/BaseTestResult.class", 
+          "tag": 353577393
+        }, 
+        {
+          "path": "org/chromium/base/test/ScreenshotOnFailureStatement.class", 
+          "tag": 780655776
+        }, 
+        {
+          "path": "org/chromium/base/test/SetUpStatement.class", 
+          "tag": 3792225679
+        }, 
+        {
+          "path": "org/chromium/base/test/SetUpTestRule.class", 
+          "tag": 3606933252
+        }, 
+        {
+          "path": "org/chromium/base/test/TestListInstrumentationRunListener.class", 
+          "tag": 2557324630
+        }, 
+        {
+          "path": "org/chromium/base/test/TestTraceEvent$EventType.class", 
+          "tag": 533978741
+        }, 
+        {
+          "path": "org/chromium/base/test/TestTraceEvent.class", 
+          "tag": 1059560532
+        }, 
+        {
+          "path": "org/chromium/base/test/params/BaseJUnit4RunnerDelegate.class", 
+          "tag": 3813699887
+        }, 
+        {
+          "path": "org/chromium/base/test/params/BlockJUnit4RunnerDelegate.class", 
+          "tag": 3253813371
+        }, 
+        {
+          "path": "org/chromium/base/test/params/MethodParamAnnotationRule$1.class", 
+          "tag": 2813515382
+        }, 
+        {
+          "path": "org/chromium/base/test/params/MethodParamAnnotationRule.class", 
+          "tag": 698680668
+        }, 
+        {
+          "path": "org/chromium/base/test/params/MethodParamRule.class", 
+          "tag": 1574682747
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterAnnotations$ClassParameter.class", 
+          "tag": 2784261746
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterAnnotations$RuleParameter.class", 
+          "tag": 2404958533
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterAnnotations$UseMethodParameter.class", 
+          "tag": 2165839557
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterAnnotations$UseMethodParameterAfter.class", 
+          "tag": 4188632758
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterAnnotations$UseMethodParameterBefore.class", 
+          "tag": 1863538005
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterAnnotations$UseRunnerDelegate.class", 
+          "tag": 490958681
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterAnnotations.class", 
+          "tag": 4080671818
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterProvider.class", 
+          "tag": 4113340186
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterSet.class", 
+          "tag": 452427962
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterizedFrameworkMethod.class", 
+          "tag": 3728541666
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterizedRunner$IllegalParameterArgumentException.class", 
+          "tag": 2500418260
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterizedRunner$ParameterizedTestInstantiationException.class", 
+          "tag": 2013633070
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterizedRunner.class", 
+          "tag": 3769984928
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterizedRunnerDelegate.class", 
+          "tag": 2103018010
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterizedRunnerDelegateCommon.class", 
+          "tag": 2858949737
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterizedRunnerDelegateFactory$1.class", 
+          "tag": 2443729315
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterizedRunnerDelegateFactory$ParameterizedRunnerDelegateInstantiationException.class", 
+          "tag": 2130001834
+        }, 
+        {
+          "path": "org/chromium/base/test/params/ParameterizedRunnerDelegateFactory.class", 
+          "tag": 1794686586
+        }, 
+        {
+          "path": "org/chromium/base/test/util/AdvancedMockContext$MapBuilder.class", 
+          "tag": 219140871
+        }, 
+        {
+          "path": "org/chromium/base/test/util/AdvancedMockContext.class", 
+          "tag": 2051220888
+        }, 
+        {
+          "path": "org/chromium/base/test/util/AnnotationProcessingUtils$1.class", 
+          "tag": 3524785798
+        }, 
+        {
+          "path": "org/chromium/base/test/util/AnnotationProcessingUtils$AnnotatedNode$ClassNode.class", 
+          "tag": 2646803044
+        }, 
+        {
+          "path": "org/chromium/base/test/util/AnnotationProcessingUtils$AnnotatedNode$DescriptionNode.class", 
+          "tag": 3673354056
+        }, 
+        {
+          "path": "org/chromium/base/test/util/AnnotationProcessingUtils$AnnotatedNode$MethodNode.class", 
+          "tag": 990100096
+        }, 
+        {
+          "path": "org/chromium/base/test/util/AnnotationProcessingUtils$AnnotatedNode.class", 
+          "tag": 773124667
+        }, 
+        {
+          "path": "org/chromium/base/test/util/AnnotationProcessingUtils$AnnotationExtractor.class", 
+          "tag": 1432871579
+        }, 
+        {
+          "path": "org/chromium/base/test/util/AnnotationProcessingUtils.class", 
+          "tag": 2634952284
+        }, 
+        {
+          "path": "org/chromium/base/test/util/AnnotationRule.class", 
+          "tag": 4264020929
+        }, 
+        {
+          "path": "org/chromium/base/test/util/CallbackHelper.class", 
+          "tag": 2068605130
+        }, 
+        {
+          "path": "org/chromium/base/test/util/CommandLineFlags$Add.class", 
+          "tag": 1830749416
+        }, 
+        {
+          "path": "org/chromium/base/test/util/CommandLineFlags$Remove.class", 
+          "tag": 1427368207
+        }, 
+        {
+          "path": "org/chromium/base/test/util/CommandLineFlags.class", 
+          "tag": 3008418114
+        }, 
+        {
+          "path": "org/chromium/base/test/util/DisableIf$Build.class", 
+          "tag": 3671419039
+        }, 
+        {
+          "path": "org/chromium/base/test/util/DisableIf$Device.class", 
+          "tag": 1056943099
+        }, 
+        {
+          "path": "org/chromium/base/test/util/DisableIf.class", 
+          "tag": 1980627276
+        }, 
+        {
+          "path": "org/chromium/base/test/util/DisableIfSkipCheck.class", 
+          "tag": 3962076660
+        }, 
+        {
+          "path": "org/chromium/base/test/util/DisabledTest.class", 
+          "tag": 686682030
+        }, 
+        {
+          "path": "org/chromium/base/test/util/EnormousTest.class", 
+          "tag": 2059170360
+        }, 
+        {
+          "path": "org/chromium/base/test/util/Feature.class", 
+          "tag": 1738329264
+        }, 
+        {
+          "path": "org/chromium/base/test/util/FlakyTest.class", 
+          "tag": 1734282386
+        }, 
+        {
+          "path": "org/chromium/base/test/util/InMemorySharedPreferences$1.class", 
+          "tag": 2194091004
+        }, 
+        {
+          "path": "org/chromium/base/test/util/InMemorySharedPreferences$InMemoryEditor.class", 
+          "tag": 2496894061
+        }, 
+        {
+          "path": "org/chromium/base/test/util/InMemorySharedPreferences.class", 
+          "tag": 2008939650
+        }, 
+        {
+          "path": "org/chromium/base/test/util/InstrumentationUtils.class", 
+          "tag": 3162836259
+        }, 
+        {
+          "path": "org/chromium/base/test/util/IntegrationTest.class", 
+          "tag": 4199573289
+        }, 
+        {
+          "path": "org/chromium/base/test/util/Manual.class", 
+          "tag": 1150138813
+        }, 
+        {
+          "path": "org/chromium/base/test/util/Matchers$GreaterThanOrEqualTo.class", 
+          "tag": 546587693
+        }, 
+        {
+          "path": "org/chromium/base/test/util/Matchers.class", 
+          "tag": 130114122
+        }, 
+        {
+          "path": "org/chromium/base/test/util/MetricsUtils$HistogramDelta.class", 
+          "tag": 1548668905
+        }, 
+        {
+          "path": "org/chromium/base/test/util/MetricsUtils.class", 
+          "tag": 2611670924
+        }, 
+        {
+          "path": "org/chromium/base/test/util/MinAndroidSdkLevel.class", 
+          "tag": 1962045845
+        }, 
+        {
+          "path": "org/chromium/base/test/util/MinAndroidSdkLevelSkipCheck.class", 
+          "tag": 3346055372
+        }, 
+        {
+          "path": "org/chromium/base/test/util/Restriction.class", 
+          "tag": 4259052237
+        }, 
+        {
+          "path": "org/chromium/base/test/util/RestrictionSkipCheck.class", 
+          "tag": 749687761
+        }, 
+        {
+          "path": "org/chromium/base/test/util/RetryOnFailure.class", 
+          "tag": 3597255214
+        }, 
+        {
+          "path": "org/chromium/base/test/util/ScalableTimeout.class", 
+          "tag": 3351616542
+        }, 
+        {
+          "path": "org/chromium/base/test/util/SkipCheck.class", 
+          "tag": 1950842760
+        }, 
+        {
+          "path": "org/chromium/base/test/util/TestFileUtil.class", 
+          "tag": 3539293837
+        }, 
+        {
+          "path": "org/chromium/base/test/util/TestThread$1.class", 
+          "tag": 3360517016
+        }, 
+        {
+          "path": "org/chromium/base/test/util/TestThread$2.class", 
+          "tag": 2833161848
+        }, 
+        {
+          "path": "org/chromium/base/test/util/TestThread.class", 
+          "tag": 502926793
+        }, 
+        {
+          "path": "org/chromium/base/test/util/TimeoutScale.class", 
+          "tag": 651166361
+        }, 
+        {
+          "path": "org/chromium/base/test/util/UrlUtils.class", 
+          "tag": 3953693467
+        }, 
+        {
+          "path": "org/chromium/base/test/util/UserActionTester$1.class", 
+          "tag": 4121332707
+        }, 
+        {
+          "path": "org/chromium/base/test/util/UserActionTester$2.class", 
+          "tag": 1273636807
+        }, 
+        {
+          "path": "org/chromium/base/test/util/UserActionTester.class", 
+          "tag": 1442736081
+        }, 
+        {
+          "path": "org/chromium/base/test/util/parameter/CommandLineParameter.class", 
+          "tag": 231327952
+        }, 
+        {
+          "path": "org/chromium/base/test/util/parameter/SkipCommandLineParameterization.class", 
+          "tag": 2692503951
+        }, 
+        {
+          "path": "org/chromium/base/test/util/AnnotationProcessingUtils$AnnotationExtractor$$Lambda$0.class", 
+          "tag": 2390927524
+        }, 
+        {
+          "path": "org/chromium/base/test/util/AnnotationProcessingUtils$AnnotationExtractor$$Lambda$1.class", 
+          "tag": 982856902
+        }, 
+        {
+          "path": "org/chromium/base/test/util/CommandLineFlags$$Lambda$0.class", 
+          "tag": 3121550859
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/dex.py", 
+      "tag": "92f07a54681f9da14d0c639647142db3"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "02b2b2af8679aeed8e11fdd11bea5a08"
+}

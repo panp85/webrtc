@@ -1,0 +1,13 @@
+[
+  "gen/examples/androidnativeapi/androidnativeapi/androidnativeapi.dex.jar",
+  "gen/third_party/bazel/desugar/desugar_runtime_java.dex.jar",
+  "gen/build/android/buildhooks/build_hooks_java.dex.jar",
+  "gen/third_party/jsr-305/jsr_305_javalib.dex.jar",
+  "gen/rtc_base/base_java.dex.jar",
+  "gen/modules/audio_device/audio_device_java.dex.jar",
+  "gen/sdk/android/base_java.dex.jar",
+  "gen/sdk/android/video_api_java.dex.jar",
+  "gen/sdk/android/video_java.dex.jar",
+  "gen/sdk/android/camera_java.dex.jar",
+  "gen/sdk/android/surfaceviewrenderer_java.dex.jar"
+]

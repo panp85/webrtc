@@ -1,0 +1,16 @@
+org.chromium.testing.local.JsonListener,../../testing/android/junit/java/src/org/chromium/testing/local/JsonListener.java
+org.chromium.testing.local.TestDir,../../testing/android/junit/java/src/org/chromium/testing/local/TestDir.java
+org.chromium.testing.local.GNManifestFactory,../../testing/android/junit/java/src/org/chromium/testing/local/GNManifestFactory.java
+org.chromium.testing.local.JsonLogger,../../testing/android/junit/java/src/org/chromium/testing/local/JsonLogger.java
+org.chromium.testing.local.JunitTestArgParser,../../testing/android/junit/java/src/org/chromium/testing/local/JunitTestArgParser.java
+org.chromium.testing.local.GtestFilter,../../testing/android/junit/java/src/org/chromium/testing/local/GtestFilter.java
+org.chromium.testing.local.LocalRobolectricTestRunner,../../testing/android/junit/java/src/org/chromium/testing/local/LocalRobolectricTestRunner.java
+org.chromium.testing.local.JunitTestMain,../../testing/android/junit/java/src/org/chromium/testing/local/JunitTestMain.java
+org.chromium.testing.local.CustomShadowAsyncTask,../../testing/android/junit/java/src/org/chromium/testing/local/CustomShadowAsyncTask.java
+org.chromium.testing.local.GtestListener,../../testing/android/junit/java/src/org/chromium/testing/local/GtestListener.java
+org.chromium.testing.local.GtestLogger,../../testing/android/junit/java/src/org/chromium/testing/local/GtestLogger.java
+org.chromium.testing.local.CustomShadowUserManager,../../testing/android/junit/java/src/org/chromium/testing/local/CustomShadowUserManager.java
+org.chromium.testing.local.PackageFilter,../../testing/android/junit/java/src/org/chromium/testing/local/PackageFilter.java
+org.chromium.testing.local.GtestComputer,../../testing/android/junit/java/src/org/chromium/testing/local/GtestComputer.java
+org.chromium.testing.local.BackgroundShadowAsyncTask,../../testing/android/junit/java/src/org/chromium/testing/local/BackgroundShadowAsyncTask.java
+org.chromium.testing.local.RunnerFilter,../../testing/android/junit/java/src/org/chromium/testing/local/RunnerFilter.java

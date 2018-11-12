@@ -1,0 +1,92 @@
+{
+  "deps_info": {
+    "deps_configs": [
+      "gen/third_party/robolectric/robolectric_annotations_java.build_config",
+      "gen/third_party/robolectric/robolectric_sandbox_java.build_config",
+      "gen/third_party/robolectric/robolectric_shadowapi_java.build_config",
+      "gen/third_party/jsr-305/jsr_305_javalib.build_config",
+      "gen/third_party/junit/junit.build_config"
+    ],
+    "gradle_treat_as_prebuilt": null,
+    "interface_jar_path": "lib.java/third_party/robolectric/robolectric_junit_java.interface.jar",
+    "is_prebuilt": false,
+    "jar_path": "lib.java/third_party/robolectric/robolectric_junit_java.jar",
+    "java_sources_file": "gen/third_party/robolectric/robolectric_junit_java.sources",
+    "javac_full_classpath": [
+      "../../third_party/robolectric/lib/android-all-8.1.0-robolectric-r4402310.jar",
+      "../../third_party/bazel/desugar/Desugar-runtime.jar",
+      "gen/build/android/buildhooks/build_hooks_java.javac.jar",
+      "gen/third_party/jsr-305/jsr_305_javalib.javac.jar",
+      "gen/third_party/robolectric/robolectric_shadowapi_java.javac.jar",
+      "../../third_party/intellij/lib/annotations.jar",
+      "gen/third_party/robolectric/robolectric_annotations_java.javac.jar",
+      "gen/third_party/robolectric/robolectric_utils_java.javac.jar",
+      "../../third_party/guava/lib/guava.jar",
+      "../../third_party/ow2_asm/lib/asm.jar",
+      "../../third_party/ow2_asm/lib/asm-tree.jar",
+      "../../third_party/ow2_asm/lib/asm-commons.jar",
+      "gen/third_party/robolectric/robolectric_sandbox_java.javac.jar",
+      "../../third_party/hamcrest/lib/hamcrest-core.jar",
+      "../../third_party/hamcrest/lib/hamcrest-integration.jar",
+      "../../third_party/hamcrest/lib/hamcrest-library.jar",
+      "gen/third_party/junit/junit.javac.jar"
+    ],
+    "javac_full_interface_classpath": [
+      "lib.java/third_party/robolectric/android-all-8.1.0-robolectric-r4402310.interface.jar",
+      "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar",
+      "lib.java/build/android/buildhooks/build_hooks_java.interface.jar",
+      "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar",
+      "lib.java/third_party/robolectric/robolectric_shadowapi_java.interface.jar",
+      "lib.java/third_party/intellij/annotations.interface.jar",
+      "lib.java/third_party/robolectric/robolectric_annotations_java.interface.jar",
+      "lib.java/third_party/robolectric/robolectric_utils_java.interface.jar",
+      "lib.java/third_party/guava/guava.interface.jar",
+      "lib.java/third_party/ow2_asm/asm.interface.jar",
+      "lib.java/third_party/ow2_asm/asm-tree.interface.jar",
+      "lib.java/third_party/ow2_asm/asm-commons.interface.jar",
+      "lib.java/third_party/robolectric/robolectric_sandbox_java.interface.jar",
+      "lib.java/third_party/hamcrest/hamcrest-core.interface.jar",
+      "lib.java/third_party/hamcrest/hamcrest-integration.interface.jar",
+      "lib.java/third_party/hamcrest/hamcrest-library.interface.jar",
+      "lib.java/third_party/junit/junit.interface.jar"
+    ],
+    "name": "robolectric_junit_java.build_config",
+    "path": "gen/third_party/robolectric/robolectric_junit_java.build_config",
+    "requires_android": false,
+    "supports_android": false,
+    "type": "java_library",
+    "unprocessed_jar_path": "gen/third_party/robolectric/robolectric_junit_java.javac.jar"
+  },
+  "gradle": {
+    "bundled_srcjars": [],
+    "dependent_android_projects": [],
+    "dependent_java_projects": [
+      "gen/third_party/robolectric/robolectric_annotations_java.build_config",
+      "gen/third_party/robolectric/robolectric_sandbox_java.build_config",
+      "gen/third_party/robolectric/robolectric_shadowapi_java.build_config",
+      "gen/third_party/jsr-305/jsr_305_javalib.build_config",
+      "gen/build/android/buildhooks/build_hooks_java.build_config"
+    ],
+    "dependent_prebuilt_jars": [
+      "lib.java/third_party/junit/junit.jar"
+    ]
+  },
+  "javac": {
+    "classpath": [
+      "gen/third_party/robolectric/robolectric_annotations_java.javac.jar",
+      "gen/third_party/robolectric/robolectric_sandbox_java.javac.jar",
+      "gen/third_party/robolectric/robolectric_shadowapi_java.javac.jar",
+      "gen/third_party/jsr-305/jsr_305_javalib.javac.jar",
+      "gen/third_party/junit/junit.javac.jar"
+    ],
+    "interface_classpath": [
+      "lib.java/third_party/robolectric/robolectric_annotations_java.interface.jar",
+      "lib.java/third_party/robolectric/robolectric_sandbox_java.interface.jar",
+      "lib.java/third_party/robolectric/robolectric_shadowapi_java.interface.jar",
+      "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar",
+      "lib.java/third_party/junit/junit.interface.jar"
+    ],
+    "processor_classes": [],
+    "processor_classpath": []
+  }
+}

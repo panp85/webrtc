@@ -1,0 +1,429 @@
+{
+  "input-strings": [], 
+  "files-md5": "4a9d8d36d600193dc4268482514cbc3d", 
+  "input-files": [
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_java.interface.jar", 
+      "tag": "1b65d9fc56ed74a602715a27c16354b6"
+    }, 
+    {
+      "path": "lib.java/android.interface.jar", 
+      "tag": "37b1210806e59ec1c8dc9fa500fa18a9"
+    }, 
+    {
+      "path": "obj/third_party/ub-uiautomator/ub_uiautomator_java__process_prebuilt-bytecode-rewritten.jar", 
+      "tag": "c9ff30ec5978cbc755b6cce04345d86d", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 3993141178
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiDevice$1.class", 
+          "tag": 2289593333
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiDevice$EventForwardingFilter.class", 
+          "tag": 2683344508
+        }, 
+        {
+          "path": "android/support/test/uiautomator/ByMatcher$SinglyLinkedList.class", 
+          "tag": 3050288006
+        }, 
+        {
+          "path": "android/support/test/uiautomator/AccessibilityNodeInfoHelper.class", 
+          "tag": 2619326715
+        }, 
+        {
+          "path": "android/support/test/uiautomator/InteractionController$WaitForAnyEventPredicate.class", 
+          "tag": 2862875841
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$11.class", 
+          "tag": 3310837803
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until.class", 
+          "tag": 1835723762
+        }, 
+        {
+          "path": "android/support/test/uiautomator/By.class", 
+          "tag": 2063501786
+        }, 
+        {
+          "path": "android/support/test/uiautomator/InstrumentationAutomationSupport.class", 
+          "tag": 1657151910
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$12.class", 
+          "tag": 2562142764
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$5.class", 
+          "tag": 1780445940
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$10.class", 
+          "tag": 1378704645
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$7.class", 
+          "tag": 2296868053
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Configurator.class", 
+          "tag": 3694745611
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiAutomatorInstrumentationTestRunner.class", 
+          "tag": 3284567825
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$6.class", 
+          "tag": 1011124690
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiCollection.class", 
+          "tag": 3990986213
+        }, 
+        {
+          "path": "android/support/test/uiautomator/PointerGesture$PointerLinearMoveAction.class", 
+          "tag": 3139245022
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$19.class", 
+          "tag": 3422568929
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiObject2Condition.class", 
+          "tag": 4202212547
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$16.class", 
+          "tag": 2132934980
+        }, 
+        {
+          "path": "android/support/test/uiautomator/GestureController$1.class", 
+          "tag": 1603276358
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$2.class", 
+          "tag": 1064728386
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Tracer$LogcatSink.class", 
+          "tag": 4135457870
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$1.class", 
+          "tag": 1075558736
+        }, 
+        {
+          "path": "android/support/test/uiautomator/InteractionController$EventCollectingPredicate.class", 
+          "tag": 2082028008
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$14.class", 
+          "tag": 2228319289
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$3.class", 
+          "tag": 1832091001
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$17.class", 
+          "tag": 3087028180
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Tracer$1.class", 
+          "tag": 4209304926
+        }, 
+        {
+          "path": "android/support/test/uiautomator/GestureController$GestureRunnable.class", 
+          "tag": 3739732060
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$15.class", 
+          "tag": 3981093488
+        }, 
+        {
+          "path": "android/support/test/uiautomator/EventCondition.class", 
+          "tag": 1507917744
+        }, 
+        {
+          "path": "android/support/test/uiautomator/GestureController$Pointer.class", 
+          "tag": 267203103
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Gestures$1.class", 
+          "tag": 388246052
+        }, 
+        {
+          "path": "android/support/test/uiautomator/AccessibilityNodeInfoDumper.class", 
+          "tag": 89468474
+        }, 
+        {
+          "path": "android/support/test/uiautomator/QueryController.class", 
+          "tag": 2452523534
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiWatcher.class", 
+          "tag": 3543215693
+        }, 
+        {
+          "path": "android/support/test/uiautomator/WaitMixin.class", 
+          "tag": 2986073511
+        }, 
+        {
+          "path": "android/support/test/uiautomator/InteractionController$3.class", 
+          "tag": 2714270181
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiAutomatorInstrumentationTestRunner$1.class", 
+          "tag": 3493148212
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Tracer.class", 
+          "tag": 2384660248
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiSelector.class", 
+          "tag": 3431571939
+        }, 
+        {
+          "path": "android/support/test/uiautomator/PointerGesture$PointerAction.class", 
+          "tag": 1531071849
+        }, 
+        {
+          "path": "android/support/test/uiautomator/ByMatcher$SinglyLinkedList$1.class", 
+          "tag": 1175163032
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiScrollable.class", 
+          "tag": 2766970544
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Tracer$Mode.class", 
+          "tag": 1972529771
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Tracer$TracerSink.class", 
+          "tag": 512684826
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiObject2.class", 
+          "tag": 2019337633
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$18.class", 
+          "tag": 794824629
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiDevice$2.class", 
+          "tag": 3100455465
+        }, 
+        {
+          "path": "android/support/test/uiautomator/QueryController$1.class", 
+          "tag": 4262817687
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$8.class", 
+          "tag": 78631442
+        }, 
+        {
+          "path": "android/support/test/uiautomator/IAutomationSupport.class", 
+          "tag": 3261465250
+        }, 
+        {
+          "path": "android/support/test/uiautomator/GestureController$2.class", 
+          "tag": 1156559528
+        }, 
+        {
+          "path": "android/support/test/uiautomator/BySelector.class", 
+          "tag": 33198433
+        }, 
+        {
+          "path": "android/support/test/uiautomator/InteractionController$WaitForAllEventPredicate.class", 
+          "tag": 2270297913
+        }, 
+        {
+          "path": "android/support/test/uiautomator/ByMatcher$PartialMatch.class", 
+          "tag": 531301977
+        }, 
+        {
+          "path": "android/support/test/uiautomator/InteractionController$2.class", 
+          "tag": 3783629182
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiDevice.class", 
+          "tag": 2943769174
+        }, 
+        {
+          "path": "android/support/test/uiautomator/SearchCondition.class", 
+          "tag": 3369049169
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Tracer$FileSink.class", 
+          "tag": 3690607831
+        }, 
+        {
+          "path": "android/support/test/uiautomator/InteractionController$4.class", 
+          "tag": 3012699379
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiAutomatorTestCase.class", 
+          "tag": 205669687
+        }, 
+        {
+          "path": "android/support/test/uiautomator/ByMatcher$SinglyLinkedList$Node.class", 
+          "tag": 21585587
+        }, 
+        {
+          "path": "android/support/test/uiautomator/GestureController.class", 
+          "tag": 2050542867
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Direction.class", 
+          "tag": 3368371623
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiObject.class", 
+          "tag": 1476166027
+        }, 
+        {
+          "path": "android/support/test/uiautomator/InteractionController$1.class", 
+          "tag": 1165658217
+        }, 
+        {
+          "path": "android/support/test/uiautomator/PointerGesture$PointerPauseAction.class", 
+          "tag": 3206133684
+        }, 
+        {
+          "path": "android/support/test/uiautomator/InteractionController.class", 
+          "tag": 2691612914
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Searchable.class", 
+          "tag": 4123073988
+        }, 
+        {
+          "path": "android/support/test/uiautomator/InstrumentationUiAutomatorBridge.class", 
+          "tag": 1850687219
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiAutomatorBridge.class", 
+          "tag": 2707827954
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$4.class", 
+          "tag": 1410165323
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$9.class", 
+          "tag": 198419411
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Until$13.class", 
+          "tag": 2401873423
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Gestures.class", 
+          "tag": 1351595435
+        }, 
+        {
+          "path": "android/support/test/uiautomator/UiObjectNotFoundException.class", 
+          "tag": 1043460625
+        }, 
+        {
+          "path": "android/support/test/uiautomator/PointerGesture.class", 
+          "tag": 4019568612
+        }, 
+        {
+          "path": "android/support/test/uiautomator/StaleObjectException.class", 
+          "tag": 719904893
+        }, 
+        {
+          "path": "android/support/test/uiautomator/ByMatcher.class", 
+          "tag": 1250280983
+        }, 
+        {
+          "path": "android/support/test/uiautomator/Condition.class", 
+          "tag": 2417850425
+        }, 
+        {
+          "path": "android/support/test/uiautomator/v18/BuildConfig.class", 
+          "tag": 2934629354
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/desugar.py", 
+      "tag": "4b00258d03ad87dd1313c1f9eac82032"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "d41d8cd98f00b204e9800998ecf8427e"
+}

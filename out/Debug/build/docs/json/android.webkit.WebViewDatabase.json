@@ -1,0 +1,25 @@
+{
+  "methods": {
+    "getInstance(android.content.Context)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public",
+        "static"
+      ],
+      "params": [
+        "ignored"
+      ],
+      "returnType": "android.webkit.WebViewDatabase",
+      "exceptions": [],
+      "name": "getInstance(android.content.Context)"
+    }
+  },
+  "imports": [
+    "android.content.Context",
+    "android.webkit.WebViewDatabase",
+    "org.robolectric.annotation.Implementation",
+    "org.robolectric.annotation.Implements",
+    "org.robolectric.shadow.api.Shadow"
+  ],
+  "name": "org.robolectric.shadows.ShadowWebViewDatabase"
+}

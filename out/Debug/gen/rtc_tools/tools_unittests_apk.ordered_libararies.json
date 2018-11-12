@@ -1,0 +1,9 @@
+{
+  "java_libraries_list": "{\"_tools_unittests__library\"}",
+  "lib_paths": [
+    "./lib_tools_unittests__library.so"
+  ],
+  "libraries": [
+    "lib_tools_unittests__library.so"
+  ]
+}

@@ -1,0 +1,9 @@
+defines = -DV8_DEPRECATION_WARNINGS -DNO_TCMALLOC -DSAFE_BROWSING_DB_REMOTE -DCHROMIUM_BUILD -DFIELDTRIAL_TESTING_ENABLED -DANDROID -DHAVE_SYS_UIO_H -DANDROID_NDK_VERSION_ROLL=r16_1 -DCR_CLANG_REVISION=\"332838-1\" -D__GNU_SOURCE=1 -DCHROMIUM_CXX_TWEAK_INLINES -D_DEBUG -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DWTF_USE_DYNAMIC_ANNOTATIONS=1
+include_dirs = -I../.. -Igen
+label_name = thread_pool
+root_out_dir = .
+target_out_dir = obj/third_party/abseil-cpp/absl/synchronization
+target_output_name = thread_pool
+
+
+build obj/third_party/abseil-cpp/absl/synchronization/thread_pool.stamp: stamp || obj/third_party/abseil-cpp/absl/synchronization/synchronization.stamp obj/third_party/abseil-cpp/absl/base/core_headers.stamp obj/third_party/abseil-cpp/absl/synchronization/graphcycles_internal.stamp obj/third_party/abseil-cpp/absl/base/base.stamp obj/third_party/abseil-cpp/absl/base/base_internal.stamp obj/third_party/abseil-cpp/absl/base/config.stamp obj/third_party/abseil-cpp/absl/base/dynamic_annotations.stamp obj/third_party/abseil-cpp/absl/base/spinlock_wait.stamp obj/third_party/abseil-cpp/absl/base/malloc_internal.stamp obj/third_party/abseil-cpp/absl/debugging/stacktrace.stamp obj/third_party/abseil-cpp/absl/debugging/debugging_internal.stamp obj/third_party/abseil-cpp/absl/debugging/symbolize.stamp obj/third_party/abseil-cpp/absl/debugging/demangle_internal.stamp obj/third_party/abseil-cpp/absl/time/time.stamp obj/third_party/abseil-cpp/absl/numeric/int128.stamp obj/third_party/abseil-cpp/absl/time/internal/cctz/civil_time.stamp obj/third_party/abseil-cpp/absl/time/internal/cctz/time_zone.stamp

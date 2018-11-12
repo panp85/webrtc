@@ -1,0 +1,3 @@
+android.support.test.rule.R,gen/examples/AppRTCMobileTestStubbedVideoIO__apk__compile_resources.srcjar
+org.appspot.apprtc.test.R,gen/examples/AppRTCMobileTestStubbedVideoIO__apk__compile_resources.srcjar
+org.appspot.apprtc.test.CallActivityStubbedInputOutputTest,../../examples/androidtests/src/org/appspot/apprtc/test/CallActivityStubbedInputOutputTest.java

@@ -1,0 +1,17 @@
+org.chromium.base.BuildConfig,gen/base/base_build_config_gen.srcjar
+org.appspot.apprtc.TCPChannelClientTest,../../examples/androidjunit/src/org/appspot/apprtc/TCPChannelClientTest.java
+org.appspot.apprtc.BluetoothManagerTest,../../examples/androidjunit/src/org/appspot/apprtc/BluetoothManagerTest.java
+android.support.compat.R,gen/android_junit_tests__prepare_resources.srcjar
+org.webrtc.ScalingSettingsTest,../../sdk/android/tests/src/org/webrtc/ScalingSettingsTest.java
+com.google.android.gms.base.R,gen/android_junit_tests__prepare_resources.srcjar
+android.support.fragment.R,gen/android_junit_tests__prepare_resources.srcjar
+android.support.coreutils.R,gen/android_junit_tests__prepare_resources.srcjar
+org.appspot.apprtc.DirectRTCClientTest,../../examples/androidjunit/src/org/appspot/apprtc/DirectRTCClientTest.java
+android.arch.lifecycle.R,gen/android_junit_tests__prepare_resources.srcjar
+com.google.android.gms.R,gen/android_junit_tests__prepare_resources.srcjar
+android.support.coreui.R,gen/android_junit_tests__prepare_resources.srcjar
+android.support.mediacompat.R,gen/android_junit_tests__prepare_resources.srcjar
+org.webrtc.CameraEnumerationTest,../../sdk/android/tests/src/org/webrtc/CameraEnumerationTest.java
+android.support.test.rule.R,gen/android_junit_tests__prepare_resources.srcjar
+org.appspot.apprtc.R,gen/android_junit_tests__prepare_resources.srcjar
+org.dummy.R,gen/android_junit_tests__prepare_resources.srcjar

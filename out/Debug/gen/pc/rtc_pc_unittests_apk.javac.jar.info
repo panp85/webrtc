@@ -1,0 +1,10 @@
+org.chromium.base.BuildConfig,gen/pc/rtc_pc_unittests_apk__build_config_java.srcjar
+org.chromium.base.library_loader.NativeLibraries,gen/pc/rtc_pc_unittests_apk__native_libraries_java.srcjar
+android.support.test.rule.R,gen/pc/rtc_pc_unittests_apk__compile_resources.srcjar
+android.support.compat.R,gen/pc/rtc_pc_unittests_apk__compile_resources.srcjar
+android.support.fragment.R,gen/pc/rtc_pc_unittests_apk__compile_resources.srcjar
+org.webrtc.native_test.R,gen/pc/rtc_pc_unittests_apk__compile_resources.srcjar
+android.support.coreutils.R,gen/pc/rtc_pc_unittests_apk__compile_resources.srcjar
+android.arch.lifecycle.R,gen/pc/rtc_pc_unittests_apk__compile_resources.srcjar
+android.support.coreui.R,gen/pc/rtc_pc_unittests_apk__compile_resources.srcjar
+android.support.mediacompat.R,gen/pc/rtc_pc_unittests_apk__compile_resources.srcjar

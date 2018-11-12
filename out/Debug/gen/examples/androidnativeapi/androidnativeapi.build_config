@@ -1,0 +1,184 @@
+{
+  "assets": [],
+  "compressed_locales_java_list": "{}",
+  "deps_info": {
+    "android_manifest": "../../examples/androidnativeapi/AndroidManifest.xml",
+    "apk_path": "apks/androidnativeapi.apk",
+    "deps_configs": [
+      "gen/examples/androidnativeapi/resources.build_config",
+      "gen/modules/audio_device/audio_device_java.build_config",
+      "gen/sdk/android/camera_java.build_config",
+      "gen/sdk/android/surfaceviewrenderer_java.build_config",
+      "gen/sdk/android/video_api_java.build_config",
+      "gen/sdk/android/video_java.build_config",
+      "gen/third_party/jsr-305/jsr_305_javalib.build_config"
+    ],
+    "dex_path": "gen/examples/androidnativeapi/androidnativeapi/androidnativeapi.dex.jar",
+    "incremental_apk_path": "apks/androidnativeapi_incremental.apk",
+    "incremental_install_json_path": "gen/examples/androidnativeapi/androidnativeapi.incremental.json",
+    "interface_jar_path": "gen/examples/androidnativeapi/androidnativeapi/androidnativeapi.interface.jar",
+    "jar_path": "gen/examples/androidnativeapi/androidnativeapi/androidnativeapi.jar",
+    "java_runtime_classpath": [
+      "gen/examples/androidnativeapi/androidnativeapi/androidnativeapi.jar",
+      "lib.java/third_party/bazel/desugar/Desugar-runtime.jar",
+      "lib.java/build/android/buildhooks/build_hooks_java.jar",
+      "lib.java/third_party/jsr-305/jsr_305_javalib.jar",
+      "lib.java/rtc_base/base_java.jar",
+      "lib.java/modules/audio_device/audio_device_java.jar",
+      "lib.java/sdk/android/base_java.jar",
+      "lib.java/sdk/android/video_api_java.jar",
+      "lib.java/sdk/android/video_java.jar",
+      "lib.java/sdk/android/camera_java.jar",
+      "lib.java/sdk/android/surfaceviewrenderer_java.jar"
+    ],
+    "java_sources_file": "gen/examples/androidnativeapi/androidnativeapi.sources",
+    "javac_full_classpath": [
+      "../../third_party/bazel/desugar/Desugar-runtime.jar",
+      "gen/build/android/buildhooks/build_hooks_java.javac.jar",
+      "gen/third_party/jsr-305/jsr_305_javalib.javac.jar",
+      "gen/rtc_base/base_java.javac.jar",
+      "gen/modules/audio_device/audio_device_java.javac.jar",
+      "gen/sdk/android/base_java.javac.jar",
+      "gen/sdk/android/video_api_java.javac.jar",
+      "gen/sdk/android/video_java.javac.jar",
+      "gen/sdk/android/camera_java.javac.jar",
+      "gen/sdk/android/surfaceviewrenderer_java.javac.jar"
+    ],
+    "javac_full_interface_classpath": [
+      "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar",
+      "lib.java/build/android/buildhooks/build_hooks_java.interface.jar",
+      "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar",
+      "lib.java/rtc_base/base_java.interface.jar",
+      "lib.java/modules/audio_device/audio_device_java.interface.jar",
+      "lib.java/sdk/android/base_java.interface.jar",
+      "lib.java/sdk/android/video_api_java.interface.jar",
+      "lib.java/sdk/android/video_java.interface.jar",
+      "lib.java/sdk/android/camera_java.interface.jar",
+      "lib.java/sdk/android/surfaceviewrenderer_java.interface.jar"
+    ],
+    "name": "androidnativeapi.build_config",
+    "non_native_packed_relocations": "False",
+    "owned_resource_srcjars": [
+      "gen/examples/androidnativeapi/resources.srcjar"
+    ],
+    "owned_resources_dirs": [
+      "../../examples/androidnativeapi/res"
+    ],
+    "owned_resources_zips": [],
+    "package_name": "org.webrtc.examples.androidnativeapi",
+    "path": "gen/examples/androidnativeapi/androidnativeapi.build_config",
+    "proguard_all_configs": [],
+    "proguard_all_extra_jars": [],
+    "proguard_enabled": null,
+    "requires_android": true,
+    "supports_android": true,
+    "type": "android_apk",
+    "unprocessed_jar_path": "gen/examples/androidnativeapi/androidnativeapi.javac.jar"
+  },
+  "dist_jar": {
+    "all_interface_jars": [
+      "gen/examples/androidnativeapi/androidnativeapi/androidnativeapi.interface.jar",
+      "lib.java/third_party/bazel/desugar/Desugar-runtime.interface.jar",
+      "lib.java/build/android/buildhooks/build_hooks_java.interface.jar",
+      "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar",
+      "lib.java/rtc_base/base_java.interface.jar",
+      "lib.java/modules/audio_device/audio_device_java.interface.jar",
+      "lib.java/sdk/android/base_java.interface.jar",
+      "lib.java/sdk/android/video_api_java.interface.jar",
+      "lib.java/sdk/android/video_java.interface.jar",
+      "lib.java/sdk/android/camera_java.interface.jar",
+      "lib.java/sdk/android/surfaceviewrenderer_java.interface.jar"
+    ]
+  },
+  "extra_android_manifests": [],
+  "final_dex": {
+    "dependency_dex_files": [
+      "gen/third_party/bazel/desugar/desugar_runtime_java.dex.jar",
+      "gen/build/android/buildhooks/build_hooks_java.dex.jar",
+      "gen/third_party/jsr-305/jsr_305_javalib.dex.jar",
+      "gen/rtc_base/base_java.dex.jar",
+      "gen/modules/audio_device/audio_device_java.dex.jar",
+      "gen/sdk/android/base_java.dex.jar",
+      "gen/sdk/android/video_api_java.dex.jar",
+      "gen/sdk/android/video_java.dex.jar",
+      "gen/sdk/android/camera_java.dex.jar",
+      "gen/sdk/android/surfaceviewrenderer_java.dex.jar"
+    ]
+  },
+  "gradle": {
+    "bundled_srcjars": [
+      "gen/examples/androidnativeapi/androidnativeapi__compile_resources.srcjar",
+      "gen/examples/androidnativeapi/androidnativeapi__native_libraries_java.srcjar",
+      "gen/examples/androidnativeapi/androidnativeapi__build_config_java.srcjar"
+    ],
+    "dependent_android_projects": [
+      "gen/modules/audio_device/audio_device_java.build_config",
+      "gen/sdk/android/camera_java.build_config",
+      "gen/sdk/android/surfaceviewrenderer_java.build_config",
+      "gen/sdk/android/video_api_java.build_config",
+      "gen/sdk/android/video_java.build_config"
+    ],
+    "dependent_java_projects": [
+      "gen/third_party/jsr-305/jsr_305_javalib.build_config"
+    ],
+    "dependent_prebuilt_jars": []
+  },
+  "java_resources_jars": [],
+  "javac": {
+    "classpath": [
+      "gen/modules/audio_device/audio_device_java.javac.jar",
+      "gen/sdk/android/camera_java.javac.jar",
+      "gen/sdk/android/surfaceviewrenderer_java.javac.jar",
+      "gen/sdk/android/video_api_java.javac.jar",
+      "gen/sdk/android/video_java.javac.jar",
+      "gen/third_party/jsr-305/jsr_305_javalib.javac.jar"
+    ],
+    "interface_classpath": [
+      "lib.java/modules/audio_device/audio_device_java.interface.jar",
+      "lib.java/sdk/android/camera_java.interface.jar",
+      "lib.java/sdk/android/surfaceviewrenderer_java.interface.jar",
+      "lib.java/sdk/android/video_api_java.interface.jar",
+      "lib.java/sdk/android/video_java.interface.jar",
+      "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar"
+    ],
+    "processor_classes": [],
+    "processor_classpath": []
+  },
+  "jni": {
+    "all_source": [
+      "gen/build/android/buildhooks/build_hooks_java.sources",
+      "gen/third_party/jsr-305/jsr_305_javalib.sources",
+      "gen/rtc_base/base_java.sources",
+      "gen/modules/audio_device/audio_device_java.sources",
+      "gen/sdk/android/base_java.sources",
+      "gen/sdk/android/video_api_java.sources",
+      "gen/sdk/android/video_java.sources",
+      "gen/sdk/android/camera_java.sources",
+      "gen/sdk/android/surfaceviewrenderer_java.sources",
+      "gen/examples/androidnativeapi/androidnativeapi.sources"
+    ]
+  },
+  "native": {
+    "extra_shared_libraries": [],
+    "java_libraries_list": "{\"examples_androidnativeapi_jni\"}",
+    "libraries": [
+      "libexamples_androidnativeapi_jni.so"
+    ],
+    "secondary_abi_java_libraries_list": null,
+    "secondary_abi_libraries": [],
+    "uncompress_shared_libraries": false
+  },
+  "resources": {
+    "dependency_zips": [
+      "resource_zips/examples/androidnativeapi/resources.resources.zip"
+    ],
+    "extra_package_names": [
+      "org.webrtc.examples.androidnativeapi"
+    ],
+    "extra_r_text_files": [
+      "gen/examples/androidnativeapi/resources_R.txt"
+    ]
+  },
+  "uncompressed_assets": [],
+  "uncompressed_locales_java_list": "{}"
+}

@@ -1,0 +1,34 @@
+{
+  "methods": {
+    "getColor()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "int",
+      "exceptions": [],
+      "name": "getColor()"
+    },
+    "setColor(int)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "color"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "setColor(int)"
+    }
+  },
+  "imports": [
+    "org.robolectric.shadow.api.Shadow.directlyOn",
+    "android.graphics.drawable.GradientDrawable",
+    "org.robolectric.annotation.Implementation",
+    "org.robolectric.annotation.Implements",
+    "org.robolectric.annotation.RealObject"
+  ],
+  "name": "org.robolectric.shadows.ShadowGradientDrawable"
+}

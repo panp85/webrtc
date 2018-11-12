@@ -1,0 +1,9 @@
+org.chromium.base.BuildConfig,gen/examples/AppRTCMobile__build_config_java.srcjar
+android.support.coreutils.R,gen/examples/AppRTCMobile__compile_resources.srcjar
+android.support.compat.R,gen/examples/AppRTCMobile__compile_resources.srcjar
+android.support.fragment.R,gen/examples/AppRTCMobile__compile_resources.srcjar
+org.chromium.base.library_loader.NativeLibraries,gen/examples/AppRTCMobile__native_libraries_java.srcjar
+android.arch.lifecycle.R,gen/examples/AppRTCMobile__compile_resources.srcjar
+android.support.coreui.R,gen/examples/AppRTCMobile__compile_resources.srcjar
+android.support.mediacompat.R,gen/examples/AppRTCMobile__compile_resources.srcjar
+org.appspot.apprtc.R,gen/examples/AppRTCMobile__compile_resources.srcjar

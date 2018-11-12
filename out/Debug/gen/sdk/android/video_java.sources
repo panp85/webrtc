@@ -1,0 +1,12 @@
+../../sdk/android/api/org/webrtc/EglRenderer.java
+../../sdk/android/api/org/webrtc/GlRectDrawer.java
+../../sdk/android/api/org/webrtc/VideoDecoderFallback.java
+../../sdk/android/api/org/webrtc/VideoEncoderFallback.java
+../../sdk/android/api/org/webrtc/VideoFrameDrawer.java
+../../sdk/android/src/java/org/webrtc/NativeCapturerObserver.java
+../../sdk/android/src/java/org/webrtc/NV21Buffer.java
+../../sdk/android/src/java/org/webrtc/VideoDecoderWrapper.java
+../../sdk/android/src/java/org/webrtc/VideoEncoderWrapper.java
+../../sdk/android/src/java/org/webrtc/WrappedNativeI420Buffer.java
+../../sdk/android/src/java/org/webrtc/WrappedNativeVideoDecoder.java
+../../sdk/android/src/java/org/webrtc/WrappedNativeVideoEncoder.java

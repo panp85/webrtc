@@ -1,0 +1,11 @@
+org.webrtc.Camera2Session,../../sdk/android/src/java/org/webrtc/Camera2Session.java
+org.webrtc.Camera1Session,../../sdk/android/src/java/org/webrtc/Camera1Session.java
+org.webrtc.CameraSession,../../sdk/android/src/java/org/webrtc/CameraSession.java
+org.webrtc.Camera2Enumerator,../../sdk/android/api/org/webrtc/Camera2Enumerator.java
+org.webrtc.Camera1Capturer,../../sdk/android/api/org/webrtc/Camera1Capturer.java
+org.webrtc.CameraEnumerationAndroid,../../sdk/android/api/org/webrtc/CameraEnumerationAndroid.java
+org.webrtc.CameraVideoCapturer,../../sdk/android/api/org/webrtc/CameraVideoCapturer.java
+org.webrtc.CameraCapturer,../../sdk/android/src/java/org/webrtc/CameraCapturer.java
+org.webrtc.Camera2Capturer,../../sdk/android/api/org/webrtc/Camera2Capturer.java
+org.webrtc.Camera1Enumerator,../../sdk/android/api/org/webrtc/Camera1Enumerator.java
+org.webrtc.CameraEnumerator,../../sdk/android/api/org/webrtc/CameraEnumerator.java

@@ -1,0 +1,273 @@
+{
+  "input-strings": [], 
+  "files-md5": "08f5905d122320abe0d63577cf35e238", 
+  "input-files": [
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_java.interface.jar", 
+      "tag": "1b65d9fc56ed74a602715a27c16354b6"
+    }, 
+    {
+      "path": "lib.java/android.interface.jar", 
+      "tag": "37b1210806e59ec1c8dc9fa500fa18a9"
+    }, 
+    {
+      "path": "obj/third_party/hamcrest/hamcrest_core_java__process_prebuilt-bytecode-rewritten.jar", 
+      "tag": "17076d87aee58149c78f000d5067ffaa", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 1238761471
+        }, 
+        {
+          "path": "org/hamcrest/BaseDescription.class", 
+          "tag": 532061016
+        }, 
+        {
+          "path": "org/hamcrest/BaseMatcher.class", 
+          "tag": 2663264289
+        }, 
+        {
+          "path": "org/hamcrest/Condition$1.class", 
+          "tag": 4088512498
+        }, 
+        {
+          "path": "org/hamcrest/Condition$Matched.class", 
+          "tag": 1100265674
+        }, 
+        {
+          "path": "org/hamcrest/Condition$NotMatched.class", 
+          "tag": 3417105676
+        }, 
+        {
+          "path": "org/hamcrest/Condition$Step.class", 
+          "tag": 2052454189
+        }, 
+        {
+          "path": "org/hamcrest/Condition.class", 
+          "tag": 3152449347
+        }, 
+        {
+          "path": "org/hamcrest/CoreMatchers.class", 
+          "tag": 4017017094
+        }, 
+        {
+          "path": "org/hamcrest/CustomMatcher.class", 
+          "tag": 4116465170
+        }, 
+        {
+          "path": "org/hamcrest/CustomTypeSafeMatcher.class", 
+          "tag": 4044243376
+        }, 
+        {
+          "path": "org/hamcrest/Description$NullDescription.class", 
+          "tag": 387354355
+        }, 
+        {
+          "path": "org/hamcrest/Description.class", 
+          "tag": 3560587070
+        }, 
+        {
+          "path": "org/hamcrest/DiagnosingMatcher.class", 
+          "tag": 364208581
+        }, 
+        {
+          "path": "org/hamcrest/Factory.class", 
+          "tag": 678301612
+        }, 
+        {
+          "path": "org/hamcrest/FeatureMatcher.class", 
+          "tag": 2316128839
+        }, 
+        {
+          "path": "org/hamcrest/Matcher.class", 
+          "tag": 1583707701
+        }, 
+        {
+          "path": "org/hamcrest/MatcherAssert.class", 
+          "tag": 3339544344
+        }, 
+        {
+          "path": "org/hamcrest/SelfDescribing.class", 
+          "tag": 1821641089
+        }, 
+        {
+          "path": "org/hamcrest/StringDescription.class", 
+          "tag": 2009040261
+        }, 
+        {
+          "path": "org/hamcrest/TypeSafeDiagnosingMatcher.class", 
+          "tag": 1865449781
+        }, 
+        {
+          "path": "org/hamcrest/TypeSafeMatcher.class", 
+          "tag": 4055490437
+        }, 
+        {
+          "path": "org/hamcrest/core/AllOf.class", 
+          "tag": 3873962028
+        }, 
+        {
+          "path": "org/hamcrest/core/AnyOf.class", 
+          "tag": 548050772
+        }, 
+        {
+          "path": "org/hamcrest/core/CombinableMatcher$CombinableBothMatcher.class", 
+          "tag": 2818031457
+        }, 
+        {
+          "path": "org/hamcrest/core/CombinableMatcher$CombinableEitherMatcher.class", 
+          "tag": 2260539098
+        }, 
+        {
+          "path": "org/hamcrest/core/CombinableMatcher.class", 
+          "tag": 2576506441
+        }, 
+        {
+          "path": "org/hamcrest/core/DescribedAs.class", 
+          "tag": 4244984657
+        }, 
+        {
+          "path": "org/hamcrest/core/Every.class", 
+          "tag": 1181004890
+        }, 
+        {
+          "path": "org/hamcrest/core/Is.class", 
+          "tag": 220585579
+        }, 
+        {
+          "path": "org/hamcrest/core/IsAnything.class", 
+          "tag": 431094529
+        }, 
+        {
+          "path": "org/hamcrest/core/IsCollectionContaining.class", 
+          "tag": 1962830725
+        }, 
+        {
+          "path": "org/hamcrest/core/IsEqual.class", 
+          "tag": 2851838826
+        }, 
+        {
+          "path": "org/hamcrest/core/IsInstanceOf.class", 
+          "tag": 403186041
+        }, 
+        {
+          "path": "org/hamcrest/core/IsNot.class", 
+          "tag": 3017832757
+        }, 
+        {
+          "path": "org/hamcrest/core/IsNull.class", 
+          "tag": 962844365
+        }, 
+        {
+          "path": "org/hamcrest/core/IsSame.class", 
+          "tag": 1429559253
+        }, 
+        {
+          "path": "org/hamcrest/core/ShortcutCombination.class", 
+          "tag": 2089823979
+        }, 
+        {
+          "path": "org/hamcrest/core/StringContains.class", 
+          "tag": 2250939513
+        }, 
+        {
+          "path": "org/hamcrest/core/StringEndsWith.class", 
+          "tag": 1512876318
+        }, 
+        {
+          "path": "org/hamcrest/core/StringStartsWith.class", 
+          "tag": 4200134181
+        }, 
+        {
+          "path": "org/hamcrest/core/SubstringMatcher.class", 
+          "tag": 2516068429
+        }, 
+        {
+          "path": "org/hamcrest/internal/ArrayIterator.class", 
+          "tag": 2662763609
+        }, 
+        {
+          "path": "org/hamcrest/internal/ReflectiveTypeFinder.class", 
+          "tag": 2403782651
+        }, 
+        {
+          "path": "org/hamcrest/internal/SelfDescribingValue.class", 
+          "tag": 1161323641
+        }, 
+        {
+          "path": "org/hamcrest/internal/SelfDescribingValueIterator.class", 
+          "tag": 71256018
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/desugar.py", 
+      "tag": "4b00258d03ad87dd1313c1f9eac82032"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "d41d8cd98f00b204e9800998ecf8427e"
+}

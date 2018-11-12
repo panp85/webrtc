@@ -1,0 +1,5 @@
+org.chromium.base.BuildConfig,gen/examples/androidnativeapi/androidnativeapi__build_config_java.srcjar
+org.chromium.base.library_loader.NativeLibraries,gen/examples/androidnativeapi/androidnativeapi__native_libraries_java.srcjar
+org.webrtc.examples.androidnativeapi.R,gen/examples/androidnativeapi/androidnativeapi__compile_resources.srcjar
+org.webrtc.examples.androidnativeapi.MainActivity,../../examples/androidnativeapi/java/org/webrtc/examples/androidnativeapi/MainActivity.java
+org.webrtc.examples.androidnativeapi.CallClient,../../examples/androidnativeapi/java/org/webrtc/examples/androidnativeapi/CallClient.java

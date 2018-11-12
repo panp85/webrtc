@@ -1,0 +1,373 @@
+{
+  "input-strings": [], 
+  "files-md5": "9a8750da7cb012ccabd9fbe1a277a698", 
+  "input-files": [
+    {
+      "path": "lib.java/third_party/android_tools/support/android_support_compat_java.interface.jar", 
+      "tag": "331055d5c291a6150791102301114079"
+    }, 
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_java.interface.jar", 
+      "tag": "1b65d9fc56ed74a602715a27c16354b6"
+    }, 
+    {
+      "path": "lib.java/build/android/buildhooks/build_hooks_android_java.interface.jar", 
+      "tag": "d3c4784b6cc62e78239b50be6f588dec"
+    }, 
+    {
+      "path": "lib.java/android.interface.jar", 
+      "tag": "37b1210806e59ec1c8dc9fa500fa18a9"
+    }, 
+    {
+      "path": "obj/third_party/android_tools/support/android_support_core_utils_java__classes__process_prebuilt-bytecode-rewritten.jar", 
+      "tag": "780d3b99f403ee91a2789b886f0ffed0", 
+      "entries": [
+        {
+          "path": "android/support/coreutils/BuildConfig.class", 
+          "tag": 2614843513
+        }, 
+        {
+          "path": "android/support/v4/app/AppLaunchChecker.class", 
+          "tag": 3257844206
+        }, 
+        {
+          "path": "android/support/v4/app/FrameMetricsAggregator$1.class", 
+          "tag": 94233644
+        }, 
+        {
+          "path": "android/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl$1.class", 
+          "tag": 2470048942
+        }, 
+        {
+          "path": "android/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl.class", 
+          "tag": 2116778985
+        }, 
+        {
+          "path": "android/support/v4/app/FrameMetricsAggregator$FrameMetricsBaseImpl.class", 
+          "tag": 1140389858
+        }, 
+        {
+          "path": "android/support/v4/app/FrameMetricsAggregator$MetricType.class", 
+          "tag": 4189128692
+        }, 
+        {
+          "path": "android/support/v4/app/FrameMetricsAggregator.class", 
+          "tag": 662308535
+        }, 
+        {
+          "path": "android/support/v4/app/NavUtils.class", 
+          "tag": 2013136422
+        }, 
+        {
+          "path": "android/support/v4/app/TaskStackBuilder$SupportParentable.class", 
+          "tag": 2286087260
+        }, 
+        {
+          "path": "android/support/v4/app/TaskStackBuilder$TaskStackBuilderApi16Impl.class", 
+          "tag": 1059076681
+        }, 
+        {
+          "path": "android/support/v4/app/TaskStackBuilder$TaskStackBuilderBaseImpl.class", 
+          "tag": 1267565045
+        }, 
+        {
+          "path": "android/support/v4/app/TaskStackBuilder.class", 
+          "tag": 714807276
+        }, 
+        {
+          "path": "android/support/v4/content/AsyncTaskLoader$LoadTask.class", 
+          "tag": 3415732743
+        }, 
+        {
+          "path": "android/support/v4/content/AsyncTaskLoader.class", 
+          "tag": 174704664
+        }, 
+        {
+          "path": "android/support/v4/content/CursorLoader.class", 
+          "tag": 3554500991
+        }, 
+        {
+          "path": "android/support/v4/content/FileProvider$PathStrategy.class", 
+          "tag": 2752684912
+        }, 
+        {
+          "path": "android/support/v4/content/FileProvider$SimplePathStrategy.class", 
+          "tag": 2142013396
+        }, 
+        {
+          "path": "android/support/v4/content/FileProvider.class", 
+          "tag": 424316254
+        }, 
+        {
+          "path": "android/support/v4/content/Loader$ForceLoadContentObserver.class", 
+          "tag": 3582829169
+        }, 
+        {
+          "path": "android/support/v4/content/Loader$OnLoadCanceledListener.class", 
+          "tag": 1070941787
+        }, 
+        {
+          "path": "android/support/v4/content/Loader$OnLoadCompleteListener.class", 
+          "tag": 228689190
+        }, 
+        {
+          "path": "android/support/v4/content/Loader.class", 
+          "tag": 2675258492
+        }, 
+        {
+          "path": "android/support/v4/content/LocalBroadcastManager$1.class", 
+          "tag": 1670531094
+        }, 
+        {
+          "path": "android/support/v4/content/LocalBroadcastManager$BroadcastRecord.class", 
+          "tag": 363838040
+        }, 
+        {
+          "path": "android/support/v4/content/LocalBroadcastManager$ReceiverRecord.class", 
+          "tag": 2308741598
+        }, 
+        {
+          "path": "android/support/v4/content/LocalBroadcastManager.class", 
+          "tag": 740218973
+        }, 
+        {
+          "path": "android/support/v4/content/MimeTypeFilter.class", 
+          "tag": 3968919010
+        }, 
+        {
+          "path": "android/support/v4/content/ModernAsyncTask$1.class", 
+          "tag": 2739393654
+        }, 
+        {
+          "path": "android/support/v4/content/ModernAsyncTask$2.class", 
+          "tag": 3427717637
+        }, 
+        {
+          "path": "android/support/v4/content/ModernAsyncTask$3.class", 
+          "tag": 634111652
+        }, 
+        {
+          "path": "android/support/v4/content/ModernAsyncTask$4.class", 
+          "tag": 4240623656
+        }, 
+        {
+          "path": "android/support/v4/content/ModernAsyncTask$AsyncTaskResult.class", 
+          "tag": 2242767593
+        }, 
+        {
+          "path": "android/support/v4/content/ModernAsyncTask$InternalHandler.class", 
+          "tag": 726315785
+        }, 
+        {
+          "path": "android/support/v4/content/ModernAsyncTask$Status.class", 
+          "tag": 3148611324
+        }, 
+        {
+          "path": "android/support/v4/content/ModernAsyncTask$WorkerRunnable.class", 
+          "tag": 1190198938
+        }, 
+        {
+          "path": "android/support/v4/content/ModernAsyncTask.class", 
+          "tag": 2969495746
+        }, 
+        {
+          "path": "android/support/v4/content/PermissionChecker$PermissionResult.class", 
+          "tag": 2027255871
+        }, 
+        {
+          "path": "android/support/v4/content/PermissionChecker.class", 
+          "tag": 3996391924
+        }, 
+        {
+          "path": "android/support/v4/content/WakefulBroadcastReceiver.class", 
+          "tag": 3322758973
+        }, 
+        {
+          "path": "android/support/v4/graphics/ColorUtils.class", 
+          "tag": 2000406933
+        }, 
+        {
+          "path": "android/support/v4/graphics/drawable/RoundedBitmapDrawable.class", 
+          "tag": 417196912
+        }, 
+        {
+          "path": "android/support/v4/graphics/drawable/RoundedBitmapDrawable21.class", 
+          "tag": 413552518
+        }, 
+        {
+          "path": "android/support/v4/graphics/drawable/RoundedBitmapDrawableFactory$DefaultRoundedBitmapDrawable.class", 
+          "tag": 125288210
+        }, 
+        {
+          "path": "android/support/v4/graphics/drawable/RoundedBitmapDrawableFactory.class", 
+          "tag": 3425621707
+        }, 
+        {
+          "path": "android/support/v4/math/MathUtils.class", 
+          "tag": 2190150740
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$1.class", 
+          "tag": 3999113572
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$ColorMode.class", 
+          "tag": 1331428291
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$OnPrintFinishCallback.class", 
+          "tag": 3843181381
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$Orientation.class", 
+          "tag": 1059490719
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$PrintHelperApi19$1.class", 
+          "tag": 105911762
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$PrintHelperApi19$2.class", 
+          "tag": 4261572066
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$PrintHelperApi19$3$1$1.class", 
+          "tag": 118931704
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$PrintHelperApi19$3$1.class", 
+          "tag": 1491907879
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$PrintHelperApi19$3.class", 
+          "tag": 842183902
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$PrintHelperApi19.class", 
+          "tag": 2796659848
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$PrintHelperApi20.class", 
+          "tag": 873229145
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$PrintHelperApi23.class", 
+          "tag": 3260995034
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$PrintHelperApi24.class", 
+          "tag": 3122456871
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$PrintHelperStub.class", 
+          "tag": 1977230330
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$PrintHelperVersionImpl.class", 
+          "tag": 3841662531
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper$ScaleMode.class", 
+          "tag": 4110486694
+        }, 
+        {
+          "path": "android/support/v4/print/PrintHelper.class", 
+          "tag": 2452276108
+        }, 
+        {
+          "path": "android/support/v4/provider/DocumentFile.class", 
+          "tag": 2977141788
+        }, 
+        {
+          "path": "android/support/v4/provider/DocumentsContractApi19.class", 
+          "tag": 1178415289
+        }, 
+        {
+          "path": "android/support/v4/provider/RawDocumentFile.class", 
+          "tag": 2617158561
+        }, 
+        {
+          "path": "android/support/v4/provider/SingleDocumentFile.class", 
+          "tag": 247634429
+        }, 
+        {
+          "path": "android/support/v4/provider/TreeDocumentFile.class", 
+          "tag": 3736620803
+        }, 
+        {
+          "path": "META-INF/com.android.support_support-core-utils.version", 
+          "tag": 947225043
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/desugar.py", 
+      "tag": "4b00258d03ad87dd1313c1f9eac82032"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "d41d8cd98f00b204e9800998ecf8427e"
+}

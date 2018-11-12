@@ -1,0 +1,288 @@
+{
+  "methods": {
+    "areNotificationsEnabled()": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "boolean",
+      "exceptions": [],
+      "minSdk": 24,
+      "name": "areNotificationsEnabled()"
+    },
+    "cancel(int)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "id"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "cancel(int)"
+    },
+    "cancel(java.lang.String,int)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "tag",
+        "id"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "cancel(java.lang.String,int)"
+    },
+    "cancelAll()": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "cancelAll()"
+    },
+    "createNotificationChannel(java.lang.Object)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "channel"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "minSdk": 26,
+      "name": "createNotificationChannel(java.lang.Object)"
+    },
+    "createNotificationChannelGroup(java.lang.Object)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "group"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "minSdk": 26,
+      "name": "createNotificationChannelGroup(java.lang.Object)"
+    },
+    "createNotificationChannels(java.util.List\u003cjava.lang.Object\u003e)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "channelList"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "minSdk": 26,
+      "name": "createNotificationChannels(java.util.List\u003cjava.lang.Object\u003e)"
+    },
+    "deleteNotificationChannel(java.lang.String)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "channelId"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "minSdk": 26,
+      "name": "deleteNotificationChannel(java.lang.String)"
+    },
+    "deleteNotificationChannelGroup(java.lang.String)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "channelGroupId"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "minSdk": 26,
+      "name": "deleteNotificationChannelGroup(java.lang.String)",
+      "documentation": "Delete a notification channel group and all notification channels associated with the group.\nThis method will not notify any NotificationListenerService of resulting changes to\nnotification channel groups nor to notification channels.\n"
+    },
+    "getActiveNotifications()": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "android.service.notification.StatusBarNotification[]",
+      "exceptions": [],
+      "minSdk": 23,
+      "name": "getActiveNotifications()"
+    },
+    "getAllNotifications()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "java.util.List\u003candroid.app.Notification\u003e",
+      "exceptions": [],
+      "name": "getAllNotifications()"
+    },
+    "getNotification(int)": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "id"
+      ],
+      "returnType": "android.app.Notification",
+      "exceptions": [],
+      "name": "getNotification(int)"
+    },
+    "getNotification(java.lang.String,int)": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "tag",
+        "id"
+      ],
+      "returnType": "android.app.Notification",
+      "exceptions": [],
+      "name": "getNotification(java.lang.String,int)"
+    },
+    "getNotificationChannel(java.lang.String)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "channelId"
+      ],
+      "returnType": "java.lang.Object",
+      "exceptions": [],
+      "minSdk": 26,
+      "name": "getNotificationChannel(java.lang.String)"
+    },
+    "getNotificationChannelGroup(java.lang.String)": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "id"
+      ],
+      "returnType": "java.lang.Object",
+      "exceptions": [],
+      "name": "getNotificationChannelGroup(java.lang.String)"
+    },
+    "getNotificationChannelGroups()": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "java.util.List\u003cjava.lang.Object\u003e",
+      "exceptions": [],
+      "minSdk": 26,
+      "name": "getNotificationChannelGroups()"
+    },
+    "getNotificationChannels()": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "java.util.List\u003cjava.lang.Object\u003e",
+      "exceptions": [],
+      "minSdk": 26,
+      "name": "getNotificationChannels()"
+    },
+    "isChannelDeleted(java.lang.String)": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "channelId"
+      ],
+      "returnType": "boolean",
+      "exceptions": [],
+      "name": "isChannelDeleted(java.lang.String)",
+      "documentation": "Checks whether a channel is considered a \"deleted\" channel by Android. This is a channel that\nwas created but later deleted. If a channel is created that was deleted before, it recreates\nthe channel with the old settings.\n"
+    },
+    "notify(int,android.app.Notification)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "id",
+        "notification"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "notify(int,android.app.Notification)"
+    },
+    "notify(java.lang.String,int,android.app.Notification)": {
+      "isImplementation": true,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "tag",
+        "id",
+        "notification"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "notify(java.lang.String,int,android.app.Notification)"
+    },
+    "setNotificationsEnabled(boolean)": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [
+        "areNotificationsEnabled"
+      ],
+      "returnType": "void",
+      "exceptions": [],
+      "name": "setNotificationsEnabled(boolean)"
+    },
+    "size()": {
+      "isImplementation": false,
+      "modifiers": [
+        "public"
+      ],
+      "params": [],
+      "returnType": "int",
+      "exceptions": [],
+      "name": "size()"
+    }
+  },
+  "imports": [
+    "android.app.Notification",
+    "android.app.NotificationManager",
+    "android.os.Build",
+    "android.service.notification.StatusBarNotification",
+    "com.google.common.collect.ImmutableList",
+    "java.util.ArrayList",
+    "java.util.HashMap",
+    "java.util.List",
+    "java.util.Map",
+    "org.robolectric.RuntimeEnvironment",
+    "org.robolectric.annotation.Implementation",
+    "org.robolectric.annotation.Implements",
+    "org.robolectric.util.ReflectionHelpers",
+    "org.robolectric.shadows.ShadowNotificationManager.Key"
+  ],
+  "name": "org.robolectric.shadows.ShadowNotificationManager"
+}

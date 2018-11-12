@@ -1,0 +1,177 @@
+{
+  "input-strings": [], 
+  "files-md5": "0e382756fe148a0d5d8a8fc8252fb6af", 
+  "input-files": [
+    {
+      "path": "lib.java/examples/AppRTCMobile_javalib.interface.jar", 
+      "tag": "9d71bc07f42a1c5c9eb4d96107ab1d6d"
+    }, 
+    {
+      "path": "lib.java/sdk/android/libjingle_peerconnection_java.interface.jar", 
+      "tag": "7dc317d30d8ba12ff01d22f06042d745"
+    }, 
+    {
+      "path": "lib.java/third_party/android_support_test_runner/rules_java.interface.jar", 
+      "tag": "c546e12db965c6ae078e2998dc934853"
+    }, 
+    {
+      "path": "lib.java/third_party/android_support_test_runner/runner-release-no-dep.interface.jar", 
+      "tag": "158577539b0cfdd50000d16c716813bf"
+    }, 
+    {
+      "path": "lib.java/third_party/espresso/espresso-contrib-release-no-dep.interface.jar", 
+      "tag": "a0c88e45845221851d1c7412031fd3d7"
+    }, 
+    {
+      "path": "lib.java/third_party/espresso/espresso-core-release-no-dep.interface.jar", 
+      "tag": "0de8445ef8cd3410666a00ff19b42c63"
+    }, 
+    {
+      "path": "lib.java/third_party/espresso/espresso-idling-resource-release-no-dep.interface.jar", 
+      "tag": "8b44105e33997731374ea1a92dc8c3a6"
+    }, 
+    {
+      "path": "lib.java/third_party/espresso/espresso-intents-release-no-dep.interface.jar", 
+      "tag": "b73440bb0799f9c37f382ea35b6275dd"
+    }, 
+    {
+      "path": "lib.java/third_party/espresso/espresso-web-release-no-dep.interface.jar", 
+      "tag": "482f0a76dc7b16cd6f908b05889eb1b3"
+    }, 
+    {
+      "path": "lib.java/third_party/hamcrest/hamcrest-core.interface.jar", 
+      "tag": "8a88192f4dd6d4badddb1215e657d23b"
+    }, 
+    {
+      "path": "lib.java/third_party/hamcrest/hamcrest-integration.interface.jar", 
+      "tag": "18c8f6614243ca5378677c18cb0c59c4"
+    }, 
+    {
+      "path": "lib.java/third_party/hamcrest/hamcrest-library.interface.jar", 
+      "tag": "31ebdaa6ef711e6b013cb38d440bcf28"
+    }, 
+    {
+      "path": "lib.java/third_party/junit/junit.interface.jar", 
+      "tag": "93c92386a7302ea3633f7e225e4e0c06"
+    }, 
+    {
+      "path": "lib.java/third_party/jsr-305/jsr_305_javalib.interface.jar", 
+      "tag": "daf95408cdca8618e2d9d54c4f777c2b"
+    }, 
+    {
+      "path": "lib.java/testing/android/broker/broker_java.interface.jar", 
+      "tag": "c00f04b01f49a25557f91da83b432eb2"
+    }, 
+    {
+      "path": "gen/examples/AppRTCMobile/AppRTCMobile.interface.jar", 
+      "tag": "e02f3198556db0d4e78007bcbbd290cb"
+    }, 
+    {
+      "path": "lib.java/android.interface.jar", 
+      "tag": "37b1210806e59ec1c8dc9fa500fa18a9"
+    }, 
+    {
+      "path": "gen/examples/AppRTCMobileTestStubbedVideoIO__apk.javac.jar", 
+      "tag": "5cfa87c9f68336e8aa961292f6af1c0e", 
+      "entries": [
+        {
+          "path": "META-INF/MANIFEST.MF", 
+          "tag": 4034090902
+        }, 
+        {
+          "path": "android/support/test/rule/R$string.class", 
+          "tag": 1576658247
+        }, 
+        {
+          "path": "android/support/test/rule/R.class", 
+          "tag": 4167645763
+        }, 
+        {
+          "path": "org/appspot/apprtc/test/CallActivityStubbedInputOutputTest$1.class", 
+          "tag": 652099057
+        }, 
+        {
+          "path": "org/appspot/apprtc/test/CallActivityStubbedInputOutputTest.class", 
+          "tag": 1178125164
+        }, 
+        {
+          "path": "org/appspot/apprtc/test/R$string.class", 
+          "tag": 3761083978
+        }, 
+        {
+          "path": "org/appspot/apprtc/test/R.class", 
+          "tag": 1570021703
+        }
+      ]
+    }, 
+    {
+      "path": "../../build/android/gyp/desugar.py", 
+      "tag": "4b00258d03ad87dd1313c1f9eac82032"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/__init__.py", 
+      "tag": "c5a6eed9e7b6a847b0af25d6c918012a"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/build_utils.py", 
+      "tag": "67454ed9a5067cea961a9596f2cefbda"
+    }, 
+    {
+      "path": "../../build/android/gyp/util/md5_check.py", 
+      "tag": "55440f8dae5c1d295a6f230d487ef744"
+    }, 
+    {
+      "path": "../../build/android/pylib/__init__.py", 
+      "tag": "3941017f7c8226efcac8e2bc88ce9756"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/__init__.py", 
+      "tag": "3cf49ef3db8629c44da6361016fe1cc7"
+    }, 
+    {
+      "path": "../../build/android/pylib/constants/host_paths.py", 
+      "tag": "f0ddd46badca594fceb9e4da37fcf4a4"
+    }, 
+    {
+      "path": "../../build/gn_helpers.py", 
+      "tag": "b23c77df74cd1e1a1e582c692f5d37cf"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/__init__.py", 
+      "tag": "2c2baffced354f1c87bbb4188cce1aff"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/constants/chrome.py", 
+      "tag": "108d99573c0a3c0f50107734e3647465"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/__init__.py", 
+      "tag": "73a8a79983ebf4da9dd87eaf6a170582"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/keyevent.py", 
+      "tag": "6946acdc77829d510f8a5a78fd7e53e7"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/android/sdk/version_codes.py", 
+      "tag": "c1623ae934625d81cd6f553efe9f6bf3"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/__init__.py", 
+      "tag": "554cf18947f37d15383f328ef13f893b"
+    }, 
+    {
+      "path": "../../third_party/catapult/devil/devil/constants/exit_codes.py", 
+      "tag": "19540fddcf8d9f1d6fae1f2b6082165e"
+    }
+  ], 
+  "strings-md5": "d41d8cd98f00b204e9800998ecf8427e"
+}

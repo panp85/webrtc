@@ -1,0 +1,48 @@
+defines = -DV8_DEPRECATION_WARNINGS -DUSE_UDEV -DUSE_AURA=1 -DUSE_GLIB=1 -DUSE_NSS_CERTS=1 -DUSE_X11=1 -DFULL_SAFE_BROWSING -DSAFE_BROWSING_CSD -DSAFE_BROWSING_DB_LOCAL -DCHROMIUM_BUILD -DFIELDTRIAL_TESTING_ENABLED -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -DCR_CLANG_REVISION=\"\(\'ppt,\$ in\$ argparse,\$ add_argument_group$:\$ \',\$ \'args$:\',\$ \(\'positional\$ arguments\',\),\$ \'kwargs$:\',\$ \{\}\)\
+\(\'ppt,\$ in\$ _ArgumentGroup$:\',\$ \'container$:\',\$ ArgumentParser\(prog=\'update.py\',\$ usage=None,\$ description=\'Build\$ Clang.\',\$ version=None,\$ formatter_class=\<class\$ \'argparse.HelpFormatter\'\>,\$ conflict_handler=\'error\',\$ add_help=True\),\$ \'title$:\',\$ \'positional\$ arguments\',\$ \'kwargs$:\',\$ \{\}\)\
+\(\'ppt,\$ in\$ _ArgumentGroup$:\',\$ \'update$:\$ \',\$ \<built-in\$ method\$ setdefault\$ of\$ dict\$ object\$ at\$ 0x7fa54c8a64b0\>\)\
+\(\'ppt,\$ in\$ argparse,\$ add_argument_group$:\$ \',\$ \'args$:\',\$ \(\'optional\$ arguments\',\),\$ \'kwargs$:\',\$ \{\}\)\
+\(\'ppt,\$ in\$ _ArgumentGroup$:\',\$ \'container$:\',\$ ArgumentParser\(prog=\'update.py\',\$ usage=None,\$ description=\'Build\$ Clang.\',\$ version=None,\$ formatter_class=\<class\$ \'argparse.HelpFormatter\'\>,\$ conflict_handler=\'error\',\$ add_help=True\),\$ \'title$:\',\$ \'optional\$ arguments\',\$ \'kwargs$:\',\$ \{\}\)\
+\(\'ppt,\$ in\$ _ArgumentGroup$:\',\$ \'update$:\$ \',\$ \<built-in\$ method\$ setdefault\$ of\$ dict\$ object\$ at\$ 0x7fa54c8a64b0\>\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'-h\',\$ \'--help\'\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--bootstrap\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--if-needed\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--force-local-build\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--gcc-toolchain\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--lto-lld\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--llvm-force-head-revision\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--print-revision\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--print-clang-version\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--run-tests\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--skip-build\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--skip-checkout\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--extra-tools\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--use-system-cmake\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--verify-version\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ add_argument,\$ args$:\',\$ \(\'--without-android\',\),\$ \'prifix_chars$:\',\$ \'-\'\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 1,\$ namespace$:\',\$ None\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 2,\$ namespace$:\',\$ Namespace\(\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _HelpAction\(option_strings=\[\'-h\',\$ \'--help\'\],\$ dest=\'help\',\$ nargs=0,\$ const=None,\$ default=\'==SUPPRESS==\',\$ type=None,\$ choices=None,\$ help=\'show\$ this\$ help\$ message\$ and\$ exit\',\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreTrueAction\(option_strings=\[\'--bootstrap\'\],\$ dest=\'bootstrap\',\$ nargs=0,\$ const=True,\$ default=False,\$ type=None,\$ choices=None,\$ help=\'first\$ build\$ clang\$ with\$ CC,\$ then\$ with\$ itself.\',\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreTrueAction\(option_strings=\[\'--if-needed\'\],\$ dest=\'if_needed\',\$ nargs=0,\$ const=True,\$ default=False,\$ type=None,\$ choices=None,\$ help=\'run\$ only\$ if\$ the\$ script\$ thinks\$ clang\$ is\$ needed\',\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreTrueAction\(option_strings=\[\'--force-local-build\'\],\$ dest=\'force_local_build\',\$ nargs=0,\$ const=True,\$ default=False,\$ type=None,\$ choices=None,\$ help=\"don\'t\$ try\$ to\$ download\$ prebuild\$ binaries\",\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreAction\(option_strings=\[\'--gcc-toolchain\'\],\$ dest=\'gcc_toolchain\',\$ nargs=None,\$ const=None,\$ default=None,\$ type=None,\$ choices=None,\$ help=\'set\$ the\$ version\$ for\$ which\$ gcc\$ version\$ be\$ used\$ for\$ building\;\$ --gcc-toolchain=/opt/foo\$ picks\$ /opt/foo/bin/gcc\',\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreTrueAction\(option_strings=\[\'--lto-lld\'\],\$ dest=\'lto_lld\',\$ nargs=0,\$ const=True,\$ default=False,\$ type=None,\$ choices=None,\$ help=\'build\$ lld\$ with\$ LTO\',\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreTrueAction\(option_strings=\[\'--llvm-force-head-revision\'\],\$ dest=\'llvm_force_head_revision\',\$ nargs=0,\$ const=True,\$ default=False,\$ type=None,\$ choices=None,\$ help=\'use\$ the\$ revision\$ in\$ the\$ repo\$ when\$ printing\$ the\$ revision\',\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreTrueAction\(option_strings=\[\'--print-revision\'\],\$ dest=\'print_revision\',\$ nargs=0,\$ const=True,\$ default=False,\$ type=None,\$ choices=None,\$ help=\'print\$ current\$ clang\$ revision\$ and\$ exit.\',\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreTrueAction\(option_strings=\[\'--print-clang-version\'\],\$ dest=\'print_clang_version\',\$ nargs=0,\$ const=True,\$ default=False,\$ type=None,\$ choices=None,\$ help=\'print\$ current\$ clang\$ version\$ \(e.g.\$ x.y.z\)\$ and\$ exit.\',\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreTrueAction\(option_strings=\[\'--run-tests\'\],\$ dest=\'run_tests\',\$ nargs=0,\$ const=True,\$ default=False,\$ type=None,\$ choices=None,\$ help=\'run\$ tests\$ after\$ building\;\$ only\$ for\$ local\$ builds\',\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreTrueAction\(option_strings=\[\'--skip-build\'\],\$ dest=\'skip_build\',\$ nargs=0,\$ const=True,\$ default=False,\$ type=None,\$ choices=None,\$ help=\'do\$ not\$ build\$ anything\',\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreTrueAction\(option_strings=\[\'--skip-checkout\'\],\$ dest=\'skip_checkout\',\$ nargs=0,\$ const=True,\$ default=False,\$ type=None,\$ choices=None,\$ help=\'do\$ not\$ create\$ or\$ update\$ any\$ checkouts\',\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreAction\(option_strings=\[\'--extra-tools\'\],\$ dest=\'extra_tools\',\$ nargs=\'\*\',\$ const=None,\$ default=\[\],\$ type=None,\$ choices=None,\$ help=\'select\$ additional\$ chrome\$ tools\$ to\$ build\',\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreTrueAction\(option_strings=\[\'--use-system-cmake\'\],\$ dest=\'use_system_cmake\',\$ nargs=0,\$ const=True,\$ default=False,\$ type=None,\$ choices=None,\$ help=\'use\$ the\$ cmake\$ from\$ PATH\$ instead\$ of\$ downloading\$ and\$ using\$ prebuilt\$ cmake\$ binaries\',\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreAction\(option_strings=\[\'--verify-version\'\],\$ dest=\'verify_version\',\$ nargs=None,\$ const=None,\$ default=None,\$ type=None,\$ choices=None,\$ help=\'verify\$ that\$ clang\$ has\$ the\$ passed-in\$ version\',\$ metavar=None\)\)\
+\(\'ppt,\$ in\$ parse_known_args\$ 3,\$ action$:\',\$ _StoreFalseAction\(option_strings=\[\'--without-android\'\],\$ dest=\'with_android\',\$ nargs=0,\$ const=False,\$ default=True,\$ type=None,\$ choices=None,\$ help=\"don\'t\$ build\$ Android\$ ASan\$ runtime\$ \(linux\$ only\)\",\$ metavar=None\)\)\
+332838-1\" -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS -D_LIBCXXABI_DISABLE_VISIBILITY_ANNOTATIONS -DCR_LIBCXX_REVISION=332543 -DCR_LIBCXXABI_REVISION=331450 -DCR_SYSROOT_HASH=4e7db513b0faeea8fb410f70c9909e8736f5c0ab -D_DEBUG -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DWTF_USE_DYNAMIC_ANNOTATIONS=1 -D_GLIBCXX_DEBUG=1 -DGTEST_API_= -DGTEST_HAS_POSIX_RE=0 -DGTEST_LANG_CXX11=1 -DGTEST_HAS_TR1_TUPLE=0
+include_dirs = -I../.. -Iclang_x64/gen -I../../third_party/googletest/custom -I../../third_party/googletest/src/googletest/include
+label_name = gtest_main
+target_out_dir = clang_x64/obj/testing/gtest
+target_output_name = gtest_main
+
+
+build clang_x64/obj/testing/gtest/gtest_main.stamp: clang_x64_stamp || clang_x64/obj/third_party/googletest/gtest_main.stamp clang_x64/obj/third_party/googletest/gtest.stamp

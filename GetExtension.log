@@ -1,0 +1,879 @@
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:  EXPECT_TRUE(packet.GetExtension<TransmissionOffset>(&time_offset));
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:  EXPECT_FALSE(packet.GetExtension<TransmissionOffset>(&time_offset));
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:  EXPECT_FALSE(packet.GetExtension<TransmissionOffset>(&time_offset));
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:  EXPECT_TRUE(packet.GetExtension<TransmissionOffset>(&time_offset));
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:  EXPECT_TRUE(packet.GetExtension<AudioLevel>(&voice_active, &audio_level));
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:  EXPECT_TRUE(packet.GetExtension<TransmissionOffset>(&time_offset));
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:  EXPECT_FALSE(packet.GetExtension<TransmissionOffset>(&time_offset));
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:  EXPECT_TRUE(packet.GetExtension<TransmissionOffset>(&time_offset));
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:  EXPECT_TRUE(packet.GetExtension<RtpStreamId>(&rsid));
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:  EXPECT_TRUE(packet.GetExtension<RepairedRtpStreamId>(&repaired_rsid));
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:  EXPECT_TRUE(packet.GetExtension<RtpStreamId>(&rsid));
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:  EXPECT_FALSE(packet.GetExtension<RepairedRtpStreamId>(&repaired_rsid));
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:  EXPECT_TRUE(packet.GetExtension<RtpMid>(&mid));
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:      receive_packet.GetExtension<VideoTimingExtension>(&receivied_timing));
+./modules/rtp_rtcp/source/rtp_packet_unittest.cc:  EXPECT_TRUE(packet.GetExtension<VideoTimingExtension>(&receivied_timing));
+./modules/rtp_rtcp/source/rtp_sender_unittest.cc:  ASSERT_TRUE(packet.GetExtension<TransportSequenceNumber>(&transport_seq_no));
+./modules/rtp_rtcp/source/rtp_sender_unittest.cc:  EXPECT_TRUE(packet.GetExtension<TransportSequenceNumber>(&transport_seq_no));
+./modules/rtp_rtcp/source/rtp_sender_unittest.cc:  EXPECT_TRUE(transport_.last_sent_packet().GetExtension<VideoTimingExtension>(
+./modules/rtp_rtcp/source/rtp_sender_unittest.cc:  EXPECT_TRUE(transport_.last_sent_packet().GetExtension<VideoTimingExtension>(
+./modules/rtp_rtcp/source/rtp_sender_unittest.cc:    ASSERT_TRUE(packet.GetExtension<RtpMid>(&mid));
+./modules/rtp_rtcp/source/rtp_sender_unittest.cc:  EXPECT_TRUE(transport_.last_sent_packet().GetExtension<AudioLevel>(
+./modules/rtp_rtcp/source/rtp_sender_unittest.cc:      transport_.last_sent_packet().GetExtension<VideoOrientation>(&rotation));
+./modules/rtp_rtcp/source/rtp_sender_unittest.cc:  EXPECT_TRUE(transport_.last_sent_packet().GetExtension<VideoTimingExtension>(
+./modules/rtp_rtcp/source/rtp_sender_unittest.cc:      transport_.last_sent_packet().GetExtension<VideoOrientation>(&rotation));
+./modules/rtp_rtcp/source/rtp_sender_unittest.cc:      transport_.last_sent_packet().GetExtension<VideoOrientation>(&rotation));
+./modules/rtp_rtcp/source/flexfec_sender_unittest.cc:  ASSERT_TRUE(fec_packet->GetExtension<RtpMid>(&mid));
+./modules/rtp_rtcp/source/rtp_packet_received.cc:      GetExtension<TransmissionOffset>(
+./modules/rtp_rtcp/source/rtp_packet_received.cc:      GetExtension<AbsoluteSendTime>(&header->extension.absoluteSendTime);
+./modules/rtp_rtcp/source/rtp_packet_received.cc:      GetExtension<TransportSequenceNumber>(
+./modules/rtp_rtcp/source/rtp_packet_received.cc:  header->extension.hasAudioLevel = GetExtension<AudioLevel>(
+./modules/rtp_rtcp/source/rtp_packet_received.cc:      GetExtension<VideoOrientation>(&header->extension.videoRotation);
+./modules/rtp_rtcp/source/rtp_packet_received.cc:      GetExtension<VideoContentTypeExtension>(
+./modules/rtp_rtcp/source/rtp_packet_received.cc:      GetExtension<VideoTimingExtension>(&header->extension.video_timing);
+./modules/rtp_rtcp/source/rtp_packet_received.cc:  GetExtension<RtpStreamId>(&header->extension.stream_id);
+./modules/rtp_rtcp/source/rtp_packet_received.cc:  GetExtension<RepairedRtpStreamId>(&header->extension.repaired_stream_id);
+./modules/rtp_rtcp/source/rtp_packet_received.cc:  GetExtension<RtpMid>(&header->extension.mid);
+./modules/rtp_rtcp/source/rtp_packet_received.cc:  GetExtension<PlayoutDelayLimits>(&header->extension.playout_delay);
+./call/rtx_receive_stream_unittest.cc:  EXPECT_TRUE(rtx_packet.GetExtension<VideoOrientation>(&rotation));
+./call/rtx_receive_stream_unittest.cc:        EXPECT_TRUE(packet.GetExtension<VideoOrientation>(&rotation));
+./call/rtp_demuxer.cc:  bool has_mid = use_mid_ && packet.GetExtension<RtpMid>(&packet_mid);
+./call/rtp_demuxer.cc:  bool has_rsid = packet.GetExtension<RepairedRtpStreamId>(&packet_rsid);
+./call/rtp_demuxer.cc:    has_rsid = packet.GetExtension<RtpStreamId>(&packet_rsid);
+./video/rtp_video_stream_receiver.cc:      if (packet.GetExtension<TransmissionOffset>(&time_offset)) {
+./video/rtp_video_stream_receiver.cc:      if (packet.GetExtension<AbsoluteSendTime>(&send_time)) {
+./test/fuzzers/rtp_packet_fuzzer.cc:  // call GetExtension on an extension which was not registered, so we
+./test/fuzzers/rtp_packet_fuzzer.cc:        packet.GetExtension<TransmissionOffset>(&offset);
+./test/fuzzers/rtp_packet_fuzzer.cc:        packet.GetExtension<AudioLevel>(&voice_activity, &audio_level);
+./test/fuzzers/rtp_packet_fuzzer.cc:        packet.GetExtension<AbsoluteSendTime>(&sendtime);
+./test/fuzzers/rtp_packet_fuzzer.cc:        packet.GetExtension<VideoOrientation>(&rotation);
+./test/fuzzers/rtp_packet_fuzzer.cc:        packet.GetExtension<TransportSequenceNumber>(&seqnum);
+./test/fuzzers/rtp_packet_fuzzer.cc:        packet.GetExtension<PlayoutDelayLimits>(&playout);
+./test/fuzzers/rtp_packet_fuzzer.cc:        packet.GetExtension<VideoContentTypeExtension>(&content_type);
+./test/fuzzers/rtp_packet_fuzzer.cc:        packet.GetExtension<VideoTimingExtension>(&timing);
+./test/fuzzers/rtp_packet_fuzzer.cc:        packet.GetExtension<RtpStreamId>(&rsid);
+./test/fuzzers/rtp_packet_fuzzer.cc:        packet.GetExtension<RepairedRtpStreamId>(&rsid);
+./test/fuzzers/rtp_packet_fuzzer.cc:        packet.GetExtension<RtpMid>(&mid);
+./third_party/protobuf/python/google/protobuf/pyext/descriptor.cc:static PyObject* GetExtensionsByName(PyBaseDescriptor* self, void *closure) {
+./third_party/protobuf/python/google/protobuf/pyext/descriptor.cc:static PyObject* GetExtensions(PyBaseDescriptor* self, void *closure) {
+./third_party/protobuf/python/google/protobuf/pyext/descriptor.cc:static PyObject* GetExtensionRanges(PyBaseDescriptor *self, void *closure) {
+./third_party/protobuf/python/google/protobuf/pyext/descriptor.cc:  { "extensions", (getter)GetExtensions, NULL, "Extensions Sequence"},
+./third_party/protobuf/python/google/protobuf/pyext/descriptor.cc:  { "extensions_by_name", (getter)GetExtensionsByName, NULL,
+./third_party/protobuf/python/google/protobuf/pyext/descriptor.cc:  { "extension_ranges", (getter)GetExtensionRanges, NULL, "Extension ranges"},
+./third_party/protobuf/python/google/protobuf/pyext/descriptor.cc:static PyObject* GetExtensionScope(PyBaseDescriptor *self, void *closure) {
+./third_party/protobuf/python/google/protobuf/pyext/descriptor.cc:  { "extension_scope", (getter)GetExtensionScope, (setter)NULL,
+./third_party/protobuf/python/google/protobuf/pyext/descriptor.cc:static PyObject* GetExtensionsByName(PyFileDescriptor* self, void *closure) {
+./third_party/protobuf/python/google/protobuf/pyext/descriptor.cc:  { "extensions_by_name", (getter)GetExtensionsByName, NULL,
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:static PyObject* GetExtensionsByName(CMessageClass *self, void *closure) {
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:static PyObject* GetExtensionsByNumber(CMessageClass *self, void *closure) {
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:  {"_extensions_by_name", (getter)GetExtensionsByName, NULL},
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:  {"_extensions_by_number", (getter)GetExtensionsByNumber, NULL},
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:      const FieldDescriptor* descriptor = cmessage::GetExtensionDescriptor(key);
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:const FieldDescriptor* GetExtensionDescriptor(PyObject* extension) {
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:  const FieldDescriptor* descriptor = GetExtensionDescriptor(extension);
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:  const FieldDescriptor* descriptor = GetExtensionDescriptor(extension);
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:      GetExtensionDescriptor(extension_handle);
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:static PyObject* GetExtensionDict(CMessage* self, void *closure);
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:      ScopedPyObjectPtr extensions(GetExtensionDict(self, NULL));
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:static PyObject* GetExtensionDict(CMessage* self, void *closure) {
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:static PyObject* GetExtensionsByName(CMessage *self, void *closure) {
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:  return message_meta::GetExtensionsByName(
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:static PyObject* GetExtensionsByNumber(CMessage *self, void *closure) {
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:  return message_meta::GetExtensionsByNumber(
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:  {"Extensions", (getter)GetExtensionDict, NULL, "Extension dict"},
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:  {"_extensions_by_name", (getter)GetExtensionsByName, NULL},
+./third_party/protobuf/python/google/protobuf/pyext/message.cc:  {"_extensions_by_number", (getter)GetExtensionsByNumber, NULL},
+./third_party/protobuf/python/google/protobuf/pyext/extension_dict.cc:  const FieldDescriptor* descriptor = cmessage::GetExtensionDescriptor(key);
+./third_party/protobuf/python/google/protobuf/pyext/extension_dict.cc:  const FieldDescriptor* descriptor = cmessage::GetExtensionDescriptor(key);
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(message.GetExtension(unittest::optionalgroup_extension                 ).has_a());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(message.GetExtension(unittest::optional_nested_message_extension       ).has_bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(message.GetExtension(unittest::optional_foreign_message_extension      ).has_c());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(message.GetExtension(unittest::optional_import_message_extension       ).has_d());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(message.GetExtension(unittest::optional_public_import_message_extension).has_e());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(message.GetExtension(unittest::optional_lazy_message_extension         ).has_bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(101  , message.GetExtension(unittest::optional_int32_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(102  , message.GetExtension(unittest::optional_int64_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(103  , message.GetExtension(unittest::optional_uint32_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(104  , message.GetExtension(unittest::optional_uint64_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(105  , message.GetExtension(unittest::optional_sint32_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(106  , message.GetExtension(unittest::optional_sint64_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(107  , message.GetExtension(unittest::optional_fixed32_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(108  , message.GetExtension(unittest::optional_fixed64_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(109  , message.GetExtension(unittest::optional_sfixed32_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(110  , message.GetExtension(unittest::optional_sfixed64_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(111  , message.GetExtension(unittest::optional_float_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(112  , message.GetExtension(unittest::optional_double_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(     message.GetExtension(unittest::optional_bool_extension    ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("115", message.GetExtension(unittest::optional_string_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("116", message.GetExtension(unittest::optional_bytes_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(117, message.GetExtension(unittest::optionalgroup_extension           ).a());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(118, message.GetExtension(unittest::optional_nested_message_extension ).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(119, message.GetExtension(unittest::optional_foreign_message_extension).c());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(120, message.GetExtension(unittest::optional_import_message_extension ).d());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::TestAllTypes::BAZ, message.GetExtension(unittest::optional_nested_enum_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::FOREIGN_BAZ      , message.GetExtension(unittest::optional_foreign_enum_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest_import::IMPORT_BAZ, message.GetExtension(unittest::optional_import_enum_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("124", message.GetExtension(unittest::optional_string_piece_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("125", message.GetExtension(unittest::optional_cord_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(126, message.GetExtension(unittest::optional_public_import_message_extension ).e());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(127, message.GetExtension(unittest::optional_lazy_message_extension).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(201  , message.GetExtension(unittest::repeated_int32_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(202  , message.GetExtension(unittest::repeated_int64_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(203  , message.GetExtension(unittest::repeated_uint32_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(204  , message.GetExtension(unittest::repeated_uint64_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(205  , message.GetExtension(unittest::repeated_sint32_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(206  , message.GetExtension(unittest::repeated_sint64_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(207  , message.GetExtension(unittest::repeated_fixed32_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(208  , message.GetExtension(unittest::repeated_fixed64_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(209  , message.GetExtension(unittest::repeated_sfixed32_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(210  , message.GetExtension(unittest::repeated_sfixed64_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(211  , message.GetExtension(unittest::repeated_float_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(212  , message.GetExtension(unittest::repeated_double_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(     message.GetExtension(unittest::repeated_bool_extension    , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("215", message.GetExtension(unittest::repeated_string_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("216", message.GetExtension(unittest::repeated_bytes_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(217, message.GetExtension(unittest::repeatedgroup_extension           , 0).a());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(218, message.GetExtension(unittest::repeated_nested_message_extension , 0).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(219, message.GetExtension(unittest::repeated_foreign_message_extension, 0).c());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(220, message.GetExtension(unittest::repeated_import_message_extension , 0).d());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(227, message.GetExtension(unittest::repeated_lazy_message_extension   , 0).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::TestAllTypes::BAR, message.GetExtension(unittest::repeated_nested_enum_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::FOREIGN_BAR      , message.GetExtension(unittest::repeated_foreign_enum_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest_import::IMPORT_BAR, message.GetExtension(unittest::repeated_import_enum_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("224", message.GetExtension(unittest::repeated_string_piece_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("225", message.GetExtension(unittest::repeated_cord_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(301  , message.GetExtension(unittest::repeated_int32_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(302  , message.GetExtension(unittest::repeated_int64_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(303  , message.GetExtension(unittest::repeated_uint32_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(304  , message.GetExtension(unittest::repeated_uint64_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(305  , message.GetExtension(unittest::repeated_sint32_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(306  , message.GetExtension(unittest::repeated_sint64_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(307  , message.GetExtension(unittest::repeated_fixed32_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(308  , message.GetExtension(unittest::repeated_fixed64_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(309  , message.GetExtension(unittest::repeated_sfixed32_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(310  , message.GetExtension(unittest::repeated_sfixed64_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(311  , message.GetExtension(unittest::repeated_float_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(312  , message.GetExtension(unittest::repeated_double_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_FALSE(    message.GetExtension(unittest::repeated_bool_extension    , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("315", message.GetExtension(unittest::repeated_string_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("316", message.GetExtension(unittest::repeated_bytes_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(317, message.GetExtension(unittest::repeatedgroup_extension           , 1).a());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(318, message.GetExtension(unittest::repeated_nested_message_extension , 1).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(319, message.GetExtension(unittest::repeated_foreign_message_extension, 1).c());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(320, message.GetExtension(unittest::repeated_import_message_extension , 1).d());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(327, message.GetExtension(unittest::repeated_lazy_message_extension   , 1).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::TestAllTypes::BAZ, message.GetExtension(unittest::repeated_nested_enum_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::FOREIGN_BAZ      , message.GetExtension(unittest::repeated_foreign_enum_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest_import::IMPORT_BAZ, message.GetExtension(unittest::repeated_import_enum_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("324", message.GetExtension(unittest::repeated_string_piece_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("325", message.GetExtension(unittest::repeated_cord_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(401  , message.GetExtension(unittest::default_int32_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(402  , message.GetExtension(unittest::default_int64_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(403  , message.GetExtension(unittest::default_uint32_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(404  , message.GetExtension(unittest::default_uint64_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(405  , message.GetExtension(unittest::default_sint32_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(406  , message.GetExtension(unittest::default_sint64_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(407  , message.GetExtension(unittest::default_fixed32_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(408  , message.GetExtension(unittest::default_fixed64_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(409  , message.GetExtension(unittest::default_sfixed32_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(410  , message.GetExtension(unittest::default_sfixed64_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(411  , message.GetExtension(unittest::default_float_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(412  , message.GetExtension(unittest::default_double_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_FALSE(    message.GetExtension(unittest::default_bool_extension    ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("415", message.GetExtension(unittest::default_string_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("416", message.GetExtension(unittest::default_bytes_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::TestAllTypes::FOO, message.GetExtension(unittest::default_nested_enum_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::FOREIGN_FOO      , message.GetExtension(unittest::default_foreign_enum_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest_import::IMPORT_FOO, message.GetExtension(unittest::default_import_enum_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("424", message.GetExtension(unittest::default_string_piece_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("425", message.GetExtension(unittest::default_cord_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(message.GetExtension(unittest::oneof_nested_message_extension).has_bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(601, message.GetExtension(unittest::oneof_uint32_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(602, message.GetExtension(unittest::oneof_nested_message_extension).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("603", message.GetExtension(unittest::oneof_string_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("604", message.GetExtension(unittest::oneof_bytes_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_int32_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_int64_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_uint32_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_uint64_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_sint32_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_sint64_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_fixed32_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_fixed64_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_sfixed32_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_sfixed64_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_float_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_double_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_FALSE(    message.GetExtension(unittest::optional_bool_extension    ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(""   , message.GetExtension(unittest::optional_string_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(""   , message.GetExtension(unittest::optional_bytes_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_FALSE(message.GetExtension(unittest::optionalgroup_extension                 ).has_a());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_FALSE(message.GetExtension(unittest::optional_nested_message_extension       ).has_bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_FALSE(message.GetExtension(unittest::optional_foreign_message_extension      ).has_c());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_FALSE(message.GetExtension(unittest::optional_import_message_extension       ).has_d());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_FALSE(message.GetExtension(unittest::optional_public_import_message_extension).has_e());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_FALSE(message.GetExtension(unittest::optional_lazy_message_extension         ).has_bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0, message.GetExtension(unittest::optionalgroup_extension                 ).a());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0, message.GetExtension(unittest::optional_nested_message_extension       ).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0, message.GetExtension(unittest::optional_foreign_message_extension      ).c());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0, message.GetExtension(unittest::optional_import_message_extension       ).d());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0, message.GetExtension(unittest::optional_public_import_message_extension).e());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(0, message.GetExtension(unittest::optional_lazy_message_extension         ).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::TestAllTypes::FOO, message.GetExtension(unittest::optional_nested_enum_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::FOREIGN_FOO      , message.GetExtension(unittest::optional_foreign_enum_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest_import::IMPORT_FOO, message.GetExtension(unittest::optional_import_enum_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("", message.GetExtension(unittest::optional_string_piece_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("", message.GetExtension(unittest::optional_cord_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ( 41    , message.GetExtension(unittest::default_int32_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ( 42    , message.GetExtension(unittest::default_int64_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ( 43    , message.GetExtension(unittest::default_uint32_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ( 44    , message.GetExtension(unittest::default_uint64_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(-45    , message.GetExtension(unittest::default_sint32_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ( 46    , message.GetExtension(unittest::default_sint64_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ( 47    , message.GetExtension(unittest::default_fixed32_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ( 48    , message.GetExtension(unittest::default_fixed64_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ( 49    , message.GetExtension(unittest::default_sfixed32_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(-50    , message.GetExtension(unittest::default_sfixed64_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ( 51.5  , message.GetExtension(unittest::default_float_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ( 52e3  , message.GetExtension(unittest::default_double_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(       message.GetExtension(unittest::default_bool_extension    ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("hello", message.GetExtension(unittest::default_string_extension  ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("world", message.GetExtension(unittest::default_bytes_extension   ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::TestAllTypes::BAR, message.GetExtension(unittest::default_nested_enum_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::FOREIGN_BAR      , message.GetExtension(unittest::default_foreign_enum_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest_import::IMPORT_BAR, message.GetExtension(unittest::default_import_enum_extension ));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("abc", message.GetExtension(unittest::default_string_piece_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("123", message.GetExtension(unittest::default_cord_extension));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_FALSE(message.GetExtension(unittest::oneof_nested_message_extension).has_bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(201  , message.GetExtension(unittest::repeated_int32_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(202  , message.GetExtension(unittest::repeated_int64_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(203  , message.GetExtension(unittest::repeated_uint32_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(204  , message.GetExtension(unittest::repeated_uint64_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(205  , message.GetExtension(unittest::repeated_sint32_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(206  , message.GetExtension(unittest::repeated_sint64_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(207  , message.GetExtension(unittest::repeated_fixed32_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(208  , message.GetExtension(unittest::repeated_fixed64_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(209  , message.GetExtension(unittest::repeated_sfixed32_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(210  , message.GetExtension(unittest::repeated_sfixed64_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(211  , message.GetExtension(unittest::repeated_float_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(212  , message.GetExtension(unittest::repeated_double_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(     message.GetExtension(unittest::repeated_bool_extension    , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("215", message.GetExtension(unittest::repeated_string_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("216", message.GetExtension(unittest::repeated_bytes_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(217, message.GetExtension(unittest::repeatedgroup_extension           , 0).a());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(218, message.GetExtension(unittest::repeated_nested_message_extension , 0).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(219, message.GetExtension(unittest::repeated_foreign_message_extension, 0).c());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(220, message.GetExtension(unittest::repeated_import_message_extension , 0).d());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(227, message.GetExtension(unittest::repeated_lazy_message_extension   , 0).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::TestAllTypes::BAR, message.GetExtension(unittest::repeated_nested_enum_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::FOREIGN_BAR      , message.GetExtension(unittest::repeated_foreign_enum_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest_import::IMPORT_BAR, message.GetExtension(unittest::repeated_import_enum_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("224", message.GetExtension(unittest::repeated_string_piece_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("225", message.GetExtension(unittest::repeated_cord_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(501  , message.GetExtension(unittest::repeated_int32_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(502  , message.GetExtension(unittest::repeated_int64_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(503  , message.GetExtension(unittest::repeated_uint32_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(504  , message.GetExtension(unittest::repeated_uint64_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(505  , message.GetExtension(unittest::repeated_sint32_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(506  , message.GetExtension(unittest::repeated_sint64_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(507  , message.GetExtension(unittest::repeated_fixed32_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(508  , message.GetExtension(unittest::repeated_fixed64_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(509  , message.GetExtension(unittest::repeated_sfixed32_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(510  , message.GetExtension(unittest::repeated_sfixed64_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(511  , message.GetExtension(unittest::repeated_float_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(512  , message.GetExtension(unittest::repeated_double_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(     message.GetExtension(unittest::repeated_bool_extension    , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("515", message.GetExtension(unittest::repeated_string_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("516", message.GetExtension(unittest::repeated_bytes_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(517, message.GetExtension(unittest::repeatedgroup_extension           , 1).a());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(518, message.GetExtension(unittest::repeated_nested_message_extension , 1).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(519, message.GetExtension(unittest::repeated_foreign_message_extension, 1).c());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(520, message.GetExtension(unittest::repeated_import_message_extension , 1).d());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(527, message.GetExtension(unittest::repeated_lazy_message_extension   , 1).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::TestAllTypes::FOO, message.GetExtension(unittest::repeated_nested_enum_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::FOREIGN_FOO      , message.GetExtension(unittest::repeated_foreign_enum_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest_import::IMPORT_FOO, message.GetExtension(unittest::repeated_import_enum_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("524", message.GetExtension(unittest::repeated_string_piece_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("525", message.GetExtension(unittest::repeated_cord_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(601  , message.GetExtension(unittest::packed_int32_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(602  , message.GetExtension(unittest::packed_int64_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(603  , message.GetExtension(unittest::packed_uint32_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(604  , message.GetExtension(unittest::packed_uint64_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(605  , message.GetExtension(unittest::packed_sint32_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(606  , message.GetExtension(unittest::packed_sint64_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(607  , message.GetExtension(unittest::packed_fixed32_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(608  , message.GetExtension(unittest::packed_fixed64_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(609  , message.GetExtension(unittest::packed_sfixed32_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(610  , message.GetExtension(unittest::packed_sfixed64_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(611  , message.GetExtension(unittest::packed_float_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(612  , message.GetExtension(unittest::packed_double_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(     message.GetExtension(unittest::packed_bool_extension    , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:            message.GetExtension(unittest::packed_enum_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(701  , message.GetExtension(unittest::packed_int32_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(702  , message.GetExtension(unittest::packed_int64_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(703  , message.GetExtension(unittest::packed_uint32_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(704  , message.GetExtension(unittest::packed_uint64_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(705  , message.GetExtension(unittest::packed_sint32_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(706  , message.GetExtension(unittest::packed_sint64_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(707  , message.GetExtension(unittest::packed_fixed32_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(708  , message.GetExtension(unittest::packed_fixed64_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(709  , message.GetExtension(unittest::packed_sfixed32_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(710  , message.GetExtension(unittest::packed_sfixed64_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(711  , message.GetExtension(unittest::packed_float_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(712  , message.GetExtension(unittest::packed_double_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_FALSE(    message.GetExtension(unittest::packed_bool_extension    , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:            message.GetExtension(unittest::packed_enum_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(601  , message.GetExtension(unittest::packed_int32_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(602  , message.GetExtension(unittest::packed_int64_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(603  , message.GetExtension(unittest::packed_uint32_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(604  , message.GetExtension(unittest::packed_uint64_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(605  , message.GetExtension(unittest::packed_sint32_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(606  , message.GetExtension(unittest::packed_sint64_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(607  , message.GetExtension(unittest::packed_fixed32_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(608  , message.GetExtension(unittest::packed_fixed64_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(609  , message.GetExtension(unittest::packed_sfixed32_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(610  , message.GetExtension(unittest::packed_sfixed64_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(611  , message.GetExtension(unittest::packed_float_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(612  , message.GetExtension(unittest::packed_double_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(     message.GetExtension(unittest::packed_bool_extension    , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:            message.GetExtension(unittest::packed_enum_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(801  , message.GetExtension(unittest::packed_int32_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(802  , message.GetExtension(unittest::packed_int64_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(803  , message.GetExtension(unittest::packed_uint32_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(804  , message.GetExtension(unittest::packed_uint64_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(805  , message.GetExtension(unittest::packed_sint32_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(806  , message.GetExtension(unittest::packed_sint64_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(807  , message.GetExtension(unittest::packed_fixed32_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(808  , message.GetExtension(unittest::packed_fixed64_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(809  , message.GetExtension(unittest::packed_sfixed32_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(810  , message.GetExtension(unittest::packed_sfixed64_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(811  , message.GetExtension(unittest::packed_float_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(812  , message.GetExtension(unittest::packed_double_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(     message.GetExtension(unittest::packed_bool_extension    , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:            message.GetExtension(unittest::packed_enum_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(601  , message.GetExtension(unittest::unpacked_int32_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(602  , message.GetExtension(unittest::unpacked_int64_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(603  , message.GetExtension(unittest::unpacked_uint32_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(604  , message.GetExtension(unittest::unpacked_uint64_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(605  , message.GetExtension(unittest::unpacked_sint32_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(606  , message.GetExtension(unittest::unpacked_sint64_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(607  , message.GetExtension(unittest::unpacked_fixed32_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(608  , message.GetExtension(unittest::unpacked_fixed64_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(609  , message.GetExtension(unittest::unpacked_sfixed32_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(610  , message.GetExtension(unittest::unpacked_sfixed64_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(611  , message.GetExtension(unittest::unpacked_float_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(612  , message.GetExtension(unittest::unpacked_double_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(true , message.GetExtension(unittest::unpacked_bool_extension    , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:            message.GetExtension(unittest::unpacked_enum_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(701  , message.GetExtension(unittest::unpacked_int32_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(702  , message.GetExtension(unittest::unpacked_int64_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(703  , message.GetExtension(unittest::unpacked_uint32_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(704  , message.GetExtension(unittest::unpacked_uint64_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(705  , message.GetExtension(unittest::unpacked_sint32_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(706  , message.GetExtension(unittest::unpacked_sint64_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(707  , message.GetExtension(unittest::unpacked_fixed32_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(708  , message.GetExtension(unittest::unpacked_fixed64_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(709  , message.GetExtension(unittest::unpacked_sfixed32_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(710  , message.GetExtension(unittest::unpacked_sfixed64_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(711  , message.GetExtension(unittest::unpacked_float_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(712  , message.GetExtension(unittest::unpacked_double_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(false, message.GetExtension(unittest::unpacked_bool_extension    , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:            message.GetExtension(unittest::unpacked_enum_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(201  , message.GetExtension(unittest::repeated_int32_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(202  , message.GetExtension(unittest::repeated_int64_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(203  , message.GetExtension(unittest::repeated_uint32_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(204  , message.GetExtension(unittest::repeated_uint64_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(205  , message.GetExtension(unittest::repeated_sint32_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(206  , message.GetExtension(unittest::repeated_sint64_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(207  , message.GetExtension(unittest::repeated_fixed32_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(208  , message.GetExtension(unittest::repeated_fixed64_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(209  , message.GetExtension(unittest::repeated_sfixed32_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(210  , message.GetExtension(unittest::repeated_sfixed64_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(211  , message.GetExtension(unittest::repeated_float_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(212  , message.GetExtension(unittest::repeated_double_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(     message.GetExtension(unittest::repeated_bool_extension    , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("215", message.GetExtension(unittest::repeated_string_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("216", message.GetExtension(unittest::repeated_bytes_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(217, message.GetExtension(unittest::repeatedgroup_extension           , 0).a());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(218, message.GetExtension(unittest::repeated_nested_message_extension , 0).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(219, message.GetExtension(unittest::repeated_foreign_message_extension, 0).c());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(220, message.GetExtension(unittest::repeated_import_message_extension , 0).d());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(227, message.GetExtension(unittest::repeated_lazy_message_extension   , 0).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::TestAllTypes::BAR, message.GetExtension(unittest::repeated_nested_enum_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::FOREIGN_BAR      , message.GetExtension(unittest::repeated_foreign_enum_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest_import::IMPORT_BAR, message.GetExtension(unittest::repeated_import_enum_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("224", message.GetExtension(unittest::repeated_string_piece_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("225", message.GetExtension(unittest::repeated_cord_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(217, message.GetExtension(unittest::repeatedgroup_extension           , 0).a());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(218, message.GetExtension(unittest::repeated_nested_message_extension , 0).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(219, message.GetExtension(unittest::repeated_foreign_message_extension, 0).c());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(220, message.GetExtension(unittest::repeated_import_message_extension , 0).d());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(227, message.GetExtension(unittest::repeated_lazy_message_extension   , 0).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(201  , message.GetExtension(unittest::repeated_int32_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(202  , message.GetExtension(unittest::repeated_int64_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(203  , message.GetExtension(unittest::repeated_uint32_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(204  , message.GetExtension(unittest::repeated_uint64_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(205  , message.GetExtension(unittest::repeated_sint32_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(206  , message.GetExtension(unittest::repeated_sint64_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(207  , message.GetExtension(unittest::repeated_fixed32_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(208  , message.GetExtension(unittest::repeated_fixed64_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(209  , message.GetExtension(unittest::repeated_sfixed32_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(210  , message.GetExtension(unittest::repeated_sfixed64_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(211  , message.GetExtension(unittest::repeated_float_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(212  , message.GetExtension(unittest::repeated_double_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_TRUE(     message.GetExtension(unittest::repeated_bool_extension    , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("215", message.GetExtension(unittest::repeated_string_extension  , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("216", message.GetExtension(unittest::repeated_bytes_extension   , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(217, message.GetExtension(unittest::repeatedgroup_extension           , 1).a());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(218, message.GetExtension(unittest::repeated_nested_message_extension , 1).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(219, message.GetExtension(unittest::repeated_foreign_message_extension, 1).c());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(220, message.GetExtension(unittest::repeated_import_message_extension , 1).d());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(227, message.GetExtension(unittest::repeated_lazy_message_extension   , 1).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::TestAllTypes::BAR, message.GetExtension(unittest::repeated_nested_enum_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::FOREIGN_BAR      , message.GetExtension(unittest::repeated_foreign_enum_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest_import::IMPORT_BAR, message.GetExtension(unittest::repeated_import_enum_extension , 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("224", message.GetExtension(unittest::repeated_string_piece_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("225", message.GetExtension(unittest::repeated_cord_extension, 1));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(301  , message.GetExtension(unittest::repeated_int32_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(302  , message.GetExtension(unittest::repeated_int64_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(303  , message.GetExtension(unittest::repeated_uint32_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(304  , message.GetExtension(unittest::repeated_uint64_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(305  , message.GetExtension(unittest::repeated_sint32_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(306  , message.GetExtension(unittest::repeated_sint64_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(307  , message.GetExtension(unittest::repeated_fixed32_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(308  , message.GetExtension(unittest::repeated_fixed64_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(309  , message.GetExtension(unittest::repeated_sfixed32_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(310  , message.GetExtension(unittest::repeated_sfixed64_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(311  , message.GetExtension(unittest::repeated_float_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(312  , message.GetExtension(unittest::repeated_double_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_FALSE(    message.GetExtension(unittest::repeated_bool_extension    , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("315", message.GetExtension(unittest::repeated_string_extension  , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("316", message.GetExtension(unittest::repeated_bytes_extension   , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(317, message.GetExtension(unittest::repeatedgroup_extension           , 0).a());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(318, message.GetExtension(unittest::repeated_nested_message_extension , 0).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(319, message.GetExtension(unittest::repeated_foreign_message_extension, 0).c());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(320, message.GetExtension(unittest::repeated_import_message_extension , 0).d());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(327, message.GetExtension(unittest::repeated_lazy_message_extension   , 0).bb());
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::TestAllTypes::BAZ, message.GetExtension(unittest::repeated_nested_enum_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest::FOREIGN_BAZ      , message.GetExtension(unittest::repeated_foreign_enum_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ(unittest_import::IMPORT_BAZ, message.GetExtension(unittest::repeated_import_enum_extension , 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("324", message.GetExtension(unittest::repeated_string_piece_extension, 0));
+./third_party/protobuf/src/google/protobuf/test_util.cc:  EXPECT_EQ("325", message.GetExtension(unittest::repeated_cord_extension, 0));
+./third_party/protobuf/src/google/protobuf/compiler/java/java_name_resolver.cc:string ClassNameResolver::GetExtensionIdentifierName(
+./third_party/protobuf/src/google/protobuf/compiler/js/js_generator.cc:string GetExtensionFileName(const GeneratorOptions& options,
+./third_party/protobuf/src/google/protobuf/compiler/js/js_generator.cc:      if (!dedup.AddFile(GetExtensionFileName(options, files_ordered[i]),
+./third_party/protobuf/src/google/protobuf/compiler/js/js_generator.cc:        string filename = GetExtensionFileName(options, file);
+./third_party/protobuf/src/google/protobuf/compiler/cpp/cpp_unittest.cc:            message.GetExtension(ExtensionMessage::repeated_int32_ext, 0));
+./third_party/protobuf/src/google/protobuf/message_unittest.cc:      parsing_merge.GetExtension(unittest::TestParsingMerge::optional_ext));
+./third_party/protobuf/src/google/protobuf/wire_format_unittest.cc:  EXPECT_EQ(123, message_set.GetExtension(
+./third_party/protobuf/src/google/protobuf/wire_format_unittest.cc:  EXPECT_EQ("foo", message_set.GetExtension(
+./third_party/protobuf/src/google/protobuf/wire_format_unittest.cc:    EXPECT_EQ(123, message_set.GetExtension(
+./third_party/protobuf/src/google/protobuf/wire_format_unittest.cc:    EXPECT_EQ(123, message_set.GetExtension(
+./third_party/protobuf/src/google/protobuf/repeated_field_reflection_unittest.cc:        extended_message.GetExtension(unittest::repeated_int64_extension, i));
+./third_party/protobuf/src/google/protobuf/repeated_field_reflection_unittest.cc:        extended_message.GetExtension(unittest::repeated_int64_extension, i));
+./third_party/protobuf/src/google/protobuf/lite_unittest.cc:    ExpectMessageMerged(parsing_merge.GetExtension(
+./third_party/protobuf/src/google/protobuf/reflection_ops_unittest.cc:    message.GetExtension(unittest::optional_int32_extension));
+./third_party/protobuf/src/google/protobuf/reflection_ops_unittest.cc:    message.GetExtension(unittest::optional_string_extension));
+./third_party/protobuf/src/google/protobuf/reflection_ops_unittest.cc:    message.GetExtension(unittest::repeated_int32_extension, 1));
+./third_party/protobuf/src/google/protobuf/reflection_ops_unittest.cc:  int32 i = message.GetExtension(unittest::repeated_int32_extension, 0);
+./third_party/protobuf/src/google/protobuf/reflection_ops_unittest.cc:            &message.GetExtension(unittest::optionalgroup_extension));
+./third_party/protobuf/src/google/protobuf/reflection_ops_unittest.cc:            &message.GetExtension(unittest::optional_nested_message_extension));
+./third_party/protobuf/src/google/protobuf/reflection_ops_unittest.cc:            &message.GetExtension(
+./third_party/protobuf/src/google/protobuf/reflection_ops_unittest.cc:            &message.GetExtension(unittest::optional_import_message_extension));
+./third_party/protobuf/src/google/protobuf/reflection_ops_unittest.cc:    message.GetExtension(unittest::optional_nested_message_extension)
+./third_party/protobuf/src/google/protobuf/reflection_ops_unittest.cc:    message.GetExtension(unittest::repeated_nested_message_extension, 0)
+./third_party/protobuf/src/google/protobuf/reflection_ops_unittest.cc:    message.GetExtension(unittest::optional_nested_message_extension)
+./third_party/protobuf/src/google/protobuf/reflection_ops_unittest.cc:    message.GetExtension(unittest::repeated_nested_message_extension, 0)
+./third_party/protobuf/src/google/protobuf/extension_set_heavy.cc:  if (input->GetExtensionPool() == NULL) {
+./third_party/protobuf/src/google/protobuf/extension_set_heavy.cc:    DescriptorPoolExtensionFinder finder(input->GetExtensionPool(),
+./third_party/protobuf/src/google/protobuf/extension_set_heavy.cc:                                         input->GetExtensionFactory(),
+./third_party/protobuf/src/google/protobuf/extension_set_heavy.cc:  if (input->GetExtensionPool() == NULL) {
+./third_party/protobuf/src/google/protobuf/extension_set_heavy.cc:    DescriptorPoolExtensionFinder finder(input->GetExtensionPool(),
+./third_party/protobuf/src/google/protobuf/extension_set_heavy.cc:                                         input->GetExtensionFactory(),
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            file->options().GetExtension(protobuf_unittest::file_opt1));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            message->options().GetExtension(protobuf_unittest::message_opt1));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            field->options().GetExtension(protobuf_unittest::field_opt1));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            field->options().GetExtension(protobuf_unittest::field_opt2));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            oneof->options().GetExtension(protobuf_unittest::oneof_opt1));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            enm->options().GetExtension(protobuf_unittest::enum_opt1));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            enm->value(1)->options().GetExtension(
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            service->options().GetExtension(protobuf_unittest::service_opt1));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            method->options().GetExtension(protobuf_unittest::method_opt1));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(false    , options->GetExtension(protobuf_unittest::bool_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kint32min, options->GetExtension(protobuf_unittest::int32_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kint64min, options->GetExtension(protobuf_unittest::int64_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(0        , options->GetExtension(protobuf_unittest::uint32_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(0        , options->GetExtension(protobuf_unittest::uint64_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kint32min, options->GetExtension(protobuf_unittest::sint32_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kint64min, options->GetExtension(protobuf_unittest::sint64_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(0        , options->GetExtension(protobuf_unittest::fixed32_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(0        , options->GetExtension(protobuf_unittest::fixed64_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kint32min, options->GetExtension(protobuf_unittest::sfixed32_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kint64min, options->GetExtension(protobuf_unittest::sfixed64_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(true      , options->GetExtension(protobuf_unittest::bool_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kint32max , options->GetExtension(protobuf_unittest::int32_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kint64max , options->GetExtension(protobuf_unittest::int64_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kuint32max, options->GetExtension(protobuf_unittest::uint32_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kuint64max, options->GetExtension(protobuf_unittest::uint64_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kint32max , options->GetExtension(protobuf_unittest::sint32_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kint64max , options->GetExtension(protobuf_unittest::sint64_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kuint32max, options->GetExtension(protobuf_unittest::fixed32_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kuint64max, options->GetExtension(protobuf_unittest::fixed64_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kint32max , options->GetExtension(protobuf_unittest::sfixed32_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(kint64max , options->GetExtension(protobuf_unittest::sfixed64_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(-100, options->GetExtension(protobuf_unittest::int32_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:                  options->GetExtension(protobuf_unittest::float_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:                   options->GetExtension(protobuf_unittest::double_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            options->GetExtension(protobuf_unittest::string_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            options->GetExtension(protobuf_unittest::bytes_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            options->GetExtension(protobuf_unittest::enum_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_FLOAT_EQ(12, options->GetExtension(protobuf_unittest::float_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_DOUBLE_EQ(154, options->GetExtension(protobuf_unittest::double_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_FLOAT_EQ(-12, options->GetExtension(protobuf_unittest::float_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_DOUBLE_EQ(-154, options->GetExtension(protobuf_unittest::double_opt));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(options->GetExtension(protobuf_unittest::complex_opt1).foo(), 42);
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(options->GetExtension(protobuf_unittest::complex_opt1).
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            GetExtension(protobuf_unittest::quux), 324);
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(options->GetExtension(protobuf_unittest::complex_opt1).
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            GetExtension(protobuf_unittest::corge).qux(), 876);
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(options->GetExtension(protobuf_unittest::complex_opt2).baz(), 987);
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(options->GetExtension(protobuf_unittest::complex_opt2).
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            GetExtension(protobuf_unittest::grault), 654);
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(options->GetExtension(protobuf_unittest::complex_opt2).bar().foo(),
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(options->GetExtension(protobuf_unittest::complex_opt2).bar().
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            GetExtension(protobuf_unittest::quux), 1999);
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(options->GetExtension(protobuf_unittest::complex_opt2).bar().
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            GetExtension(protobuf_unittest::corge).qux(), 2008);
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(options->GetExtension(protobuf_unittest::complex_opt2).
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            GetExtension(protobuf_unittest::garply).foo(), 741);
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(options->GetExtension(protobuf_unittest::complex_opt2).
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            GetExtension(protobuf_unittest::garply).
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            GetExtension(protobuf_unittest::quux), 1998);
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(options->GetExtension(protobuf_unittest::complex_opt2).
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            GetExtension(protobuf_unittest::garply).
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            GetExtension(protobuf_unittest::corge).qux(), 2121);
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(options->GetExtension(
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(options->GetExtension(protobuf_unittest::complex_opt2).
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(9, options->GetExtension(protobuf_unittest::complex_opt3).qux());
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(22, options->GetExtension(protobuf_unittest::complex_opt3).
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(24, options->GetExtension(protobuf_unittest::complexopt6).xyzzy());
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(1234, file->options().GetExtension(protobuf_unittest::file_opt1));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(1234, options.GetExtension(protobuf_unittest::complex_opt1).foo());
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(3, options.GetExtension(protobuf_unittest::complex_opt1).foo4_size());
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(12, options.GetExtension(protobuf_unittest::complex_opt1).foo4(0));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(34, options.GetExtension(protobuf_unittest::complex_opt1).foo4(1));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(56, options.GetExtension(protobuf_unittest::complex_opt1).foo4(2));
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(3, options.GetExtension(
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(1,options.GetExtension(
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(10, options.GetExtension(
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  EXPECT_EQ(100, options.GetExtension(
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:      file->options().GetExtension(protobuf_unittest::fileopt);
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            file_options.file().GetExtension(protobuf_unittest::fileopt).s());
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            file_options.mset().GetExtension(
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            msg->options().GetExtension(protobuf_unittest::msgopt).s());
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            field->options().GetExtension(protobuf_unittest::fieldopt).s());
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            enumd->options().GetExtension(protobuf_unittest::enumopt).s());
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            enumv->options().GetExtension(protobuf_unittest::enumvalopt).s());
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            service->options().GetExtension(protobuf_unittest::serviceopt).s());
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:            method->options().GetExtension(protobuf_unittest::methodopt).s());
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:      options.GetExtension(protobuf_unittest::required_enum_opt);
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:  // be able to use the GetExtension ids for the custom options.
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:      options.GetExtension(protobuf_unittest::lazy_imports::lazy_enum_option);
+./third_party/protobuf/src/google/protobuf/descriptor_unittest.cc:      options2.GetExtension(protobuf_unittest::lazy_imports::lazy_enum_option);
+./third_party/protobuf/src/google/protobuf/wire_format.cc:        if (input->GetExtensionPool() == NULL) {
+./third_party/protobuf/src/google/protobuf/wire_format.cc:          field = input->GetExtensionPool()
+./third_party/protobuf/src/google/protobuf/wire_format.cc:        message, field, input->GetExtensionFactory());
+./third_party/protobuf/src/google/protobuf/wire_format.cc:              message, field, input->GetExtensionFactory());
+./third_party/protobuf/src/google/protobuf/wire_format.cc:              message, field, input->GetExtensionFactory());
+./third_party/protobuf/src/google/protobuf/wire_format.cc:              message, field, input->GetExtensionFactory());
+./third_party/protobuf/src/google/protobuf/wire_format.cc:              message, field, input->GetExtensionFactory());
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:    total_size += GetExtensionSet(message).SpaceUsedExcludingSelfLong();
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:    return GetExtensionSet(message).Has(field->number());
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:    return GetExtensionSet(message).ExtensionSize(field->number());
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:    GetExtensionSet(message).AppendToList(descriptor_, descriptor_pool_,
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:      return GetExtensionSet(message).Get##TYPENAME(                         \
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:      return GetExtensionSet(message).GetRepeated##TYPENAME(                 \
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:    return GetExtensionSet(message).GetString(field->number(),
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:    return GetExtensionSet(message).GetString(field->number(),
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:    return GetExtensionSet(message).GetRepeatedString(field->number(), index);
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:    return GetExtensionSet(message).GetRepeatedString(field->number(), index);
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:    value = GetExtensionSet(message).GetEnum(
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:    value = GetExtensionSet(message).GetRepeatedEnum(field->number(), index);
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:        GetExtensionSet(message).GetMessage(
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:        GetExtensionSet(message).GetRepeatedMessage(field->number(), index));
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:inline const ExtensionSet& GeneratedMessageReflection::GetExtensionSet(
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:                                           schema_.GetExtensionSetOffset());
+./third_party/protobuf/src/google/protobuf/generated_message_reflection.cc:                                          schema_.GetExtensionSetOffset());
+./third_party/protobuf/src/google/protobuf/text_format_unittest.cc:  EXPECT_EQ(23, proto.message_set().GetExtension(
+./third_party/protobuf/src/google/protobuf/text_format_unittest.cc:  EXPECT_EQ("foo", proto.message_set().GetExtension(
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_TRUE(message.GetExtension(unittest::optionalgroup_extension_lite                 ).has_a());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_TRUE(message.GetExtension(unittest::optional_nested_message_extension_lite       ).has_bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_TRUE(message.GetExtension(unittest::optional_foreign_message_extension_lite      ).has_c());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_TRUE(message.GetExtension(unittest::optional_import_message_extension_lite       ).has_d());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_TRUE(message.GetExtension(unittest::optional_public_import_message_extension_lite).has_e());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_TRUE(message.GetExtension(unittest::optional_lazy_message_extension_lite         ).has_bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(101  , message.GetExtension(unittest::optional_int32_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(102  , message.GetExtension(unittest::optional_int64_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(103  , message.GetExtension(unittest::optional_uint32_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(104  , message.GetExtension(unittest::optional_uint64_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(105  , message.GetExtension(unittest::optional_sint32_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(106  , message.GetExtension(unittest::optional_sint64_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(107  , message.GetExtension(unittest::optional_fixed32_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(108  , message.GetExtension(unittest::optional_fixed64_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(109  , message.GetExtension(unittest::optional_sfixed32_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(110  , message.GetExtension(unittest::optional_sfixed64_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(111  , message.GetExtension(unittest::optional_float_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(112  , message.GetExtension(unittest::optional_double_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(true , message.GetExtension(unittest::optional_bool_extension_lite    ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("115", message.GetExtension(unittest::optional_string_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("116", message.GetExtension(unittest::optional_bytes_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(117, message.GetExtension(unittest::optionalgroup_extension_lite                 ).a());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(118, message.GetExtension(unittest::optional_nested_message_extension_lite       ).bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(119, message.GetExtension(unittest::optional_foreign_message_extension_lite      ).c());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(120, message.GetExtension(unittest::optional_import_message_extension_lite       ).d());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(126, message.GetExtension(unittest::optional_public_import_message_extension_lite).e());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(127, message.GetExtension(unittest::optional_lazy_message_extension_lite         ).bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::TestAllTypesLite::BAZ , message.GetExtension(unittest::optional_nested_enum_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::FOREIGN_LITE_BAZ      , message.GetExtension(unittest::optional_foreign_enum_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest_import::IMPORT_LITE_BAZ, message.GetExtension(unittest::optional_import_enum_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(201  , message.GetExtension(unittest::repeated_int32_extension_lite   , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(202  , message.GetExtension(unittest::repeated_int64_extension_lite   , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(203  , message.GetExtension(unittest::repeated_uint32_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(204  , message.GetExtension(unittest::repeated_uint64_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(205  , message.GetExtension(unittest::repeated_sint32_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(206  , message.GetExtension(unittest::repeated_sint64_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(207  , message.GetExtension(unittest::repeated_fixed32_extension_lite , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(208  , message.GetExtension(unittest::repeated_fixed64_extension_lite , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(209  , message.GetExtension(unittest::repeated_sfixed32_extension_lite, 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(210  , message.GetExtension(unittest::repeated_sfixed64_extension_lite, 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(211  , message.GetExtension(unittest::repeated_float_extension_lite   , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(212  , message.GetExtension(unittest::repeated_double_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(true , message.GetExtension(unittest::repeated_bool_extension_lite    , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("215", message.GetExtension(unittest::repeated_string_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("216", message.GetExtension(unittest::repeated_bytes_extension_lite   , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(217, message.GetExtension(unittest::repeatedgroup_extension_lite           , 0).a());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(218, message.GetExtension(unittest::repeated_nested_message_extension_lite , 0).bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(219, message.GetExtension(unittest::repeated_foreign_message_extension_lite, 0).c());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(220, message.GetExtension(unittest::repeated_import_message_extension_lite , 0).d());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(227, message.GetExtension(unittest::repeated_lazy_message_extension_lite   , 0).bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::TestAllTypesLite::BAR , message.GetExtension(unittest::repeated_nested_enum_extension_lite , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::FOREIGN_LITE_BAR      , message.GetExtension(unittest::repeated_foreign_enum_extension_lite, 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest_import::IMPORT_LITE_BAR, message.GetExtension(unittest::repeated_import_enum_extension_lite , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(301  , message.GetExtension(unittest::repeated_int32_extension_lite   , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(302  , message.GetExtension(unittest::repeated_int64_extension_lite   , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(303  , message.GetExtension(unittest::repeated_uint32_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(304  , message.GetExtension(unittest::repeated_uint64_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(305  , message.GetExtension(unittest::repeated_sint32_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(306  , message.GetExtension(unittest::repeated_sint64_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(307  , message.GetExtension(unittest::repeated_fixed32_extension_lite , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(308  , message.GetExtension(unittest::repeated_fixed64_extension_lite , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(309  , message.GetExtension(unittest::repeated_sfixed32_extension_lite, 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(310  , message.GetExtension(unittest::repeated_sfixed64_extension_lite, 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(311  , message.GetExtension(unittest::repeated_float_extension_lite   , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(312  , message.GetExtension(unittest::repeated_double_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(false, message.GetExtension(unittest::repeated_bool_extension_lite    , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("315", message.GetExtension(unittest::repeated_string_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("316", message.GetExtension(unittest::repeated_bytes_extension_lite   , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(317, message.GetExtension(unittest::repeatedgroup_extension_lite           , 1).a());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(318, message.GetExtension(unittest::repeated_nested_message_extension_lite , 1).bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(319, message.GetExtension(unittest::repeated_foreign_message_extension_lite, 1).c());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(320, message.GetExtension(unittest::repeated_import_message_extension_lite , 1).d());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(327, message.GetExtension(unittest::repeated_lazy_message_extension_lite   , 1).bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::TestAllTypesLite::BAZ , message.GetExtension(unittest::repeated_nested_enum_extension_lite , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::FOREIGN_LITE_BAZ      , message.GetExtension(unittest::repeated_foreign_enum_extension_lite, 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest_import::IMPORT_LITE_BAZ, message.GetExtension(unittest::repeated_import_enum_extension_lite , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(401  , message.GetExtension(unittest::default_int32_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(402  , message.GetExtension(unittest::default_int64_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(403  , message.GetExtension(unittest::default_uint32_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(404  , message.GetExtension(unittest::default_uint64_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(405  , message.GetExtension(unittest::default_sint32_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(406  , message.GetExtension(unittest::default_sint64_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(407  , message.GetExtension(unittest::default_fixed32_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(408  , message.GetExtension(unittest::default_fixed64_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(409  , message.GetExtension(unittest::default_sfixed32_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(410  , message.GetExtension(unittest::default_sfixed64_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(411  , message.GetExtension(unittest::default_float_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(412  , message.GetExtension(unittest::default_double_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(false, message.GetExtension(unittest::default_bool_extension_lite    ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("415", message.GetExtension(unittest::default_string_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("416", message.GetExtension(unittest::default_bytes_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::TestAllTypesLite::FOO , message.GetExtension(unittest::default_nested_enum_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::FOREIGN_LITE_FOO      , message.GetExtension(unittest::default_foreign_enum_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest_import::IMPORT_LITE_FOO, message.GetExtension(unittest::default_import_enum_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_TRUE(message.GetExtension(unittest::oneof_nested_message_extension_lite).has_bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(601, message.GetExtension(unittest::oneof_uint32_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(602, message.GetExtension(unittest::oneof_nested_message_extension_lite).bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("603", message.GetExtension(unittest::oneof_string_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("604", message.GetExtension(unittest::oneof_bytes_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_int32_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_int64_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_uint32_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_uint64_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_sint32_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_sint64_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_fixed32_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_fixed64_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_sfixed32_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_sfixed64_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_float_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0    , message.GetExtension(unittest::optional_double_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(false, message.GetExtension(unittest::optional_bool_extension_lite    ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(""   , message.GetExtension(unittest::optional_string_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(""   , message.GetExtension(unittest::optional_bytes_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_FALSE(message.GetExtension(unittest::optionalgroup_extension_lite                 ).has_a());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_FALSE(message.GetExtension(unittest::optional_nested_message_extension_lite       ).has_bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_FALSE(message.GetExtension(unittest::optional_foreign_message_extension_lite      ).has_c());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_FALSE(message.GetExtension(unittest::optional_import_message_extension_lite       ).has_d());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_FALSE(message.GetExtension(unittest::optional_public_import_message_extension_lite).has_e());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_FALSE(message.GetExtension(unittest::optional_lazy_message_extension_lite         ).has_bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0, message.GetExtension(unittest::optionalgroup_extension_lite                 ).a());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0, message.GetExtension(unittest::optional_nested_message_extension_lite       ).bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0, message.GetExtension(unittest::optional_foreign_message_extension_lite      ).c());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0, message.GetExtension(unittest::optional_import_message_extension_lite       ).d());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0, message.GetExtension(unittest::optional_public_import_message_extension_lite).e());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(0, message.GetExtension(unittest::optional_lazy_message_extension_lite         ).bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::TestAllTypesLite::FOO , message.GetExtension(unittest::optional_nested_enum_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::FOREIGN_LITE_FOO      , message.GetExtension(unittest::optional_foreign_enum_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest_import::IMPORT_LITE_FOO, message.GetExtension(unittest::optional_import_enum_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ( 41    , message.GetExtension(unittest::default_int32_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ( 42    , message.GetExtension(unittest::default_int64_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ( 43    , message.GetExtension(unittest::default_uint32_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ( 44    , message.GetExtension(unittest::default_uint64_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(-45    , message.GetExtension(unittest::default_sint32_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ( 46    , message.GetExtension(unittest::default_sint64_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ( 47    , message.GetExtension(unittest::default_fixed32_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ( 48    , message.GetExtension(unittest::default_fixed64_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ( 49    , message.GetExtension(unittest::default_sfixed32_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(-50    , message.GetExtension(unittest::default_sfixed64_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ( 51.5  , message.GetExtension(unittest::default_float_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ( 52e3  , message.GetExtension(unittest::default_double_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(true   , message.GetExtension(unittest::default_bool_extension_lite    ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("hello", message.GetExtension(unittest::default_string_extension_lite  ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("world", message.GetExtension(unittest::default_bytes_extension_lite   ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::TestAllTypesLite::BAR , message.GetExtension(unittest::default_nested_enum_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::FOREIGN_LITE_BAR      , message.GetExtension(unittest::default_foreign_enum_extension_lite));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest_import::IMPORT_LITE_BAR, message.GetExtension(unittest::default_import_enum_extension_lite ));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_FALSE(message.GetExtension(unittest::oneof_nested_message_extension_lite).has_bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(201  , message.GetExtension(unittest::repeated_int32_extension_lite   , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(202  , message.GetExtension(unittest::repeated_int64_extension_lite   , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(203  , message.GetExtension(unittest::repeated_uint32_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(204  , message.GetExtension(unittest::repeated_uint64_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(205  , message.GetExtension(unittest::repeated_sint32_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(206  , message.GetExtension(unittest::repeated_sint64_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(207  , message.GetExtension(unittest::repeated_fixed32_extension_lite , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(208  , message.GetExtension(unittest::repeated_fixed64_extension_lite , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(209  , message.GetExtension(unittest::repeated_sfixed32_extension_lite, 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(210  , message.GetExtension(unittest::repeated_sfixed64_extension_lite, 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(211  , message.GetExtension(unittest::repeated_float_extension_lite   , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(212  , message.GetExtension(unittest::repeated_double_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(true , message.GetExtension(unittest::repeated_bool_extension_lite    , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("215", message.GetExtension(unittest::repeated_string_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("216", message.GetExtension(unittest::repeated_bytes_extension_lite   , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(217, message.GetExtension(unittest::repeatedgroup_extension_lite           , 0).a());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(218, message.GetExtension(unittest::repeated_nested_message_extension_lite , 0).bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(219, message.GetExtension(unittest::repeated_foreign_message_extension_lite, 0).c());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(220, message.GetExtension(unittest::repeated_import_message_extension_lite , 0).d());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(227, message.GetExtension(unittest::repeated_lazy_message_extension_lite   , 0).bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::TestAllTypesLite::BAR , message.GetExtension(unittest::repeated_nested_enum_extension_lite , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::FOREIGN_LITE_BAR      , message.GetExtension(unittest::repeated_foreign_enum_extension_lite, 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest_import::IMPORT_LITE_BAR, message.GetExtension(unittest::repeated_import_enum_extension_lite , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(501  , message.GetExtension(unittest::repeated_int32_extension_lite   , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(502  , message.GetExtension(unittest::repeated_int64_extension_lite   , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(503  , message.GetExtension(unittest::repeated_uint32_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(504  , message.GetExtension(unittest::repeated_uint64_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(505  , message.GetExtension(unittest::repeated_sint32_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(506  , message.GetExtension(unittest::repeated_sint64_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(507  , message.GetExtension(unittest::repeated_fixed32_extension_lite , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(508  , message.GetExtension(unittest::repeated_fixed64_extension_lite , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(509  , message.GetExtension(unittest::repeated_sfixed32_extension_lite, 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(510  , message.GetExtension(unittest::repeated_sfixed64_extension_lite, 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(511  , message.GetExtension(unittest::repeated_float_extension_lite   , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(512  , message.GetExtension(unittest::repeated_double_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(true , message.GetExtension(unittest::repeated_bool_extension_lite    , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("515", message.GetExtension(unittest::repeated_string_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ("516", message.GetExtension(unittest::repeated_bytes_extension_lite   , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(517, message.GetExtension(unittest::repeatedgroup_extension_lite           , 1).a());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(518, message.GetExtension(unittest::repeated_nested_message_extension_lite , 1).bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(519, message.GetExtension(unittest::repeated_foreign_message_extension_lite, 1).c());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(520, message.GetExtension(unittest::repeated_import_message_extension_lite , 1).d());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(527, message.GetExtension(unittest::repeated_lazy_message_extension_lite   , 1).bb());
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::TestAllTypesLite::FOO , message.GetExtension(unittest::repeated_nested_enum_extension_lite , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest::FOREIGN_LITE_FOO      , message.GetExtension(unittest::repeated_foreign_enum_extension_lite, 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(unittest_import::IMPORT_LITE_FOO, message.GetExtension(unittest::repeated_import_enum_extension_lite , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(601  , message.GetExtension(unittest::packed_int32_extension_lite   , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(602  , message.GetExtension(unittest::packed_int64_extension_lite   , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(603  , message.GetExtension(unittest::packed_uint32_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(604  , message.GetExtension(unittest::packed_uint64_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(605  , message.GetExtension(unittest::packed_sint32_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(606  , message.GetExtension(unittest::packed_sint64_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(607  , message.GetExtension(unittest::packed_fixed32_extension_lite , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(608  , message.GetExtension(unittest::packed_fixed64_extension_lite , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(609  , message.GetExtension(unittest::packed_sfixed32_extension_lite, 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(610  , message.GetExtension(unittest::packed_sfixed64_extension_lite, 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(611  , message.GetExtension(unittest::packed_float_extension_lite   , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(612  , message.GetExtension(unittest::packed_double_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(true , message.GetExtension(unittest::packed_bool_extension_lite    , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:            message.GetExtension(unittest::packed_enum_extension_lite, 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(701  , message.GetExtension(unittest::packed_int32_extension_lite   , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(702  , message.GetExtension(unittest::packed_int64_extension_lite   , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(703  , message.GetExtension(unittest::packed_uint32_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(704  , message.GetExtension(unittest::packed_uint64_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(705  , message.GetExtension(unittest::packed_sint32_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(706  , message.GetExtension(unittest::packed_sint64_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(707  , message.GetExtension(unittest::packed_fixed32_extension_lite , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(708  , message.GetExtension(unittest::packed_fixed64_extension_lite , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(709  , message.GetExtension(unittest::packed_sfixed32_extension_lite, 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(710  , message.GetExtension(unittest::packed_sfixed64_extension_lite, 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(711  , message.GetExtension(unittest::packed_float_extension_lite   , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(712  , message.GetExtension(unittest::packed_double_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(false, message.GetExtension(unittest::packed_bool_extension_lite    , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:            message.GetExtension(unittest::packed_enum_extension_lite, 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(601  , message.GetExtension(unittest::packed_int32_extension_lite   , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(602  , message.GetExtension(unittest::packed_int64_extension_lite   , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(603  , message.GetExtension(unittest::packed_uint32_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(604  , message.GetExtension(unittest::packed_uint64_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(605  , message.GetExtension(unittest::packed_sint32_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(606  , message.GetExtension(unittest::packed_sint64_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(607  , message.GetExtension(unittest::packed_fixed32_extension_lite , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(608  , message.GetExtension(unittest::packed_fixed64_extension_lite , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(609  , message.GetExtension(unittest::packed_sfixed32_extension_lite, 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(610  , message.GetExtension(unittest::packed_sfixed64_extension_lite, 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(611  , message.GetExtension(unittest::packed_float_extension_lite   , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(612  , message.GetExtension(unittest::packed_double_extension_lite  , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(true , message.GetExtension(unittest::packed_bool_extension_lite    , 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:            message.GetExtension(unittest::packed_enum_extension_lite, 0));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(801  , message.GetExtension(unittest::packed_int32_extension_lite   , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(802  , message.GetExtension(unittest::packed_int64_extension_lite   , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(803  , message.GetExtension(unittest::packed_uint32_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(804  , message.GetExtension(unittest::packed_uint64_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(805  , message.GetExtension(unittest::packed_sint32_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(806  , message.GetExtension(unittest::packed_sint64_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(807  , message.GetExtension(unittest::packed_fixed32_extension_lite , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(808  , message.GetExtension(unittest::packed_fixed64_extension_lite , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(809  , message.GetExtension(unittest::packed_sfixed32_extension_lite, 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(810  , message.GetExtension(unittest::packed_sfixed64_extension_lite, 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(811  , message.GetExtension(unittest::packed_float_extension_lite   , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(812  , message.GetExtension(unittest::packed_double_extension_lite  , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:  EXPECT_EQ(true , message.GetExtension(unittest::packed_bool_extension_lite    , 1));
+./third_party/protobuf/src/google/protobuf/test_util_lite.cc:            message.GetExtension(unittest::packed_enum_extension_lite, 1));
+./third_party/protobuf/src/google/protobuf/unknown_field_set_unittest.cc:              message.GetExtension(optional_nested_enum_extension));
+./third_party/protobuf/src/google/protobuf/unknown_field_set_unittest.cc:              message.GetExtension(repeated_nested_enum_extension, 0));
+./third_party/protobuf/src/google/protobuf/unknown_field_set_unittest.cc:              message.GetExtension(repeated_nested_enum_extension, 1));
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:            &message.GetExtension(unittest::optionalgroup_extension));
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:            &message.GetExtension(unittest::optional_nested_message_extension));
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:            &message.GetExtension(
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:            &message.GetExtension(unittest::optional_import_message_extension));
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:            &message.GetExtension(unittest::optionalgroup_extension));
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:            &message.GetExtension(unittest::optional_nested_message_extension));
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:            &message.GetExtension(
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:            &message.GetExtension(unittest::optional_import_message_extension));
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:    message.GetExtension(unittest::optional_int64_extension);
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:  EXPECT_EQ(0, message.GetExtension(unittest::optional_int64_extension));
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:            &message.GetExtension(
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:  EXPECT_EQ(2, message1->GetExtension(unittest::optional_int32_extension));
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:  EXPECT_EQ(1, message2->GetExtension(unittest::optional_int32_extension));
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:  EXPECT_EQ("foo", message.GetExtension(unittest::optional_string_extension));
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:            message.GetExtension(unittest::repeated_string_extension, 0));
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:        sizeof(message.GetExtension(unittest::optional_##type##_extension));  \
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:        sizeof(message.GetExtension(unittest::optional_nested_enum_extension));
+./third_party/protobuf/src/google/protobuf/extension_set_unittest.cc:      123, message.GetExtension(

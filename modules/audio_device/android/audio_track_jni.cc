@@ -248,6 +248,7 @@ void AudioTrackJni::OnGetPlayoutData(size_t length) {
     RTC_LOG(LS_ERROR) << "AttachAudioBuffer has not been called";
     return;
   }
+  RTC_LOG(LS_ERROR) << "ppt, in AudioTrackJni::OnGetPlayoutData, go to audio_device_buffer_->RequestPlayoutData";
   // Pull decoded data (in 16-bit PCM format) from jitter buffer.
   int samples = audio_device_buffer_->RequestPlayoutData(frames_per_buffer_);
   if (samples <= 0) {

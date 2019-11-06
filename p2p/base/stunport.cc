@@ -271,7 +271,8 @@ int UDPPort::SendTo(const void* data, size_t size,
                     const rtc::SocketAddress& addr,
                     const rtc::PacketOptions& options,
                     bool payload) {
-  //RTC_LOG(LS_ERROR) << "ppt, in UDPPort::SendTo, go to socket_->SendTo, " << ToString();
+  RTC_LOG(LS_ERROR) << "ppt, in UDPPort::SendTo, go to socket_->SendTo, " 
+  	<< addr.ToString();
   rtc::PacketOptions modified_options(options);
   CopyPortInformationToPacketInfo(&modified_options.info_signaled_after_sent);
   int sent = socket_->SendTo(data, size, addr, modified_options);
@@ -357,10 +358,17 @@ void UDPPort::OnReadPacket(rtc::AsyncPacketSocket* socket,
   // will eat it because it might be a response to a retransmitted packet, and
   // we already cleared the request when we got the first response.
   if (server_addresses_.find(remote_addr) != server_addresses_.end()) {
+  	RTC_LOG(LS_ERROR) << "ppt, in UDPPort::OnReadPacket, in server_addresses_, remote addr: "
+  						<< remote_addr.ipaddr().ToString() << ":"
+        				<< remote_addr.port();
     requests_.CheckResponse(data, size);
     return;
   }
-
+  else{
+  	RTC_LOG(LS_ERROR) << "ppt, in UDPPort::OnReadPacket, not server_addresses_, remote addr: "
+  						<< remote_addr.ipaddr().ToString() << ":"
+        				<< remote_addr.port();
+  }
   if (Connection* conn = GetConnection(remote_addr)) {
   	ALOGI("ppt, in UDPPort::OnReadPacket, go to conn->OnReadPacket.\n");
     conn->OnReadPacket(data, size, packet_time);
@@ -372,6 +380,7 @@ void UDPPort::OnReadPacket(rtc::AsyncPacketSocket* socket,
 
 void UDPPort::OnSentPacket(rtc::AsyncPacketSocket* socket,
                            const rtc::SentPacket& sent_packet) {
+  RTC_LOG(LS_WARNING) << "ppt, in UDPPort::OnSendPacket";
   PortInterface::SignalSentPacket(sent_packet);
 }
 

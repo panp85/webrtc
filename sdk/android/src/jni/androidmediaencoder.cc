@@ -323,6 +323,7 @@ MediaCodecVideoEncoder::MediaCodecVideoEncoder(JNIEnv* jni,
 int32_t MediaCodecVideoEncoder::InitEncode(const VideoCodec* codec_settings,
                                            int32_t /* number_of_cores */,
                                            size_t /* max_payload_size */) {
+  ALOGE << "ppt, in MediaCodecVideoEncoder::InitEncode, go in.\n";                                         
   RTC_DCHECK_CALLED_SEQUENTIALLY(&encoder_queue_checker_);
   if (codec_settings == NULL) {
     ALOGE << "NULL VideoCodec instance";

@@ -92,6 +92,7 @@ CreateModularPeerConnectionFactory(
 rtc::scoped_refptr<PeerConnectionFactoryInterface>
 CreateModularPeerConnectionFactory(
     PeerConnectionFactoryDependencies dependencies) {
+  RTC_LOG(LS_ERROR) << "ppt, in CreateModularPeerConnectionFactory, go to PeerConnectionFactory";
   rtc::scoped_refptr<PeerConnectionFactory> pc_factory(
       new rtc::RefCountedObject<PeerConnectionFactory>(
           std::move(dependencies)));

@@ -31,6 +31,8 @@ VideoDecoderFactoryWrapper::~VideoDecoderFactoryWrapper() = default;
 std::unique_ptr<VideoDecoder> VideoDecoderFactoryWrapper::CreateVideoDecoder(
     const SdpVideoFormat& format) {
   JNIEnv* jni = AttachCurrentThreadIfNeeded();
+  RTC_LOG(LS_WARNING) 
+  	<< "ppt, in VideoDecoderFactoryWrapper::CreateVideoDecoder, go to Java_VideoDecoderFactory_createDecoder";
   ScopedJavaLocalRef<jobject> decoder = Java_VideoDecoderFactory_createDecoder(
       jni, decoder_factory_, NativeToJavaString(jni, format.name));
   if (!decoder.obj())

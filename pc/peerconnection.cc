@@ -1923,6 +1923,7 @@ void PeerConnection::SetLocalDescription(
     SetSessionDescriptionObserver* observer,
     SessionDescriptionInterface* desc_ptr) {
   TRACE_EVENT0("webrtc", "PeerConnection::SetLocalDescription");
+  RTC_LOG(LS_WARNING) << "ppt, in PeerConnection::SetLocalDescription";
 
   // The SetLocalDescription contract is that we take ownership of the session
   // description regardless of the outcome, so wrap it in a unique_ptr right
@@ -4894,6 +4895,7 @@ RTCError PeerConnection::PushdownMediaDescription(
       continue;
     }
     std::string error;
+	RTC_LOG(LS_WARNING) << "ppt, in PushdownMediaDescription, go to SetLocalContent or SetRemoteContent.";
     bool success =
         (source == cricket::CS_LOCAL)
             ? channel->SetLocalContent(content_desc, type, &error)

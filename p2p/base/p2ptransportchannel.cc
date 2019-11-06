@@ -1479,7 +1479,7 @@ int P2PTransportChannel::CompareConnections(
     bool* missed_receiving_unchanged_threshold) const {
   RTC_CHECK(a != nullptr);
   RTC_CHECK(b != nullptr);
-
+  RTC_LOG(LS_INFO) << "ppt, in P2PTransportChannel::CompareConnections";
   // We prefer to switch to a writable and receiving connection over a
   // non-writable or non-receiving connection, even if the latter has
   // been nominated by the controlling side.
@@ -1590,6 +1590,7 @@ void P2PTransportChannel::SortConnectionsAndUpdateState(
   // Update the state of this channel.
   UpdateState();
 
+  RTC_LOG(LS_INFO) << "ppt, in P2PTransportChannel::SortConnectionsAndUpdateState, go to MaybeStartPinging";
   // Also possibly start pinging.
   // We could start pinging if:
   // * The first connection was created.
@@ -2097,7 +2098,7 @@ bool P2PTransportChannel::GetUseCandidateAttr(Connection* conn,
 // unusable.
 void P2PTransportChannel::OnConnectionStateChange(Connection* connection) {
   RTC_DCHECK(network_thread_ == rtc::Thread::Current());
-
+  RTC_LOG(LS_INFO) << "ppt, in P2PTransportChannel::OnConnectionStateChange, go in.\n";
   // May stop the allocator session when at least one connection becomes
   // strongly connected after starting to get ports and the local candidate of
   // the connection is at the latest generation. It is not enough to check

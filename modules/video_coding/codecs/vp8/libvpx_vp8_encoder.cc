@@ -347,6 +347,7 @@ void LibvpxVp8Encoder::SetupTemporalLayers(int num_streams,
 int LibvpxVp8Encoder::InitEncode(const VideoCodec* inst,
                                  int number_of_cores,
                                  size_t /*maxPayloadSize */) {
+  RTC_LOG(LS_ERROR)  << "ppt, in LibvpxVp8Encoder::InitEncode, go in.\n";
   if (inst == NULL) {
     return WEBRTC_VIDEO_CODEC_ERR_PARAMETER;
   }

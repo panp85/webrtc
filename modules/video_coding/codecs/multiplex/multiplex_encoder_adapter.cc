@@ -59,6 +59,7 @@ MultiplexEncoderAdapter::~MultiplexEncoderAdapter() {
 int MultiplexEncoderAdapter::InitEncode(const VideoCodec* inst,
                                         int number_of_cores,
                                         size_t max_payload_size) {
+  RTC_LOG(LS_ERROR)  << "ppt, in MultiplexEncoderAdapter::InitEncode, go in.\n";
   const size_t buffer_size =
       CalcBufferSize(VideoType::kI420, inst->width, inst->height);
   multiplex_dummy_planes_.resize(buffer_size);

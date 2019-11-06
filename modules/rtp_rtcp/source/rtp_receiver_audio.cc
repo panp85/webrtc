@@ -205,7 +205,7 @@ int32_t RTPReceiverAudio::ParseAudioCodecSpecific(
       TelephoneEventPayloadType(rtp_header->header.payloadType);
   if (telephone_event_packet) {
     rtc::CritScope lock(&crit_sect_);
-
+	RTC_LOG(LS_ERROR) << "ppt, in RTPReceiverAudio::ParseAudioCodecSpecific, telephone_event_packet";
     // RFC 4733 2.3
     // 0                   1                   2                   3
     // 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1

@@ -231,6 +231,7 @@ void WebRtcSessionDescriptionFactory::CreateOffer(
   } else {
     RTC_DCHECK(certificate_request_state_ == CERTIFICATE_SUCCEEDED ||
                certificate_request_state_ == CERTIFICATE_NOT_NEEDED);
+	RTC_LOG(LS_ERROR) << "ppt, in WebRtcSessionDescriptionFactory::CreateOffer, go to InternalCreateOffer";
     InternalCreateOffer(request);
   }
 }
@@ -319,6 +320,7 @@ void WebRtcSessionDescriptionFactory::OnMessage(rtc::Message* msg) {
 void WebRtcSessionDescriptionFactory::InternalCreateOffer(
     CreateSessionDescriptionRequest request) {
   if (pc_->local_description()) {
+  	RTC_LOG(LS_ERROR) << "ppt, in InternalCreateOffer, local_description yes.";
     // If the needs-ice-restart flag is set as described by JSEP, we should
     // generate an offer with a new ufrag/password to trigger an ICE restart.
     for (cricket::MediaDescriptionOptions& options :
@@ -351,6 +353,7 @@ void WebRtcSessionDescriptionFactory::InternalCreateOffer(
     return;
   }
   if (pc_->local_description()) {
+  	RTC_LOG(LS_WARNING) << "ppt, in WebRtcSessionDescriptionFactory::InternalCreateOffer, local_description yes.\n";
     for (const cricket::MediaDescriptionOptions& options :
          request.options.media_description_options) {
       if (!options.transport_options.ice_restart) {

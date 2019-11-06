@@ -122,6 +122,7 @@ int32_t VideoEncoderSoftwareFallbackWrapper::InitEncode(
     const VideoCodec* codec_settings,
     int32_t number_of_cores,
     size_t max_payload_size) {
+    RTC_LOG(LS_ERROR)  << "ppt, in VideoEncoderSoftwareFallbackWrapper::InitEncode, go in.\n";
   // Store settings, in case we need to dynamically switch to the fallback
   // encoder after a failed Encode call.
   codec_settings_ = *codec_settings;

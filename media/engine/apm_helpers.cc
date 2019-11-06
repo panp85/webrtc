@@ -90,6 +90,7 @@ void SetEcStatus(AudioProcessing* apm,
   EchoCancellation* ec = apm->echo_cancellation();
   EchoControlMobile* ecm = apm->echo_control_mobile();
   if (mode == kEcConference) {
+  	RTC_LOG(LS_ERROR) << "ppt, SetEcStatus 1, enable: " << enable;
     // Disable the AECM before enabling the AEC.
     if (enable && ecm->is_enabled() && ecm->Enable(false) != 0) {
       RTC_LOG(LS_ERROR) << "Failed to disable AECM.";
@@ -105,6 +106,7 @@ void SetEcStatus(AudioProcessing* apm,
       return;
     }
   } else {
+    RTC_LOG(LS_ERROR) << "ppt, SetEcStatus 2, enable: " << enable;
     // Disable the AEC before enabling the AECM.
     if (enable && ec->is_enabled() && ec->Enable(false) != 0) {
       RTC_LOG(LS_ERROR) << "Failed to disable AEC.";

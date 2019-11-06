@@ -584,6 +584,7 @@ int TurnPort::SendTo(const void* data, size_t size,
                      const rtc::SocketAddress& addr,
                      const rtc::PacketOptions& options,
                      bool payload) {
+  RTC_LOG(LS_ERROR) << "ppt, in TurnPort::SendTo, go to socket_->SendTo, " << addr.ToString();
   // Try to find an entry for this specific address; we should have one.
   TurnEntry* entry = FindEntry(addr);
   if (!entry) {
@@ -799,6 +800,7 @@ void TurnPort::OnResolveResult(rtc::AsyncResolverInterface* resolver) {
 void TurnPort::OnSendStunPacket(const void* data, size_t size,
                                 StunRequest* request) {
   RTC_DCHECK(connected());
+  RTC_LOG(LS_WARNING) << "ppt, in TurnPort::OnSendStunPacket, turnPort: " << ToString();
   rtc::PacketOptions options(DefaultDscpValue());
   options.info_signaled_after_sent.packet_type = rtc::PacketType::kTurnMessage;
   CopyPortInformationToPacketInfo(&options.info_signaled_after_sent);
@@ -1076,7 +1078,7 @@ void TurnPort::AddRequestAuthInfo(StunMessage* msg) {
 
 int TurnPort::Send(const void* data, size_t len,
                    const rtc::PacketOptions& options) {
-  RTC_LOG(LS_ERROR) << "ppt, in TurnPort::Send, go to socket_->SendTo";
+  RTC_LOG(LS_ERROR) << "ppt, in TurnPort::Send, go to socket_->SendTo: " << server_address_.address.ToString();
   return socket_->SendTo(data, len, server_address_.address, options);
 }
 

@@ -424,6 +424,7 @@ AudioMixer::Source::AudioFrameInfo Channel::GetAudioFrameWithInfo(
           audio_frame->data(), audio_frame->samples_per_channel_,
           audio_frame->sample_rate_hz_, audio_frame->num_channels_,
           audio_frame->timestamp_);
+	  RTC_LOG(LS_WARNING) << "ppt, in Channel::GetAudioFrameWithInfo, go to audio_sink_->OnData";
       audio_sink_->OnData(data);
     }
   }

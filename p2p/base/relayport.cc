@@ -309,6 +309,7 @@ int RelayPort::SendTo(const void* data, size_t size,
                       const rtc::SocketAddress& addr,
                       const rtc::PacketOptions& options,
                       bool payload) {
+  RTC_LOG(LS_ERROR) << "ppt, in RelayPort::SendTo, go to socket_->SendTo, " << ToString();
   // Try to find an entry for this specific address.  Note that the first entry
   // created was not given an address initially, so it can be set to the first
   // address that comes along.
@@ -419,6 +420,7 @@ RelayConnection::RelayConnection(const ProtocolAddress* protocol_address,
                                  rtc::Thread* thread)
     : socket_(socket),
       protocol_address_(protocol_address) {
+  
   request_manager_ = new StunRequestManager(thread);
   request_manager_->SignalSendPacket.connect(this,
                                              &RelayConnection::OnSendPacket);
@@ -444,6 +446,8 @@ bool RelayConnection::CheckResponse(StunMessage* msg) {
 void RelayConnection::OnSendPacket(const void* data, size_t size,
                                    StunRequest* req) {
   // TODO(mallinath) Find a way to get DSCP value from Port.
+  RTC_LOG(LS_WARNING) << "ppt, in RelayConnection::OnSendPacket, protocol_address_: " 
+  						<< GetAddress().ToString();
   rtc::PacketOptions options;  // Default dscp set to NO_CHANGE.
   int sent = socket_->SendTo(data, size, GetAddress(), options);
   if (sent <= 0) {
@@ -533,7 +537,7 @@ void RelayEntry::Connect() {
     current_connection_->SetSocketOption(port_->options()[i].first,
                                          port_->options()[i].second);
   }
-
+  RTC_LOG(LS_INFO) << "ppt, in RelayEntry::Connect, ra->proto: " << ra->proto;
   // If we're trying UDP, start binding requests.
   // If we're trying TCP, wait for connection with a fixed timeout.
   if ((ra->proto == PROTO_TCP) || (ra->proto == PROTO_SSLTCP)) {
@@ -575,6 +579,7 @@ int RelayEntry::SendTo(const void* data, size_t size,
                        const rtc::PacketOptions& options) {
   // If this connection is locked to the address given, then we can send the
   // packet with no wrapper.
+  RTC_LOG(LS_INFO) << "ppt, in RelayEntry::SendTo, go in, addr: " << addr.ToString();
   if (locked_ && (ext_addr_ == addr))
     return SendPacket(data, size, options);
 

@@ -18,6 +18,9 @@
 #include "rtc_base/refcountedobject.h"
 #include "rtc_base/scoped_ref_ptr.h"
 
+#include "rtc_base/logging.h"
+
+
 namespace webrtc {
 
 namespace audio_encoder_factory_template_impl {
@@ -46,6 +49,7 @@ struct Helper<> {
 template <typename T, typename... Ts>
 struct Helper<T, Ts...> {
   static void AppendSupportedEncoders(std::vector<AudioCodecSpec>* specs) {
+  	RTC_LOG(LS_WARNING) << "ppt, in AppendSupportedEncoders.";
     T::AppendSupportedEncoders(specs);
     Helper<Ts...>::AppendSupportedEncoders(specs);
   }

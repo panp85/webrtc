@@ -17,6 +17,8 @@
 #include "modules/audio_processing/audio_buffer.h"
 #include "rtc_base/checks.h"
 #include "system_wrappers/include/field_trial.h"
+#include "rtc_base/logging.h"
+
 
 namespace webrtc {
 
@@ -151,12 +153,14 @@ void EchoCancellationImpl::ProcessRenderAudio(
 int EchoCancellationImpl::ProcessCaptureAudio(AudioBuffer* audio,
                                               int stream_delay_ms) {
   rtc::CritScope cs_capture(crit_capture_);
+  RTC_LOG(LS_ERROR)<<"ppt, in EchoCancellationImpl::ProcessCaptureAudio, enabled_:"<<enabled_;  
   if (!enabled_) {
     return AudioProcessing::kNoError;
   }
 
   const int stream_delay_ms_use =
       enforce_zero_stream_delay_ ? 0 : stream_delay_ms;
+  RTC_LOG(LS_ERROR)<<"ppt, in EchoCancellationImpl::ProcessCaptureAudio, stream_delay_ms_use:"<<stream_delay_ms_use;  
 
   if (drift_compensation_enabled_ && !was_stream_drift_set_) {
     return AudioProcessing::kStreamParameterNotSetError;
@@ -210,7 +214,7 @@ int EchoCancellationImpl::Enable(bool enable) {
   // Run in a single-threaded manner.
   rtc::CritScope cs_render(crit_render_);
   rtc::CritScope cs_capture(crit_capture_);
-
+  RTC_LOG(LS_ERROR)<<"ppt, in EchoCancellationImpl::Enable, enable:"<<enable;
   if (enable && !enabled_) {
     enabled_ = enable;  // Must be set before Initialize() is called.
 

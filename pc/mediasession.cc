@@ -292,6 +292,7 @@ static void GetCurrentStreamParams(const SessionDescription* sdesc,
                                    StreamParamsVec* stream_params) {
   RTC_DCHECK(stream_params);
   if (!sdesc) {
+  	RTC_LOG(LS_WARNING) << "ppt, in GetCurrentStreamParams, return 1";
     return;
   }
   for (const ContentInfo& content : sdesc->contents()) {
@@ -435,6 +436,7 @@ static bool AddStreamParams(
   for (const SenderOptions& sender : sender_options) {
     // groupid is empty for StreamParams generated using
     // MediaSessionDescriptionFactory.
+    RTC_LOG(LS_WARNING) << "ppt, in AddStreamParams, sender.track_id: " << sender.track_id;
     StreamParams* param =
         GetStreamByIds(*current_streams, "" /*group_id*/, sender.track_id);
     if (!param) {
@@ -442,9 +444,11 @@ static bool AddStreamParams(
       std::vector<uint32_t> ssrcs;
       GenerateSsrcs(*current_streams, sender.num_sim_layers, &ssrcs);
       StreamParams stream_param;
+	  RTC_LOG(LS_WARNING) << "ppt, in AddStreamParams, sender.track_id: " << sender.track_id;
       stream_param.id = sender.track_id;
       // Add the generated ssrc.
       for (size_t i = 0; i < ssrcs.size(); ++i) {
+	  	RTC_LOG(LS_WARNING) << "ppt, in AddStreamParams, ssid: " << ssrcs[i];
         stream_param.ssrcs.push_back(ssrcs[i]);
       }
       if (sender.num_sim_layers > 1) {
@@ -486,6 +490,8 @@ static bool AddStreamParams(
       // Use existing generated SSRCs/groups, but update the sync_label if
       // necessary. This may be needed if a MediaStreamTrack was moved from one
       // MediaStream to another.
+      for (auto stream_id : sender.stream_ids)
+      	RTC_LOG(LS_WARNING) << "ppt, in AddStreamParams, stream_id: " << stream_id;
       param->set_stream_ids(sender.stream_ids);
       content_description->AddStream(*param);
     }
@@ -503,9 +509,10 @@ static bool UpdateTransportInfoForBundle(const ContentGroup& bundle_group,
   if (!sdesc || !bundle_group.FirstContentName()) {
     return false;
   }
-
+  
   // We should definitely have a transport for the first content.
   const std::string& selected_content_name = *bundle_group.FirstContentName();
+  RTC_LOG(LS_WARNING) << "ppt, in UpdateTransportInfoForBundle, selected_content_name: " << selected_content_name;
   const TransportInfo* selected_transport_info =
       sdesc->GetTransportInfoByName(selected_content_name);
   if (!selected_transport_info) {
@@ -1348,6 +1355,7 @@ SessionDescription* MediaSessionDescriptionFactory::CreateOffer(
   if (session_options.bundle_enabled && offer->contents().size() > 0u) {
     ContentGroup offer_bundle(GROUP_TYPE_BUNDLE);
     for (const ContentInfo& content : offer->contents()) {
+		RTC_LOG(LS_WARNING) << "ppt, in MediaSessionDescriptionFactory::CreateOffer, content.name:" << content.name;
       // TODO(deadbeef): There are conditions that make bundling two media
       // descriptions together illegal. For example, they use the same payload
       // type to represent different codecs, or same IDs for different header
@@ -1550,6 +1558,7 @@ SessionDescription* MediaSessionDescriptionFactory::CreateAnswer(
 
 const AudioCodecs& MediaSessionDescriptionFactory::GetAudioCodecsForOffer(
     const RtpTransceiverDirection& direction) const {
+  RTC_LOG(LS_WARNING) << "ppt, in MediaSessionDescriptionFactory::GetAudioCodecsForOffer, direction: " << (int)direction;
   switch (direction) {
     // If stream is inactive - generate list as if sendrecv.
     case RtpTransceiverDirection::kSendRecv:
@@ -1633,6 +1642,10 @@ void MediaSessionDescriptionFactory::GetCodecsForOffer(
   // Add our codecs that are not in |current_description|.
   MergeCodecs<AudioCodec>(all_audio_codecs_, audio_codecs, &used_pltypes);
   MergeCodecs<VideoCodec>(video_codecs_, video_codecs, &used_pltypes);
+  for (const VideoCodec& code : video_codecs_) {
+  	RTC_LOG(LS_ERROR) << "ppt, in MediaSessionDescriptionFactory::GetCodecsForOffer: video codec: "
+                      << code.name;
+  }
   MergeCodecs<DataCodec>(data_codecs_, data_codecs, &used_pltypes);
 }
 
@@ -1775,10 +1788,13 @@ bool MediaSessionDescriptionFactory::AddTransportOffer(
   const TransportOptions& transport_options,
   const SessionDescription* current_desc,
   SessionDescription* offer_desc) const {
-  if (!transport_desc_factory_)
+  if (!transport_desc_factory_){
+  	RTC_LOG(LS_WARNING) << "ppt, in MediaSessionDescriptionFactory::AddTransportOffer, return 0.\n";
      return false;
+  }
   const TransportDescription* current_tdesc =
       GetTransportDescription(content_name, current_desc);
+  RTC_LOG(LS_WARNING) << "ppt, in MediaSessionDescriptionFactory::AddTransportOffer, go to transport_desc_factory_->CreateOffer";
   std::unique_ptr<TransportDescription> new_tdesc(
       transport_desc_factory_->CreateOffer(transport_options, current_tdesc));
   bool ret = (new_tdesc.get() != NULL &&
@@ -1802,6 +1818,7 @@ TransportDescription* MediaSessionDescriptionFactory::CreateTransportAnswer(
       GetTransportDescription(content_name, offer_desc);
   const TransportDescription* current_tdesc =
       GetTransportDescription(content_name, current_desc);
+  RTC_LOG(LS_WARNING) << "ppt, in MediaSessionDescriptionFactory::CreateTransportAnswer, go to transport_desc_factory_->CreateAnswer";
   return transport_desc_factory_->CreateAnswer(offer_tdesc, transport_options,
                                                require_transport_attributes,
                                                current_tdesc);
@@ -1811,6 +1828,7 @@ bool MediaSessionDescriptionFactory::AddTransportAnswer(
     const std::string& content_name,
     const TransportDescription& transport_desc,
     SessionDescription* answer_desc) const {
+    RTC_LOG(LS_WARNING) << "ppt, in MediaSessionDescriptionFactory::AddTransportAnswer, go to answer_desc->AddTransportInfo";
   if (!answer_desc->AddTransportInfo(TransportInfo(content_name,
                                                    transport_desc))) {
     RTC_LOG(LS_ERROR) << "Failed to AddTransportAnswer, content name="

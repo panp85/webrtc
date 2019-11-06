@@ -48,6 +48,7 @@ VideoEncoderWrapper::~VideoEncoderWrapper() = default;
 int32_t VideoEncoderWrapper::InitEncode(const VideoCodec* codec_settings,
                                         int32_t number_of_cores,
                                         size_t max_payload_size) {
+  RTC_LOG(LS_ERROR)  << "ppt, in VideoEncoderWrapper::InitEncode, go in.\n";
   JNIEnv* jni = AttachCurrentThreadIfNeeded();
 
   number_of_cores_ = number_of_cores;

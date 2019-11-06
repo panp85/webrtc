@@ -66,7 +66,7 @@ int AsyncSocketAdapter::Send(const void* pv, size_t cb) {
 int AsyncSocketAdapter::SendTo(const void* pv,
                                size_t cb,
                                const SocketAddress& addr) {
-  RTC_LOG(LS_ERROR) << "ppt, in AsyncSocketAdapter::SendTo, go to socket_->SendTo";
+  RTC_LOG(LS_ERROR) << "ppt, in AsyncSocketAdapter::SendTo, go to socket_->SendTo: " << addr.ToString();
   return socket_->SendTo(pv, cb, addr);
 }
 

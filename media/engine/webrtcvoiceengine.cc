@@ -350,8 +350,8 @@ bool WebRtcVoiceEngine::ApplyOptions(const AudioOptions& options_in) {
     RTC_LOG(LS_INFO) << "Always disable AEC on iOS. Use built-in instead.";
   }
 #elif defined(WEBRTC_ANDROID)
-  ec_mode = webrtc::kEcAecm;
-  options.extended_filter_aec = false;
+  //ec_mode = webrtc::kEcAecm;//del by panpan
+  //options.extended_filter_aec = false;
 #endif
 
   // Delay Agnostic AEC automatically turns on EC if not set except on iOS

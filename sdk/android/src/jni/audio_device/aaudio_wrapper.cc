@@ -106,6 +106,7 @@ aaudio_data_callback_result_t DataCallback(AAudioStream* stream,
   RTC_DCHECK(audio_data);
   AAudioWrapper* aaudio_wrapper = reinterpret_cast<AAudioWrapper*>(user_data);
   RTC_DCHECK(aaudio_wrapper->observer());
+  RTC_LOG(WARNING) << "ppt, in DataCallback, go to aaudio_wrapper->observer()->OnDataCallback";
   return aaudio_wrapper->observer()->OnDataCallback(audio_data, num_frames);
 }
 
@@ -383,6 +384,7 @@ void AAudioWrapper::SetStreamConfiguration(AAudioStreamBuilder* builder) {
   // an asynchronous callback function to transfer data to and from the
   // application. AAudio executes the callback in a higher-priority thread that
   // has better performance.
+  RTC_LOG(WARNING) << "ppt, in AAudioWrapper::SetStreamConfiguration, go to AAudioStreamBuilder_setDataCallback.\n";
   AAudioStreamBuilder_setDataCallback(builder, DataCallback, this);
   // Request that AAudio calls this functions if any error occurs on a callback
   // thread.

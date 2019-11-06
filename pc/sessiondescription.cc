@@ -170,6 +170,7 @@ void SessionDescription::AddContent(const std::string& name,
                                     bool rejected,
                                     MediaContentDescription* description) {
   ContentInfo content(type);
+  RTC_LOG(LS_WARNING) << "ppt, in SessionDescription::AddContent, name: " << name;
   content.name = name;
   content.rejected = rejected;
   content.description = description;

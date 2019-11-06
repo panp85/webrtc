@@ -674,6 +674,7 @@ int NetEqImpl::InsertPacketInternal(const RTPHeader& rtp_header,
   // Update bandwidth estimate, if the packet is not comfort noise.
   if (!packet_list.empty() &&
       !decoder_database_->IsComfortNoise(main_payload_type)) {
+    RTC_LOG(LS_WARNING) << "ppt, in NetEqImpl::InsertPacketInternal, is IsComfortNoise.\n";
     // The list can be empty here if we got nothing but DTMF payloads.
     AudioDecoder* decoder = decoder_database_->GetDecoder(main_payload_type);
     RTC_DCHECK(decoder);  // Should always get a valid object, since we have

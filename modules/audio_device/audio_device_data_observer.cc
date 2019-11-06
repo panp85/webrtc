@@ -11,6 +11,7 @@
 #include "modules/audio_device/include/audio_device_data_observer.h"
 #include "rtc_base/checks.h"
 #include "rtc_base/refcountedobject.h"
+#include "rtc_base/logging.h"
 
 namespace webrtc {
 
@@ -144,7 +145,10 @@ class ADMWrapper : public AudioDeviceModule, public AudioTransport {
   int32_t PlayoutIsAvailable(bool* available) override {
     return impl_->PlayoutIsAvailable(available);
   }
-  int32_t InitPlayout() override { return impl_->InitPlayout(); }
+  int32_t InitPlayout() override { 
+    RTC_LOG(LS_WARNING) << "ppt, in InitPlayout audio_device_data_observer.cc.";
+  	return impl_->InitPlayout(); 
+  }
   bool PlayoutIsInitialized() const override {
     return impl_->PlayoutIsInitialized();
   }

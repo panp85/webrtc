@@ -192,6 +192,7 @@ void VideoDecoderWrapper::OnDecodedFrame(
   // If the decoder provides QP values itself, no need to parse the bitstream.
   // Enable QP parsing if decoder does not provide QP values itself.
   qp_parsing_enabled_ = !decoder_qp.has_value();
+  RTC_LOG(LS_WARNING) << "ppt, in VideoDecoderWrapper::OnDecodedFrame, go to callback_->Decoded.\n";
   callback_->Decoded(frame, decoding_time_ms,
                      decoder_qp ? decoder_qp : frame_extra_info.qp);
 }

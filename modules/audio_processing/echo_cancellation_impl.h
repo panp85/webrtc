@@ -93,7 +93,7 @@ class EchoCancellationImpl : public EchoCancellation {
   rtc::CriticalSection* const crit_render_ RTC_ACQUIRED_BEFORE(crit_capture_);
   rtc::CriticalSection* const crit_capture_;
 
-  bool enabled_ = false;
+  bool enabled_ = true;
   bool drift_compensation_enabled_ RTC_GUARDED_BY(crit_capture_);
   bool metrics_enabled_ RTC_GUARDED_BY(crit_capture_);
   SuppressionLevel suppression_level_ RTC_GUARDED_BY(crit_capture_);

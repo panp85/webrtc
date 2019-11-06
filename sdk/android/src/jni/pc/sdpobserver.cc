@@ -29,6 +29,7 @@ CreateSdpObserverJni::CreateSdpObserverJni(
 
 void CreateSdpObserverJni::OnSuccess(SessionDescriptionInterface* desc) {
   JNIEnv* env = AttachCurrentThreadIfNeeded();
+  RTC_LOG(LS_ERROR) << "ppt, in CreateSdpObserverJni::OnSuccess, go to Java_SdpObserver_onCreateSuccess and NativeToJavaSessionDescription";
   Java_SdpObserver_onCreateSuccess(env, j_observer_global_,
                                    NativeToJavaSessionDescription(env, desc));
   // OnSuccess transfers ownership of the description (there's a TODO to make

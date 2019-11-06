@@ -57,6 +57,7 @@ void AudioState::AddReceivingStream(webrtc::AudioReceiveStream* stream) {
   // Make sure playback is initialized; start playing if enabled.
   auto* adm = config_.audio_device_module.get();
   if (!adm->Playing()) {
+  	RTC_LOG(LS_WARNING) << "ppt, in AudioState::AddReceivingStream, go to adm->InitPlayout.";
     if (adm->InitPlayout() == 0) {
       if (playout_enabled_) {
         adm->StartPlayout();

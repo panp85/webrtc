@@ -45,6 +45,7 @@ int I420Encoder::Release() {
 int I420Encoder::InitEncode(const VideoCodec* codecSettings,
                             int /*numberOfCores*/,
                             size_t /*maxPayloadSize */) {
+  RTC_LOG(LS_ERROR)  << "ppt, in I420Encoder::InitEncode, go in.\n";
   if (codecSettings == NULL) {
     return WEBRTC_VIDEO_CODEC_ERR_PARAMETER;
   }

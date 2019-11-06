@@ -30,7 +30,8 @@ TransportDescription* TransportDescriptionFactory::CreateOffer(
     const TransportOptions& options,
     const TransportDescription* current_description) const {
   std::unique_ptr<TransportDescription> desc(new TransportDescription());
-
+  RTC_LOG(LS_WARNING) << "ppt, in TransportDescriptionFactory::CreateOffer,, options.ice_restart: " 
+  	<< options.ice_restart << ", options.enable_ice_renomination: " << options.enable_ice_renomination;
   // Generate the ICE credentials if we don't already have them.
   if (!current_description || options.ice_restart) {
     desc->ice_ufrag = rtc::CreateRandomString(ICE_UFRAG_LENGTH);
@@ -61,13 +62,15 @@ TransportDescription* TransportDescriptionFactory::CreateAnswer(
     const TransportOptions& options,
     bool require_transport_attributes,
     const TransportDescription* current_description) const {
+    
   // TODO(juberti): Figure out why we get NULL offers, and fix this upstream.
   if (!offer) {
     RTC_LOG(LS_WARNING) << "Failed to create TransportDescription answer "
                            "because offer is NULL";
     return NULL;
   }
-
+  RTC_LOG(LS_WARNING) << "ppt, in TransportDescriptionFactory::CreateAnswer, options.ice_restart: " 
+  << options.ice_restart << ", options.enable_ice_renomination: " << options.enable_ice_renomination;
   std::unique_ptr<TransportDescription> desc(new TransportDescription());
   // Generate the ICE credentials if we don't already have them or ice is
   // being restarted.

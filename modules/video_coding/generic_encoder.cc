@@ -53,6 +53,7 @@ int32_t VCMGenericEncoder::Release() {
 int32_t VCMGenericEncoder::InitEncode(const VideoCodec* settings,
                                       int32_t number_of_cores,
                                       size_t max_payload_size) {
+  RTC_LOG(LS_ERROR)  << "ppt, in VCMGenericEncoder::InitEncode, go in.\n";                                         
   RTC_DCHECK_RUNS_SERIALIZED(&race_checker_);
   TRACE_EVENT0("webrtc", "VCMGenericEncoder::InitEncode");
   streams_or_svc_num_ = settings->numberOfSimulcastStreams;

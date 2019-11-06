@@ -194,6 +194,7 @@ class AndroidAudioDeviceModule : public AudioDeviceModule {
     if (PlayoutIsInitialized()) {
       return 0;
     }
+	RTC_LOG(INFO) << "ppt, in InitPlayout, go to output_->InitPlayout";
     int32_t result = output_->InitPlayout();
     RTC_LOG(INFO) << "output: " << result;
     RTC_HISTOGRAM_BOOLEAN("WebRTC.Audio.InitPlayoutSuccess",

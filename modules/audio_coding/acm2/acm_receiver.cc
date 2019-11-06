@@ -389,7 +389,9 @@ const rtc::Optional<CodecInst> AcmReceiver::RtpHeaderToDecoder(
     uint8_t first_payload_byte) const {
   const rtc::Optional<CodecInst> ci =
       neteq_->GetDecoder(rtp_header.payloadType);
+  
   if (ci && STR_CASE_CMP(ci->plname, "red") == 0) {
+  	RTC_LOG(LS_INFO) << "ppt, in AcmReceiver::RtpHeaderToDecoder, ci->plname: red";
     // This is a RED packet. Get the payload of the audio codec.
     return neteq_->GetDecoder(first_payload_byte & 0x7f);
   } else {

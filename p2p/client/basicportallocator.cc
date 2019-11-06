@@ -1328,12 +1328,14 @@ void AllocationSequence::CreateUDPPorts() {
   bool emit_local_candidate_for_anyaddress =
       !IsFlagSet(PORTALLOCATOR_DISABLE_DEFAULT_LOCAL_CANDIDATE);
   if (IsFlagSet(PORTALLOCATOR_ENABLE_SHARED_SOCKET) && udp_socket_) {
+  	RTC_LOG(LS_INFO) << "ppt, in AllocationSequence::CreateUDPPorts, PORTALLOCATOR_ENABLE_SHARED_SOCKET and udp_socket_ ok.";
     port = UDPPort::Create(
         session_->network_thread(), session_->socket_factory(), network_,
         udp_socket_.get(), session_->username(), session_->password(),
         session_->allocator()->origin(), emit_local_candidate_for_anyaddress,
         session_->allocator()->stun_candidate_keepalive_interval());
   } else {
+  	RTC_LOG(LS_INFO) << "ppt, in AllocationSequence::CreateUDPPorts, PORTALLOCATOR_ENABLE_SHARED_SOCKET and udp_socket_ no.";
     port = UDPPort::Create(
         session_->network_thread(), session_->socket_factory(), network_,
         session_->allocator()->min_port(), session_->allocator()->max_port(),
@@ -1405,6 +1407,8 @@ void AllocationSequence::CreateStunPorts() {
       session_->allocator()->origin(),
       session_->allocator()->stun_candidate_keepalive_interval());
   if (port) {
+  	RTC_LOG(LS_INFO) << "ppt, in AllocationSequence::CreateStunPorts, go to session_->AddAllocatedPort, port: " 
+		<< port->ToString();
     session_->AddAllocatedPort(port, this, true);
     // Since StunPort is not created using shared socket, |port| will not be
     // added to the dequeue.
@@ -1536,6 +1540,8 @@ void AllocationSequence::CreateTurnPort(const RelayServerConfig& config) {
       }
     }
     RTC_DCHECK(port != NULL);
+	RTC_LOG(LS_INFO) << "ppt, in AllocationSequence::CreateTurnPort, go to session_->AddAllocatedPort, port: " 
+		<< port->ToString();
     session_->AddAllocatedPort(port.release(), this, true);
   }
 }

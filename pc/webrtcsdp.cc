@@ -861,7 +861,7 @@ std::string SdpSerialize(const JsepSessionDescription& jdesc) {
       break;
     }
   }
-
+  RTC_LOG(LS_ERROR) << "ppt, in SdpSerialize, before BuildMediaDescription, message:" << message;
   // Preserve the order of the media contents.
   int mline_index = -1;
   for (cricket::ContentInfos::const_iterator it = desc->contents().begin();
@@ -869,6 +869,7 @@ std::string SdpSerialize(const JsepSessionDescription& jdesc) {
     const MediaContentDescription* mdesc = it->media_description();
     std::vector<Candidate> candidates;
     GetCandidatesByMindex(jdesc, ++mline_index, &candidates);
+	RTC_LOG(LS_ERROR) << "ppt, in SdpSerialize, go to BuildMediaDescription, name:" << it->name;
     BuildMediaDescription(&*it, desc->GetTransportInfoByName(it->name),
                           mdesc->type(), candidates, desc->msid_signaling(),
                           &message);
@@ -1320,7 +1321,9 @@ void BuildMediaDescription(const ContentInfo* content_info,
   if (fmt.empty()) {
     fmt = " 0";
   }
-
+ 	RTC_LOG(LS_WARNING)
+          << "ppt, in BuildMediaDescription, fmt:"
+          <<  fmt;	
   // The port number in the m line will be updated later when associated with
   // the candidates.
   //

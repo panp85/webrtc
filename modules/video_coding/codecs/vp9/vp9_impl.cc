@@ -240,6 +240,7 @@ int VP9EncoderImpl::SetRateAllocation(
 int VP9EncoderImpl::InitEncode(const VideoCodec* inst,
                                int number_of_cores,
                                size_t /*max_payload_size*/) {
+  RTC_LOG(LS_ERROR)  << "ppt, in VP9EncoderImpl::InitEncode, go in.\n"; 
   if (inst == nullptr) {
     return WEBRTC_VIDEO_CODEC_ERR_PARAMETER;
   }

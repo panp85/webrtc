@@ -278,11 +278,14 @@ int32_t VideoSender::AddVideoFrame(const VideoFrame& videoFrame,
   VideoFrame converted_frame = videoFrame;
   const VideoFrameBuffer::Type buffer_type =
       converted_frame.video_frame_buffer()->type();
+  RTC_LOG(LS_ERROR) << "ppt, in VideoSender::AddVideoFrame, converted_frame: " << (int)buffer_type;
   const bool is_buffer_type_supported =
       buffer_type == VideoFrameBuffer::Type::kI420 ||
       (buffer_type == VideoFrameBuffer::Type::kNative &&
        _encoder->SupportsNativeHandle());
   if (!is_buffer_type_supported) {
+  	RTC_LOG(LS_ERROR) 
+		<< "ppt, in VideoSender::AddVideoFrame, not is_buffer_type_supported, go to converted_frame.video_frame_buffer()->ToI420()" ;
     // This module only supports software encoding.
     // TODO(pbos): Offload conversion from the encoder thread.
     rtc::scoped_refptr<I420BufferInterface> converted_buffer(

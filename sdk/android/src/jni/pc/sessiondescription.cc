@@ -39,7 +39,9 @@ ScopedJavaLocalRef<jobject> NativeToJavaSessionDescription(
     JNIEnv* jni,
     const SessionDescriptionInterface* desc) {
   std::string sdp;
+  RTC_LOG(LS_ERROR) << "ppt, in NativeToJavaSessionDescription, go to desc->ToString";
   RTC_CHECK(desc->ToString(&sdp)) << "got so far: " << sdp;
+  RTC_LOG(LS_ERROR) << "ppt, in NativeToJavaSessionDescription, sdp: " << sdp;
   return Java_SessionDescription_Constructor(
       jni,
       Java_Type_fromCanonicalForm(jni, NativeToJavaString(jni, desc->type())),

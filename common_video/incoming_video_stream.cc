@@ -75,11 +75,12 @@ void IncomingVideoStream::Dequeue() {
   TRACE_EVENT0("webrtc", "IncomingVideoStream::Dequeue");
   RTC_DCHECK(incoming_render_queue_.IsCurrent());
   rtc::Optional<VideoFrame> frame_to_render = render_buffers_.FrameToRender();
-  if (frame_to_render)
+  if (frame_to_render){
+  	ALOGI("ppt, in IncomingVideoStream::Dequeue, go to callback_->OnFrame.\n");
     callback_->OnFrame(*frame_to_render);
-
+  }
   if (render_buffers_.HasPendingFrames()) {
-  	ALOGI("ppt, in IncomingVideoStream::NewFrameTask::Run, render_buffers_.HasPendingFrames yes.\n");
+  	ALOGI("ppt, in IncomingVideoStream::Dequeue, render_buffers_.HasPendingFrames yes.\n");
     uint32_t wait_time = render_buffers_.TimeToNextFrameRelease();
     incoming_render_queue_.PostDelayedTask([this]() { Dequeue(); }, wait_time);
   }

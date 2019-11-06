@@ -437,6 +437,12 @@ void Port::AddAddress(const rtc::SocketAddress& address,
   c.set_network_type(network_->type());
   c.set_related_address(related_address);
   c.set_url(url);
+  RTC_LOG(LS_INFO) << "ppt, in Port::AddAddress, c: " << address.ToString() 
+  	<< ", base_address: " << base_address.ToString()
+  	<< ", tcptype: " << tcptype
+  	<< ", relay_protocol: "<< relay_protocol 
+  	<< ", network_: " << network_->name() << ", " << network_->type()
+  	<< ", url: " << url;
   candidates_.push_back(c);
   SignalCandidateReady(this, c);
 
@@ -1137,6 +1143,7 @@ void Connection::set_write_state(WriteState value) {
 
 void Connection::UpdateReceiving(int64_t now) {
   bool receiving;
+  RTC_LOG(LS_INFO) << "ppt, in Connection::UpdateReceiving, " << ToString() << ", go in.";
   if (last_ping_sent() < last_ping_response_received()) {
     // We consider any candidate pair that has its last connectivity check
     // acknowledged by a response as receiving, particularly for backup
@@ -1154,7 +1161,7 @@ void Connection::UpdateReceiving(int64_t now) {
   if (receiving_ == receiving) {
     return;
   }
-  RTC_LOG(LS_VERBOSE) << ToString() << ": set_receiving to "
+  RTC_LOG(LS_INFO) << "ppt, in Connection::UpdateReceiving, " << ToString() << ": set_receiving to "
                       << receiving;
   receiving_ = receiving;
   receiving_unchanged_since_ = now;
@@ -1197,6 +1204,7 @@ int Connection::receiving_timeout() const {
 
 void Connection::OnSendStunPacket(const void* data, size_t size,
                                   StunRequest* req) {
+  RTC_LOG(LS_WARNING) << "ppt, in Connection::OnSendStunPacket, connect: " << ToString();
   rtc::PacketOptions options(port_->DefaultDscpValue());
   options.info_signaled_after_sent.packet_type =
       rtc::PacketType::kIceConnectivityCheck;
@@ -1405,9 +1413,9 @@ void Connection::PrintPingsSinceLastResponse(std::string* s, size_t max) {
 void Connection::UpdateState(int64_t now) {
   int rtt = ConservativeRTTEstimate(rtt_);
 
-  if (RTC_LOG_CHECK_LEVEL(LS_VERBOSE)) {
+  if (1/*RTC_LOG_CHECK_LEVEL(LS_VERBOSE)*/) {
     std::string pings;
-    PrintPingsSinceLastResponse(&pings, 5);
+    //PrintPingsSinceLastResponse(&pings, 5);
     RTC_LOG(LS_VERBOSE) << ToString()
                         << ": UpdateState()"
                            ", ms since last received response="
@@ -1456,6 +1464,7 @@ void Connection::UpdateState(int64_t now) {
   // Update the receiving state.
   UpdateReceiving(now);
   if (dead(now)) {
+  	RTC_LOG(LS_INFO) << "ppt, in Connection::UpdateState, go to Destroy";
     Destroy();
   }
 }
@@ -1814,6 +1823,9 @@ void Connection::MaybeUpdateLocalCandidate(ConnectionRequest* request,
            "stun response message";
     return;
   }
+  RTC_LOG(LS_ERROR) << "ppt, in Connection::MaybeUpdateLocalCandidate, addr: "
+						  << addr->GetAddress().ToString() << ":"
+						  << addr->GetAddress().port();
 
   for (size_t i = 0; i < port_->Candidates().size(); ++i) {
     if (port_->Candidates()[i].address() == addr->GetAddress()) {
@@ -1825,6 +1837,7 @@ void Connection::MaybeUpdateLocalCandidate(ConnectionRequest* request,
         // Connection's local candidate has changed.
         SignalStateChange(this);
       }
+	  RTC_LOG(LS_ERROR) << "ppt, in Connection::MaybeUpdateLocalCandidate, in Candidates.\n";
       return;
     }
   }
@@ -1865,6 +1878,7 @@ void Connection::MaybeUpdateLocalCandidate(ConnectionRequest* request,
   // Change the local candidate of this Connection to the new prflx candidate.
   RTC_LOG(LS_INFO) << ToString()
                    << ": Updating local candidate type to prflx.";
+  
   local_candidate_index_ = port_->AddPrflxCandidate(new_local_candidate);
 
   // SignalStateChange to force a re-sort in P2PTransportChannel as this

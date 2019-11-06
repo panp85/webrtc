@@ -743,6 +743,7 @@ int32_t AudioDeviceModuleImpl::InitPlayout() {
   if (PlayoutIsInitialized()) {
     return 0;
   }
+  RTC_LOG(WARNING) << "ppt, in AudioDeviceModuleImpl::InitPlayout,go to audio_device_->InitPlayout.";
   int32_t result = audio_device_->InitPlayout();
   RTC_LOG(INFO) << "output: " << result;
   RTC_HISTOGRAM_BOOLEAN("WebRTC.Audio.InitPlayoutSuccess",

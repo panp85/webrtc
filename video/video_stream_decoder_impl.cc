@@ -95,6 +95,7 @@ VideoDecoder* VideoStreamDecoderImpl::GetDecoder(int payload_type) {
   }
 
   const SdpVideoFormat& video_format = decoder_settings_it->second.first;
+  RTC_LOG(LS_WARNING) << "ppt, in VideoStreamDecoderImpl::GetDecoder, video_format: " << video_format.name;
   std::unique_ptr<VideoDecoder> decoder =
       decoder_factory_->CreateVideoDecoder(video_format);
   if (!decoder) {

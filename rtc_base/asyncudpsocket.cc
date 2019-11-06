@@ -74,6 +74,7 @@ int AsyncUDPSocket::Send(const void *pv, size_t cb,
 int AsyncUDPSocket::SendTo(const void *pv, size_t cb,
                            const SocketAddress& addr,
                            const rtc::PacketOptions& options) {
+  RTC_LOG(LS_INFO) << "ppt, in AsyncUDPSocket::SendTo, go in, addr:" << addr.ToString();
   rtc::SentPacket sent_packet(options.packet_id, rtc::TimeMillis(),
                               options.info_signaled_after_sent);
   CopySocketInformationToPacketInfo(cb, *this, true, &sent_packet.info);
@@ -112,7 +113,7 @@ void AsyncUDPSocket::OnReadEvent(AsyncSocket* socket) {
 
   SocketAddress remote_addr;
   int64_t timestamp;
-  ALOGI("ppt, in AsyncSocketAdapter::OnReadEvent, go to socket_->RecvFrom.\n");
+  ALOGI("ppt, in AsyncUDPSocket::OnReadEvent, go to socket_->RecvFrom.\n");
   int len = socket_->RecvFrom(buf_, size_, &remote_addr, &timestamp);
   if (len < 0) {
     // An error here typically means we got an ICMP error in response to our

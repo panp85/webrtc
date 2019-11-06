@@ -197,6 +197,7 @@ AudioFrameList AudioMixerImpl::GetAudioFromSources() {
 
   // Get audio from the audio sources and put it in the SourceFrame vector.
   for (auto& source_and_status : audio_source_list_) {
+  	RTC_LOG(WARNING) << "ppt, in AudioMixerImpl::GetAudioFromSources, go to GetAudioFrameWithInfo.\n";
     const auto audio_frame_info =
         source_and_status->audio_source->GetAudioFrameWithInfo(
             OutputFrequency(), &source_and_status->audio_frame);

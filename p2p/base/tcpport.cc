@@ -165,7 +165,7 @@ void TCPPort::PrepareAddress() {
     // If socket isn't bound yet the address will be added in
     // OnAddressReady(). Socket may be in the CLOSED state if Listen()
     // failed, we still want to add the socket address.
-    RTC_LOG(LS_VERBOSE) << "Preparing TCP address, current state: "
+    RTC_LOG(LS_INFO) << "Preparing TCP address, current state: "
                         << socket_->GetState();
     if (socket_->GetState() == rtc::AsyncPacketSocket::STATE_BOUND ||
         socket_->GetState() == rtc::AsyncPacketSocket::STATE_CLOSED)

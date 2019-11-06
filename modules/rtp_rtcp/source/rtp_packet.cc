@@ -441,6 +441,7 @@ bool RtpPacket::ParseBuffer(const uint8_t* buffer, size_t size) {
   payload_offset_ = kFixedHeaderSize + number_of_crcs * 4;
 
   if (has_padding) {
+  	RTC_LOG(LS_WARNING) << "ppt, in RtpPacket::ParseBuffer, has_padding yes, size: " << size;
     padding_size_ = buffer[size - 1];
     if (padding_size_ == 0) {
       RTC_LOG(LS_WARNING) << "Padding was set, but padding size is zero";

@@ -189,7 +189,7 @@ bool JsepSessionDescription::Initialize(
     const std::string& session_version) {
   if (!description)
     return false;
-
+  RTC_LOG(LS_ERROR) << "ppt, in JsepSessionDescription::Initialize, session_id: " << session_id;
   session_id_ = session_id;
   session_version_ = session_version;
   description_.reset(description);
@@ -273,6 +273,7 @@ bool JsepSessionDescription::ToString(std::string* out) const {
   if (!description_ || !out) {
     return false;
   }
+  RTC_LOG(LS_ERROR) << "ppt, in JsepSessionDescription::ToString, go to SdpSerialize";
   *out = SdpSerialize(*this);
   return !out->empty();
 }

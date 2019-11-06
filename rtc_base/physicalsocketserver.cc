@@ -370,7 +370,7 @@ int PhysicalSocket::SendTo(const void* buffer,
                            size_t length,
                            const SocketAddress& addr) {
   sockaddr_storage saddr;
-  RTC_LOG(LS_ERROR) << "ppt, in PhysicalSocket::SendTo, go to socket_->DoSendTo";
+  RTC_LOG(LS_ERROR) << "ppt, in PhysicalSocket::SendTo, go to socket_->DoSendTo: " << addr.ToString();
   size_t len = addr.ToSockAddrStorage(&saddr);
   int sent = DoSendTo(
       s_, static_cast<const char *>(buffer), static_cast<int>(length),
@@ -388,7 +388,7 @@ int PhysicalSocket::SendTo(const void* buffer,
 	  char str[INET_ADDRSTRLEN];   //INET_ADDRSTRLEN这个宏系统默认定义 16
 	  //成功的话此时IP地址保存在str字符串中。
 	  ::inet_ntop(AF_INET,&in, str, sizeof(str));
-	  RTC_LOG(LS_ERROR) << "ppt, in SendTo, ip: " << str << ", " << sock->sin_port;
+	  RTC_LOG(LS_ERROR) << "ppt, in SendTo, ip: " << str << ", " << NetworkToHost16(sock->sin_port);
 
   UpdateLastError();
   MaybeRemapSendError();
@@ -437,6 +437,7 @@ int PhysicalSocket::RecvFrom(void* buffer,
   sockaddr_storage addr_storage;
   socklen_t addr_len = sizeof(addr_storage);
   sockaddr* addr = reinterpret_cast<sockaddr*>(&addr_storage);
+  /*
   if(addr)
   {
     struct sockaddr_in *sock = ( struct sockaddr_in*)addr;
@@ -447,6 +448,7 @@ int PhysicalSocket::RecvFrom(void* buffer,
 	::inet_ntop(AF_INET,&in, str, sizeof(str));
 	ALOGI("ppt, in RecvFrom, ip: %s, %d.\n", str, sock->sin_port);
   }
+  */
   int received = ::recvfrom(s_, static_cast<char*>(buffer),
                             static_cast<int>(length), 0, addr, &addr_len);
 
@@ -457,7 +459,7 @@ int PhysicalSocket::RecvFrom(void* buffer,
 	char str[INET_ADDRSTRLEN];
 	//char *ip1 = inet_ntoa(in);   //注意此时ip1的地址不允许访问，会出错。
 	::inet_ntop(AF_INET,&in, str, sizeof(str));
-	ALOGI("ppt, in RecvFrom, after, ip: %s, %d.\n", str, sock->sin_port);
+	ALOGI("ppt, in RecvFrom, after, ip: %s, %d.\n", str, NetworkToHost16(sock->sin_port));
    }
 	
   if (timestamp) {

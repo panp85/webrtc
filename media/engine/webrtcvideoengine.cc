@@ -73,6 +73,7 @@ class DecoderFactoryAdapter {
 
   std::unique_ptr<webrtc::VideoDecoder> CreateVideoDecoder(
       const webrtc::SdpVideoFormat& format) {
+    RTC_LOG(LS_WARNING) << "ppt, in DecoderFactoryAdapter::CreateVideoDecoder, go to decoder_factory_->CreateVideoDecoder.\n";  
     return decoder_factory_->CreateVideoDecoder(format);
   }
 
@@ -555,7 +556,7 @@ WebRtcVideoEngine::WebRtcVideoEngine(
     : decoder_factory_(
           new DecoderFactoryAdapter(std::move(video_decoder_factory))),
       encoder_factory_(std::move(video_encoder_factory)) {
-  RTC_LOG(LS_INFO) << "WebRtcVideoEngine::WebRtcVideoEngine()";
+  RTC_LOG(LS_INFO) << "ppt, in WebRtcVideoEngine::WebRtcVideoEngine(), encoder_factory_ create";
 }
 
 WebRtcVideoEngine::~WebRtcVideoEngine() {
@@ -2258,6 +2259,10 @@ void WebRtcVideoChannel::WebRtcVideoReceiveStream::ConfigureCodecs(
 
     if (!new_decoder && decoder_factory_) {
       decoder_factory_->SetReceiveStreamId(stream_params_.id);
+	  RTC_LOG(LS_WARNING) 
+	  	<< "ppt, in WebRtcVideoChannel::WebRtcVideoReceiveStream::ConfigureCodecs, "
+	  	<< "go to decoder_factory_->CreateVideoDecoder, "
+	  	<< "recv_codec.codec.name: " << recv_codec.codec.name;
       new_decoder = decoder_factory_->CreateVideoDecoder(webrtc::SdpVideoFormat(
           recv_codec.codec.name, recv_codec.codec.params));
     }

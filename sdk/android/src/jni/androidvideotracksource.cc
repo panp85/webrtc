@@ -90,7 +90,7 @@ void AndroidVideoTrackSource::OnFrameCaptured(
                   &crop_y)) {
     return;
   }
-
+  RTC_LOG(LS_INFO) << "ppt, in AndroidVideoTrackSource::OnFrameCaptured, CropAndScale.\n";
   rtc::scoped_refptr<VideoFrameBuffer> buffer =
       AndroidVideoBuffer::Create(jni, j_video_frame_buffer)
           ->CropAndScale(jni, crop_x, crop_y, crop_width, crop_height,
@@ -98,7 +98,7 @@ void AndroidVideoTrackSource::OnFrameCaptured(
 
   // AdaptedVideoTrackSource handles applying rotation for I420 frames.
   if (apply_rotation() && rotation != kVideoRotation_0) {
-  	//RTC_LOG(LS_INFO) << "ppt, in OnFrameCaptured, go to ToI420.\n";
+  	RTC_LOG(LS_INFO) << "ppt, in OnFrameCaptured, go to ToI420.\n";
     buffer = buffer->ToI420();
   }
 

@@ -383,6 +383,7 @@ void AAudioWrapper::SetStreamConfiguration(AAudioStreamBuilder* builder) {
   // an asynchronous callback function to transfer data to and from the
   // application. AAudio executes the callback in a higher-priority thread that
   // has better performance.
+  RTC_LOG(INFO) << "ppt, in AAudioWrapper::SetStreamConfiguration, modules/audio_device/android, go to AAudioStreamBuilder_setDataCallback.\n";
   AAudioStreamBuilder_setDataCallback(builder, DataCallback, this);
   // Request that AAudio calls this functions if any error occurs on a callback
   // thread.

@@ -189,6 +189,7 @@ H264EncoderImpl::~H264EncoderImpl() {
 int32_t H264EncoderImpl::InitEncode(const VideoCodec* codec_settings,
                                     int32_t number_of_cores,
                                     size_t max_payload_size) {
+  RTC_LOG(LS_ERROR)  << "ppt, in H264EncoderImpl::InitEncode, go in.\n";                                         
   ReportInit();
   if (!codec_settings ||
       codec_settings->codecType != kVideoCodecH264) {

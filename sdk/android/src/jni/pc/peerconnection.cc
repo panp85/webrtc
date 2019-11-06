@@ -410,6 +410,7 @@ static ScopedJavaLocalRef<jobject> JNI_PeerConnection_GetLocalDescription(
     const JavaParamRef<jobject>& j_pc) {
   const SessionDescriptionInterface* sdp =
       ExtractNativePC(jni, j_pc)->local_description();
+   RTC_LOG(LS_ERROR) << "ppt, in JNI_PeerConnection_GetLocalDescription, sdp: " << (sdp?"yes":"no");
   return sdp ? NativeToJavaSessionDescription(jni, sdp) : nullptr;
 }
 
@@ -418,6 +419,7 @@ static ScopedJavaLocalRef<jobject> JNI_PeerConnection_GetRemoteDescription(
     const JavaParamRef<jobject>& j_pc) {
   const SessionDescriptionInterface* sdp =
       ExtractNativePC(jni, j_pc)->remote_description();
+  RTC_LOG(LS_ERROR) << "ppt, in JNI_PeerConnection_GetRemoteDescription, sdp: " << (sdp?"yes":"no");
   return sdp ? NativeToJavaSessionDescription(jni, sdp) : nullptr;
 }
 

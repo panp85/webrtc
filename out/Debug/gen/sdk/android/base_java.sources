@@ -1,8 +1,0 @@
-../../sdk/android/api/org/webrtc/RefCounted.java
-../../sdk/android/src/java/org/webrtc/CalledByNative.java
-../../sdk/android/src/java/org/webrtc/CalledByNativeUnchecked.java
-../../sdk/android/src/java/org/webrtc/Histogram.java
-../../sdk/android/src/java/org/webrtc/JniCommon.java
-../../sdk/android/src/java/org/webrtc/JniHelper.java
-../../sdk/android/src/java/org/webrtc/RefCountDelegate.java
-../../sdk/android/src/java/org/webrtc/WebRtcClassLoader.java

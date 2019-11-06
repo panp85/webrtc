@@ -1,9 +1,0 @@
-{
-  "java_libraries_list": "{\"_webrtc_nonparallel_tests__library\"}",
-  "lib_paths": [
-    "./lib_webrtc_nonparallel_tests__library.so"
-  ],
-  "libraries": [
-    "lib_webrtc_nonparallel_tests__library.so"
-  ]
-}

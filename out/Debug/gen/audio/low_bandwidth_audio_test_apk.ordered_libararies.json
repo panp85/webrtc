@@ -1,9 +1,0 @@
-{
-  "java_libraries_list": "{\"_low_bandwidth_audio_test__library\"}",
-  "lib_paths": [
-    "./lib_low_bandwidth_audio_test__library.so"
-  ],
-  "libraries": [
-    "lib_low_bandwidth_audio_test__library.so"
-  ]
-}

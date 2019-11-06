@@ -1,6 +1,0 @@
-org.robolectric.internal.ShadowProvider,../../third_party/robolectric/robolectric/shadowapi/src/main/java/org/robolectric/internal/ShadowProvider.java
-org.robolectric.internal.IShadow,../../third_party/robolectric/robolectric/shadowapi/src/main/java/org/robolectric/internal/IShadow.java
-org.robolectric.shadow.api.Shadow,../../third_party/robolectric/robolectric/shadowapi/src/main/java/org/robolectric/shadow/api/Shadow.java
-org.robolectric.annotation.internal.DoNotInstrument,../../third_party/robolectric/robolectric/shadowapi/src/main/java/org/robolectric/annotation/internal/DoNotInstrument.java
-org.robolectric.util.ReflectionHelpers,../../third_party/robolectric/robolectric/shadowapi/src/main/java/org/robolectric/util/ReflectionHelpers.java
-org.robolectric.annotation.internal.Instrument,../../third_party/robolectric/robolectric/shadowapi/src/main/java/org/robolectric/annotation/internal/Instrument.java

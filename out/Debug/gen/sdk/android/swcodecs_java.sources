@@ -1,6 +1,0 @@
-../../sdk/android/api/org/webrtc/SoftwareVideoDecoderFactory.java
-../../sdk/android/api/org/webrtc/SoftwareVideoEncoderFactory.java
-../../sdk/android/src/java/org/webrtc/VP8Encoder.java
-../../sdk/android/src/java/org/webrtc/VP8Decoder.java
-../../sdk/android/src/java/org/webrtc/VP9Encoder.java
-../../sdk/android/src/java/org/webrtc/VP9Decoder.java

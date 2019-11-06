@@ -1,9 +1,0 @@
-{
-  "java_libraries_list": "{\"_peerconnection_unittests__library\"}",
-  "lib_paths": [
-    "./lib_peerconnection_unittests__library.so"
-  ],
-  "libraries": [
-    "lib_peerconnection_unittests__library.so"
-  ]
-}

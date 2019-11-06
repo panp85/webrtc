@@ -1,9 +1,0 @@
-{
-  "java_libraries_list": "{\"examples_androidnativeapi_jni\"}",
-  "lib_paths": [
-    "./libexamples_androidnativeapi_jni.so"
-  ],
-  "libraries": [
-    "libexamples_androidnativeapi_jni.so"
-  ]
-}

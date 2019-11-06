@@ -1,9 +1,0 @@
-{
-  "java_libraries_list": "{\"_bwe_simulations_tests__library\"}",
-  "lib_paths": [
-    "./lib_bwe_simulations_tests__library.so"
-  ],
-  "libraries": [
-    "lib_bwe_simulations_tests__library.so"
-  ]
-}

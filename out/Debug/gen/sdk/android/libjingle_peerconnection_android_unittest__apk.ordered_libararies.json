@@ -1,9 +1,0 @@
-{
-  "java_libraries_list": "{\"jingle_peerconnection_so\"}",
-  "lib_paths": [
-    "./libjingle_peerconnection_so.so"
-  ],
-  "libraries": [
-    "libjingle_peerconnection_so.so"
-  ]
-}

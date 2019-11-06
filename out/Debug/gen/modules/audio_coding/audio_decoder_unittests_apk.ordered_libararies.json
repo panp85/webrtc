@@ -1,9 +1,0 @@
-{
-  "java_libraries_list": "{\"_audio_decoder_unittests__library\"}",
-  "lib_paths": [
-    "./lib_audio_decoder_unittests__library.so"
-  ],
-  "libraries": [
-    "lib_audio_decoder_unittests__library.so"
-  ]
-}

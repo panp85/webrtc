@@ -1,5 +1,0 @@
-org.webrtc.BuildInfo,../../sdk/android/native_unittests/org/webrtc/BuildInfo.java
-org.webrtc.PeerConnectionFactoryInitializationHelper,../../sdk/android/native_unittests/org/webrtc/PeerConnectionFactoryInitializationHelper.java
-org.webrtc.JavaTypesTestHelper,../../sdk/android/native_unittests/org/webrtc/JavaTypesTestHelper.java
-org.webrtc.ApplicationContextProvider,../../sdk/android/native_unittests/org/webrtc/ApplicationContextProvider.java
-org.webrtc.JavaVideoSourceTestHelper,../../sdk/android/native_unittests/org/webrtc/JavaVideoSourceTestHelper.java

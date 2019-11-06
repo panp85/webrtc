@@ -1,9 +1,0 @@
-{
-  "java_libraries_list": "{\"_audio_codec_speed_tests__library\"}",
-  "lib_paths": [
-    "./lib_audio_codec_speed_tests__library.so"
-  ],
-  "libraries": [
-    "lib_audio_codec_speed_tests__library.so"
-  ]
-}

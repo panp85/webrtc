@@ -1,9 +1,0 @@
-{
-  "java_libraries_list": "{\"_ortc_unittests__library\"}",
-  "lib_paths": [
-    "./lib_ortc_unittests__library.so"
-  ],
-  "libraries": [
-    "lib_ortc_unittests__library.so"
-  ]
-}
